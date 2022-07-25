@@ -1,0 +1,35 @@
+[00:00] Agora com o software _Br instalado, a equipe da Marta estava sentindo confiante para começar o trabalho da modelagem em si, como a Marta era a pessoa que mais conhecia a ferramenta, já tinha familiaridade, a equipe pediu para ela dar os primeiros passos, mostrando onde conseguimos colocar ali os símbolos, que vamos atualizar e tudo mais.
+
+[00:17] Só que a Marta disse que antes de mais nada, precisamos saber conhecer o mini mundo que vamos trabalhar e realizar abstração desse mini mundo, então, dois conceitos, mini mundo e abstração, ela sentiu que como a equipe era muito diversa, ela sentiu que algumas pessoas não tinham sintonizado muito bem com esses conceitos, ai ela decidiu explicar esses conceitos um pouco melhor.
+
+[00:39] Então mini mundo, podemos trazer uma definição de banco de dados aqui que, na verdade, o banco de dados representa aspectos do mundo real, às vezes chamado de mini mundo, ou seja, ele é um recorte no mundo real.
+
+[00:52] Porque já que meu banco de dados vai representar algo da realidade, não tem como representar tudo, eu tenho que escolher o que vai apresentar, fazer um recorte, e daí sim colocar no nosso banco, então vamos ver um exemplo disso.
+
+[01:06] Imagina uma situação aqui do clube do livro, eu tenho um comprador, o Carlos, ele vai comprar um livro, e esse livro tem uma autora, a Janaína, então tenho aqui o Carlos comprou um livro que a Janaína escreveu.
+
+[01:23] Então perceba que eu tenho uma situação, eu vou me concentrar aqui nos principais tópicos para que eu consiga transcrever isso, transpor para um software, então que entes que temos aqui que estamos trabalhando? Deixa eu pensar.
+
+[01:40] Primeiro eu tenho o cliente, eu tenho a ação da compra, eu tenho o livro que é o produto, eu tenho a autoria, então todo livro tem um autor, uma autora, e eu tenho a Janaína que é a autora nesse caso, olha quantos entes temos aqui nessa ação que descrevemos.
+
+[02:02] Inclusive, aliás, por definição, um banco de dados ele traz relação entre os dados, e se eu for observar eu tenho aqui dentro desses entes, relações entre eles, por exemplo, eu posso pensar que a compra tem relação com o cliente e com o produto que é o livro.
+
+[02:24] E a autoria também tem relação com o livro, também tem a relação com a autora, então essas informações elas estão de alguma forma relacionadas aqui dentro dessa representação que fizemos.
+
+[02:37] Agora para conseguirmos desenhar esse nosso mini mundo, é muito importante que eu entenda e consiga ter um domínio da abstração, então o que será que significa esse termo, abstração? Abstração, nada mais é do que um processo mental que consiste em escolher, ou isolar um aspecto determinado de coisas bem complexas, com a finalidade de simplificarmos a sua avaliação, então a ideia é essa.
+
+[03:07] Então eu tenho ali várias coisas que eu estou observando e com a abstração é como se eu tivesse dando um zoom para fora, olhando os pontos principais, escolhendo esses pontos para que eu consiga representar, então é importante falarmos que cada pessoa vai fazer abstração com os detalhes que é importante para ela, então aqui temos um Q de subjetividade.
+
+[03:32] Então vamos pegar um exemplo, vamos pensar aqui em porco, se eu falasse para você me dizer assim, quais são os pontos principais para que eu consiga desenhar um porco, faz de conta que eu nunca vi um pouco na vida e você vai me falar.
+
+[03:45] Você pode escolher alguns pontos que são importantes para você, pode falar da orelhinha, do rabinho, do focinho, e tal, e se eu perguntar para outra pessoa, ela pode dar outros tipos de respostas, porque para ela outros pontos podem ser importante.
+
+[03:58] Então a abstração ela é um pouco subjetiva, mas é assim mesmo, se você vai fazer a abstração daqueles pontos para construir um banco de dados, é claro que você vai pegar os pontos que são mais importantes para você, e se fosse outro profissional esses pontos poderiam variar um pouco.
+
+[04:16] Vamos ver um exemplo aqui de abstração da vida real, vamos pegar um calendário, podemos fazer níveis de abstração diferentes daqui com uma data, podemos pensar em ano, depois descer para semestre, trimestre, depois mês, depois dia, quinzena, podemos fazer vários níveis diferentes.
+
+[04:35] Mas, vamos pensar na sua agenda agora, você vai preencher a sua agenda com as atividades para hoje, você vai colocar todos os segundos do seu dia, ou você vai escolher os pontos mais importantes? Claro os pontos mais importantes, tem uma reunião, tem que ir no parque, tem que ir ao mercado, esse tipo de coisa que você vai julgar mais importante e que vale a pena ser marcada ali.
+
+[04:58] Então esse é um processo de abstração que já estamos acostumados a fazer no nosso dia a dia, e é isso que vamos fazer para construir o nosso modelo de banco de dados.
+
+[05:08] Para sabermos quais são os principais pontos para construir o nosso mini mundo junto com a abstração, eu tenho que ter uma entrevista com meu usuário e esse caso vai ser entrevista com a diretoria do clube do livro, então a equipe da Marta vai sentar com a diretora, vai conversar e vai entender um pouco do negócio, para dali fazer uma abstração, um recorte, para representar um mini mundo no modelo conceitual.

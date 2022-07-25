@@ -1,0 +1,5 @@
+Nessa aula, você aprendeu a:
+Identificar os tipos de relacionamento.
+Determinar o grau de um relacionamento.
+Reconhecer os tipos de cardinalidade.
+Representar relacionamentos no DER.

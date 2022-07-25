@@ -1,0 +1,31 @@
+[00:00] Agora a equipe da Marta vai começar a representar as entidades no _BrModelo, mas como fazemos isso, como vamos identificar lá do texto da entrevista quem é a entidade ou não, como vimos os objetos físicos ou conceituais, vamos analisar cada fragmento agora do texto para tentar identificar isso.
+
+[00:22] A dica que eu já vou trazer aqui de antemão, é a seguinte, geralmente, associamos entidade a um substantivo, nem sempre, mas é uma boa dica, é o norte para partimos, sabemos que o curso não é de gramática, mas para você identificar o substantivo você pode colocar um artigo, o/a, os/as, antes ali da palavra, é uma dica isso pode nos ajudar se tivermos sentindo um pouco perdido ali na hora de abstrairmos as entidades.
+
+[00:52] Vamos dar aqui um zoom para enxergarmos um pouco melhor, deixa eu puxar para cá, então vamos analisando agora fragmento por fragmento e tentando identificar as entidades. Então vamos começar no primeiro parágrafo.
+
+[01:07] "Queremos coletar os dados pessoais de nossos clientes", olha só, clientes é um substantivo poderia colocar um artigo aqui, os clientes, então eu vou pintar, vou deixar em negrito, na verdade, só para dar um destaque, vou aumentar um pouco a fonte, para batermos o olho e identificar que isso daqui, eu já estou identificando como uma entidade.
+
+[01:28] Então, "Queremos coletar os dados pessoais de nossos clientes, como se ele é pessoa física ou jurídica, no caso de pessoa física, só seu CPF e RG, no caso jurídico CNPJ e inscrição estadual. Além disso, queremos coletar e armazenar o seu nome, endereço, telefone e e-mail".
+
+[01:40] Perceba que o resto, está complementando, dando características ali para entidade clientes, temos um detalhe que ele está subdividindo ele se é pessoa física ou jurídica, mas vamos analisar isso daqui a pouco, primeiro vamos concentrar aqui na entidade que são os clientes.
+
+[01:58] Então no primeiro já identifiquei essa entidade, o que eu vou fazer? Vou no _BrModelo agora, e eu tenho aqui já uma entidade criada, está com nome, eu vou posicionar ela aqui em algum lugar, não vamos focar muito no lugar onde vamos colocar essa entidade agora porque vimos que podemos clicar e deixar pressionado o botão esquerdo do mouse, e posso brincar com ele, colocar onde eu quiser, vou deixar mais ou menos aqui.
+
+[02:25] Com ele selecionado já vimos que também podemos mudar o nome, então está "Entidade_1", vou aqui em nome, vou clicar e vou colocar como "Clientes" e “Enter”, olha só, já mudou então já tenho a minha primeira entidade já modelada no _BrModelo, vamos lá, vamos voltar agora para nossa entrevista.
+
+[02:44] Segundo parágrafo, "O produto principal do e-commerce são livros, os livros" um substantivo, vou identificar então como uma entidade, "esses livros têm informações associadas a ele", olha só várias características, o ano de publicação, o valor, o autor ou autora, então já identificamos outra entidade, vamos lá nosso _BrModelo.
+
+[03:11] Eu tenho uma entidade aqui fraca desenhada, como não sabemos ainda quem é forte, quem é fraco, eu vou apagar, se eu quisesse mexer, porque se eu clico aqui eu estou pegando, na verdade, só um retângulo, então mexo em um, mexo em outro, então se eu quiser mexer com os dois ao mesmo tempo, eu posso clicar fora, abrir aqui com botão esquerdo do mouse, pressionado, eu abro uma seleção não solto, e eu solto quando seleciona todo mundo aí quando eu clico vou brincando com todo mundo, como eu quero apagar todo mundo, eu vou deixar selecionado apertar o "Delete", apaguei todo mundo.
+
+[03:44] E vou criar uma nova entidade, cliquei aqui na "Entidade" no canto direito, cliquei na minha área central e vou dar um nome aqui no canto esquerdo de "Livros", “Enter”, estamos caminhando, voltando para a entrevista, "os livros são fornecidos por editoras", as editoras, um substantivo vou identificar como uma entidade, "precisamos ter guardados telefone da editora", características da editora, mas a entidade aqui central vai ser editoras, volto no meu _BrModelo, uma nova entidade, vou clicar aqui, vou mudar o nome agora aqui no canto esquerdo, "Editoras" e dou “Enter”.
+
+[04:29] A princípio não precisa se preocupar com a posição depois podemos ir reposicionando, voltando para a entrevista, "Sabemos que não podemos ter o mesmo livro vindo de várias editoras, o livro é exclusivo de uma editora", isso aqui é uma regra de negócio.
+
+[04:46] "Nosso cliente pode comprar um ou mais livros através de um pedido de compra", vou pegar todo mundo aqui, olha só, um pedido, é um substantivo e o artigo um aqui indefinido, então um pedido de compra.
+
+[05:04] "Porém sempre que ele faz uma compra precisamos verificar no estoque se o livro está ou não disponível antes de efetuar a operação", eu vou identificar o estoque como uma entidade também, o estoque um substantivo e eu vou identificar, dependendo da regra de negócio poderíamos discutir isso aqui, se ele seria uma característica ou não, mas eu identifico que ele é uma entidade, então vou colocar essas duas entidades, pedido de compra e estoque.
+
+[05:30] Então vou vir aqui no meu modelo, clicar aqui, vou deixar selecionado, vou vir no nome, deixar só "Pedido", eu já sei que é um pedido de compra e vou criar aqui a outra entidade, deixa eu arrastar essa para cá, centralizar essa daqui, aqui, na verdade, deixar essa daqui aqui próximo dos livros, e aqui, essa outra vou mudar o nome e colocar "Estoque".
+
+[06:02] Então olha só, já começamos a modelagem dos nossos dados, do nosso banco, já identificamos aqui as entidades, vamos voltar para o doc de entrevista e era isso, mas já sabemos que temos que identificar quem são as entidades fortes e as fracas. Então vamos fazer isso no próximo vídeo.

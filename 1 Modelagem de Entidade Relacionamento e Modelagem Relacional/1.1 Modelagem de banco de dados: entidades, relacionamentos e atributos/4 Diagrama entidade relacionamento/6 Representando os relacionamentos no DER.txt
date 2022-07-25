@@ -1,0 +1,73 @@
+[00:00] Agora que já entendemos bem os tipos de cardinalidade que temos, 1 para 1, 1 para N, N para M, já conseguimos agora, colocar no nosso diagrama de entidade de relacionamento os relacionamentos e as suas respectivas cardinalidades, então vamos lá, vamos ajudar a Marta fazer isso.
+
+[00:16] Temos o nosso primeiro relacionamento, o "Relacionamento_1" aqui, e se clicamos em cima dele, do lado esquerdo conseguimos alterar o nome, assim como fazíamos com as entidades, então o nome está "Relacionamento_1", e eu vou mudar, então eu vou deixar o mais claro possível, se eu quiser, eu posso ir lá no nosso doc e entender de novo, ler de novo o texto e entender como que essas entidades estão se relacionando, ou eu posso fazer um pouco de lógica também, por exemplo, o cliente faz o que com pedido? Já falei, faz pedido, o cliente faz pedido, então posso deixar o nome aqui como "Faz", e dou um “Enter” e ele já altera.
+
+[00:51] Por falar nisso, só por uma questão de concordância, eu deixei aqui no plural, clientes faz pedido, eu vou mudar para o singular, então vou clicar na entidade, lembra como fazemos para alterar o nome? Do mesmo jeito, clico na entidade, tem o nome aqui, "Clientes", vou tirar o s, "Cliente", “Enter”, fica melhor, cliente faz pedido, e por falar nisso, eu deixei algumas entidades no plural, eu vou mudar todo mundo para o singular para fazer mais sentido.
+
+[01:16] Vou clicar fora aqui, cliente faz pedido, tem um ponto, aqui na cardinalidade não está igual vimos, 1 para 1, 1 para muitos, tem dois números nos parênteses, vamos entender então o que seria esse primeiro número.
+
+[01:32] Esse primeiro número representa a cardinalidade mínima, e o segundo a máxima, temos a cardinalidade mínima e máxima, para entendermos um pouco melhor a cardinalidade mínima, vamos pensar no exemplo de uma casa, mas vamos pensar primeiro na relação, dono, ou dona da casa, o proprietário ou proprietária, dá para existir uma casa sem dono ou dona? Não, sei que talvez possa vir na sua cabeça algum exemplo, mas segundo a constituição não dá, não dá para termos uma casa sem dono ou dona.
+
+[02:07] Então qual seria a cardinalidade mínima dessa relação? Proprietário, proprietária e casa, tem que ser um, tem que ser pelo menos uma pessoa, entendeu? Não pode ser zero, porque tem que ter ali um proprietário.
+
+[02:23] Agora vamos pensar nas pessoas que moram nessa casa, vamos pensar assim, quem está alugando a casa, ela obrigatoriamente tem que ter um morador? Não, é supercomum ter uma casa lá, e estar sem ninguém para morar, estar para alugar, mas ela pode ter zero, mas ela pode ter 1, pode ter 2, 3, N pessoas, já aprendemos em cardinalidade que quando tem mais de um vamos falar que é N.
+
+[02:48] Mas vamos falar da mínima. Qual a cardinalidade mínima de uma casa, por exemplo, que está para alugar? É zero, podemos de repente aí não ter ninguém, pois é, então esse é o conceito, vamos voltar para o nosso _BrModelo.
+
+[03:04] Olha só, então vou fazer o seguinte raciocínio, se pode não ter ninguém lá, vamos deixar como zero a cardinalidade mínima, agora se obrigatoriamente eu tenho que ter pelo menos um, vamos deixar como um.
+
+[03:18] Outro ponto legal para vermos aqui, vamos seguir uma ordem, um fluxo para colocar cardinalidade, então eu vou ler sempre a entidade, então aqui cliente, o verbo do relacionamento, e depois a cardinalidade, antes de chegar na outra entidade, pode ser um pouco diferente para quem está começando, mas logo você se acostuma, eu garanto.
+
+[03:38] Então vamos fazer esse exercício, cliente faz quantos pedidos no mínimo? Lembra que já conversamos sobre isso? Dizemos que eu posso ter um cliente que vai lá e se cadastra no banco de dados ali do nosso e-commerce, por exemplo, e ele não faz nenhum pedido, não tem nenhum problema, então a cardinalidade mínima dessa relação aqui cliente faz pedido é zero, eu posso ter um cliente que não faz pedido.
+
+[04:02] Agora vamos fazer o caminho inverso, eu posso ter um pedido sendo feito por nenhum cliente? Não dá, um pedido tem que ser feito pelo menos por um cliente, não tem sentido existir pedido sem o cliente, então eu vou clicar aqui na cardinalidade aqui desse primeiro parêntese do cliente, e vou mudar, então aqui eu tenho os tipos, cardinalidade, está zero e N, eu vou clicar no checkbox e vou colocar aqui 1 para N, vou deixar primeiro esse para analisarmos, antes focar só na cardinalidade mínima, 1 para N.
+
+[04:36] Então já colocamos aqui a cardinalidade mínima do cliente e do pedido, aqui é 1, e aqui é 0, e eu quero fazer uma pausa e dizer para você que essa ordem que estamos seguindo, entidade, verbo do relacionamento e depois a cardinalidade, ela é a que mais encontramos, ela é a mais no mercado, mas existem literaturas que fazem a inversão disso.
+
+[05:00] Então assim, se você de repente for estudar isso em algum lugar, encontrar isso invertido, não se assusta, isso pode acontecer, mas vamos seguir a mesma linha do curso inteiro aqui porque é onde eu mais encontrei no meu dia a dia da minha experiência, essa ordem de cardinalidade, então eu acho importante seguirmos uma linha só para que você consiga entender, mas se no seu dia a dia, em algum lugar fora, você encontrar isso invertido, não se assusta porque algumas literaturas realmente invertem isso.
+
+[05:26] Voltando aqui, já pensamos na cardinalidade mínima, agora vamos pensar na máxima? Então 1 cliente, pode fazer N pedidos? Sim, inclusive o e-commerce vai amar, se um cliente faz muitos pedidos, e muitos pedidos podem ser feito por um cliente? Também claro, então o que eu posso alterar aqui? Aqui vou deixar, na verdade, na cardinalidade máxima dele 1, então aqui eu vou deixar 1 e aqui eu vou deixar N, e olha só sempre é legal fazermos o caminho de ida e o caminho de volta para ver se está fazendo sentido, um cliente pode fazer N pedidos e N pedidos podem ser feitos por um cliente, então vamos deixar a cardinalidade dessa maneira.
+
+[06:17] Agora vamos fazer relacionamento do pedido e de livros, eu vou aqui selecionar todo mundo, vou puxar um pouco para baixo para termos espaço e assim que fazemos vamos ajustando isso daqui.
+
+[06:30] Então eu vou criar um relacionamento entre pedidos e livros, eu vou vir direto aqui nesse artefato que cria novas ligações, com “Ctrl” pressionado clica em "Pedido", clico em "Livros", vou clicar agora na seta, vou selecionar aqui todo mundo embaixo, eu vou puxar aqui, vou ajustando.
+
+[06:49] E esse relacionamento aqui qual o nome vamos dar? Pedido e livros, eu acho que um pedido contém livros, e livros estão contidos em um pedido, então vou mudar o nome desse relacionamento para "Contém", vou selecionar aqui no canto esquerdo, então vou digitar aqui "Contém" e “Enter”. Então pedido contém livros, livros são contidos em pedidos.
+
+[07:12] Já vimos esse exemplo inclusive lá na cardinalidade de muitos para muitos, então eu já sei como isso daqui funciona, eu sei que aqui é N, na máxima, e N, posso ter muitos livros, muitos pedidos, e muitos pedidos que contém muitos livros.
+
+[07:29] Então vamos fazer o raciocínio agora para cardinalidade mínima, pedido contém livros, tem sentido eu ter um pedido sem nenhum livro? Zero livros? Não, não dá para ter um pedido sem nada, então a cardinalidade mínima aqui tem que ser 1, então vou mudar aqui 1 para N, que um pedido tem que ter pelo menos um livro, senão não é um pedido.
+
+[07:49] E um livro? Pode ser vendido sem nenhum pedido? Não dá, se eu estou comprando um livro tem um pedido, então aqui também tem que ser um, então vocês observem como é que isso daqui é um pouco subjetivo, temos que treinar um pouco esse nosso raciocínio mesmo, é super normal aqui ficar um pouco confuso no começo, mas vamos treinando.
+
+[08:10] Inclusive aqui é uma ótima hora para você ir lá no fórum e falar olha, estou com você concordo, ou espera aí, eu penso diferente e conversamos entre nós no fórum.
+
+[08:20] Outro ponto aqui que eu quero que acende uma lâmpada laranja, não uma vermelha para você parar, mas toda vez que você tiver um relacionamento muitos para muitos, eu quero que acende uma lâmpada laranja, amarela aí, de atenção, eu quero que você para e reflita um pouco, mas isso vamos analisar daqui a pouco, vamos continuar fazendo os relacionamentos aqui, por enquanto eu só quero a lâmpada acesa na sua cabeça, muitos para muitos, guarda essa informação.
+
+[08:48] Vamos continuar, livros e editoras, inclusive, eu falei que ia mudar, então livros aqui eu vou mudar o nome desse relacionamento, ele não está pegando porque ele está pegando o retângulo de fora, eu vou clicar aqui, tirei ele um pouco do lado, tem as artimanhas, agora selecionei aqui dentro, vou mudar o nome, "Livro", “Enter”, volto o retângulo aqui, e encaixo, editoras, vou clicar nessa entidade, e deixar "Editora".
+
+[09:21] Então eu posso falar que o livro pertence à editora, então eu vou vir aqui nessa ligação dos artefatos, poderia ir nesse losangulo, que representa o relacionamento, mas artefatos acho mais prático, deixo o “Ctrl” pressionado, "Livro" e "Editora", ele já me criou aqui o relacionamento, volto para seta, puxo para cá, vou ajustando, esse relacionamento então vou dar o nome de "Pertence", então um livro pertence a uma editora, poderia ser outro verbo? Poderia, mas tem que ter mesmo sentido, então um livro pertence a uma editora.
+
+[10:01] Eu posso ter um livro que pertence a nenhuma editora? Não, um livro ele tem que pertencer a uma editora, então a cardinalidade mínima desse relacionamento aqui vai ser one, 1, deixar um 1 para N, daqui a pouco vamos ajustando, vamos só focar na mínima.
+
+[10:19] E uma editora? Ela pode existir sem nenhum livro? Não, não dá para ter uma editora que não tem livros, não tem sentido, então aqui eu também vou colocar a cardinalidade mínima de 1.
+
+[10:30] Agora vamos focar na cardinalidade máxima, eu posso ter um livro pertencendo a muitas editoras? Não, inclusive lá no nosso doc estava dizendo que o livro ele é exclusivo de uma editora, então a cardinalidade máxima que eu vou colocar aqui na editora também é 1, por quê? Porque estamos vendo que sempre é ao contrário, então o livro vai pertencer ao máximo uma editora.
+
+[11:01] Agora uma editora ela pode ter muitos livros? Claro, com certeza, isso é normal, uma editora ela pode ter N livros, então aqui eu vou deixar um para N também.
+
+[11:11] Ai falta só agora nossa última entidade, vou usar agora o losango para ser diferente, vou criar um novo relacionamento aqui, e vou ajustando aqui todo mundo, puxando mais para cá para eu conseguir, puxar para cá, vamos deixar aqui, e esse relacionamento, deixa eu clicar agora na linha, vou ter que clicar nela de qualquer jeito, ligar "Livros" a "Relacionamento_1" e o "Relacionamento_1" a "Estoque".
+
+[11:36] E esse relacionamento aqui, um nome de livro existe no estoque, vou deixar como "Existe", “Enter”. Tem um detalhe aqui que eu quero mostrar para vocês também, que você percebe que essa linha ela ficou meio que embaixo, eu acho que ficaria mais legal essa linha ser colocada aqui no vértice desse losango.
+
+[12:00] Eu consigo mudar isso? Consigo, eu posso clicar nessa linha aqui do relacionamento e ai aparece umas opções, uma borracha, outra coisa que parece uma âncora, mas quando passa a seta do mouse nessa bola preta aqui, ele faz até uma bola aqui, vou até dar um zoom para vermos melhor isso, olha só, nessa parte aqui, nessa bola, quando eu passo a seta do mouse em cima, ela fica circulada, então que eu vou fazer?
+
+[12:27] Vou clicar aqui com “Ctrl” pensionado, olha só, e com “Ctrl” pressionado eu consigo ir mudando onde eu vou colocar e quando chego bem perto do losango, ele cria umas bolinhas amarelas e eu posso soltar, olha só, não está funcionando, pronto, agora foi, então agora ele ficou certo aqui, é meio chato isso mesmo e às vezes nem sempre funciona de primeira e você tem que ir tentando então vou deixar o “Ctrl” pressionado, pegar a bolinha, venho aqui solto, vamos ver, pronto, foi, e eu vou conseguindo fazer esses ajustes.
+
+[13:07] Então agora o livro existe no estoque. Eu posso ter um livro que não está no estoque? Tipo está zero no estoque? Posso, posso ter um livro que está em falta no estoque, então aqui eu vou deixar a cardinalidade mínima do estoque como zero, agora eu posso ter um estoque sem nenhum livro? Olha, isso é discutível, mas para o nosso estudo de caso aqui, para o e-commerce do livro, não tem sentido eu ter um estoque sem livro, então a cardinalidade mínima aqui do livro, desse lado, do estoque vai ser 1, vou deixar 1 para N, para começarmos.
+
+[13:45] Então assim, vamos seguir a sequência correta, o livro pode existir zero no estoque? Posso, eu posso estar em falta com esse livro, agora o estoque, pode existir nenhum livro? Para o nosso caso concreto não, então eu vou deixar como cardinalidade mínima 1.
+
+[14:02] E agora vamos fazer o raciocínio da cardinalidade máxima, então vamos pensar, eu posso ter aqui, um livro existindo em muitos estoques? Não eu só tenho um estoque, então aqui a cardinalidade máxima, eu vou deixar como 1, então 1 livro vai pertencer a um estoque, que é o estoque do e-commerce, agora no estoque eu posso ter N livros? Claro, essa é a ideia, que eu tenha muitos livros lá no meu estoque, então vamos deixar assim, N para 1, a cardinalidade máxima.
+
+[14:41] Então, como eu disse, tínhamos que acender uma luz amarela de atenção quando eu tenho um relacionamento muitos para muitos, vamos entender o porquê dessa atenção, e como podemos possivelmente resolver essa questão.

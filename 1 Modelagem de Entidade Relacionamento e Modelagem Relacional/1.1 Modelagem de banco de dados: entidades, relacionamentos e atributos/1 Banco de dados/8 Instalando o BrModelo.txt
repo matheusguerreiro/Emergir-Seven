@@ -1,0 +1,13 @@
+[00:00] Então a equipe da Marta está ansiosa para começar a utilizar o software e perguntaram para ela como eles poderiam fazer a instalação do _BrModelo e ela respondeu que podemos fazer isso diretamente do próprio site do _BrModelo, ou pesquisar no Google mesmo, mas que tem um passo muito importante antes da instalação do _BrModelo, que é garantir, assegurar, que o Java está instalado na nossa máquina.
+
+[00:24] Então vamos fazer isso, você em casa pode fazer isso também, eu vou aqui no nosso navegador digitar "download Java" e na primeira opção "java.com" já tenho o site, eu já cliquei nele uma vez.
+
+[00:44] Abrimos essa janela, e aqui embaixo eu tenho um botão centralizado escrito "Concordar e Iniciar Download Gratuito", então vamos lá vou clicar aqui, ele vai baixar um executável, vou clicar nesse executável, ele nos traz uma tela perguntando se eu permito que faça alteração no meu computador, eu digo que sim e ele abre essa janela aqui.
+
+[01:08] Então eu vou clicar agora em instalar e ele começa a instalação do Java e ele me traz a janela dizendo que a instalação do Java foi concluída com êxito, e vamos fechar, então já está garantido que o Java está dentro da nossa máquina.
+
+[01:24] Agora feito isso, podemos procurar o _BrModelo para instalar na nossa máquina, então vou colocar aqui na barra de busca "download brmodelo", e temos alguns sites aqui dizendo que podemos fazer o download, eu vou escolher a segunda opção dessa vez, vamos ver o que acontece, cheguei nessa página aqui do SourceForge, e eu tenho um botão de download, eu só consigo baixar esse software nesse site? Não você pode escolher um outro site aí, eu escolhi agora a segunda opção, vou clicar em download, meu download vai começar daqui a pouco e baixei aqui a pasta zipada.
+
+[02:14] Então vou clicar nesse arquivo, abro a minha pasta zipada aqui e vou extrair agora, vou escolher uma pasta, em documentos, "Alura > Álgebra relacional", você pode escolher o caminho aí onde você achar melhor no seu computador, já fiz a extração, vou fechar essa janela, vamos ver aqui.
+
+[02:37] Então já estou aqui com a minha pasta descompactada no caminho que eu indiquei, vou dar um duplo clique, e ele tem aqui algumas outras pastas e arquivos, agora vamos clicar nessa segunda opção, nessa pasta com nome de "dist", então vou dar um duplo clique, e aqui dentro eu tenho o ícone do "brModelo", vou dar um duplo clique e vamos ver, olha só, ele já abriu aqui para nós o _BrModelo, então esse aqui é o software em que vamos fazer as nossas modelagens de forma bem profissional, bem prática, e ele vai acompanhar aí a modelagem do banco de dados do clube do livro.

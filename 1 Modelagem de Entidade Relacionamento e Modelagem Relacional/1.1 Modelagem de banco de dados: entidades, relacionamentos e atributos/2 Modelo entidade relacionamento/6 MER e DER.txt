@@ -1,0 +1,13 @@
+[00:00] Então Marta comunicou para a equipe que estava todo mundo pronto agora para começar a construção do DER, diagrama entidade relacionamento, mas quando ela utilizou essa sigla DER, ela percebeu que algumas pessoas ficaram inseguras, uma olhando para outra, e aí ela percebendo isso resolveu explicar melhores essas siglas, desses conceitos.
+
+[00:18] E temos duas siglas aí para observar junto da Marta, a primeira sigla é o MER, e, na verdade, ele faz menção ao modelo entidade e relacionamento, esse modelo, é o modelo conceitual que é o primeiro passo que vamos dar para modelagem nos dados e ele vai ser usado para descrever os objetos do mundo real, que podemos chamar de entidades as suas características que podemos chamar de atributos e como eles se relacionam, os seus relacionamentos, por isso que é o modelo entidade relacionamento, então vamos descrever ali os objetos e a forma que estão se relacionando.
+
+[00:56] Esse modelo é usado para representar de forma abstrata como os bancos de dados vão se comportar, como vamos construir esses bancos de dados, agora a sigla que ela utilizou mesmo de fato, que é o DER, faz menção ao diagrama entidade relacionamento, então o que é esse diagrama?
+
+[01:16] Ele é a representação gráfica do modelo entidade relacionamento, muitas vezes no nosso dia a dia, de novo vamos poder ouvir as pessoas misturando esses dois conceitos ou usando como sinônimos, já que para representarmos o nosso modelo, entidade relacionamento vamos ter que usar ali alguma forma visual, por isso que o diagrama entidade relacionamento muitas vezes é usado como sinônimo.
+
+[01:42] E a grande vantagem é que ele facilita a comunicação entre todas as pessoas, desde os analistas, as pessoas que vão fazer as entrevistas ali com usuários para entender como os bancos vão ser estruturados, até realmente os desenvolvedores, então todo mundo olha pra aquele diagrama e de forma visual consegue entender como o banco vai se comportar, como os relacionamentos acontecerão.
+
+[02:03] Então agora ficou claro para a equipe toda que vamos construir um diagrama ali que vai mostrar de forma visual o nosso modelo entidade relacionamento, inclusive vamos fazer este diagrama no nosso _BrModelo.
+
+[02:16] Porém, para o próximo passo temos que entender quem vão ser as entidades e os relacionamentos desse diagrama entidade relacionamento, como vamos abstrair isso daquele texto da entrevista, então vamos ver como vamos fazer isso agora.

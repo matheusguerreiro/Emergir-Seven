@@ -1,0 +1,25 @@
+[00:00] De fato, o que o Pedro achou que ia ser o primeiro passo, na verdade, está muito ligado ao SGBD, mas que sigla é essa, SGBD? Na verdade, essa sigla significa, Sistema Gerencial de Banco Dados, então olha só a letra inicial de cada palavra dessas, SGBD, e como o próprio nome já fala, temos essa palavra aqui gerencial, ou seja, o SGBD é quem gerencia meu banco de dados, destrinchando um pouco mais essa palavra gerencial, podemos entender que ele vai incluir dados, alterá-los, ou até fazer consultas, através de uma interface ali mais amigável para o usuário.
+
+[00:44] Então quer dizer que tudo que fazemos em um banco de dados tem que passar pelo SGBD, então se quiser salvar o dado no HD, na nuvem, fazer alterações, esse tipo de coisa, eu tenho que usar um SGBD, é por isso que é tão comum no dia a dia aí, na prática, nas empresas, as pessoas fazerem referência ao SGBD como banco de dados, as pessoas confundem um pouco esses dois conceitos.
+
+[01:08] Você provavelmente já ouviu, ou vai ouvir, alguém falando assim, "eu trabalho com banco de dados da Oracle, eu trabalho com banco de dados do MySQL", mas, na verdade, o que a pessoa deveria falar corretamente, é o seguinte, eu trabalho com um SGBD da Oracle, eu trabalho com SGBD do MySQL, porque o banco de dados é o banco de dados, mas quando a pessoa utiliza aquele software para realmente gerenciar esse banco de dados, é comum as pessoas fazerem essa confusão.
+
+[01:36] É claro que a ideia não é que você sai corrigindo as pessoas por aí, mas é legal que você saiba, porque você está fazendo um curso aqui entendendo bem os conceitos, então você sabe que, na verdade, o banco é o banco e o SGBD é como vamos manipular esse banco.
+
+[01:52] E eu acho legal trazer para você alguns dos SGBDs mais utilizados no mercado, então eu trouxe aqui para você o MySQL, para que você já conheça, vai se acostumando com esses termos, da própria Oracle, PostgreSQL também bem utilizado, MariaDB está crescendo bastante, o Microsoft SQLServer, o DB2 da IBM, o SQLite e por aí vai, quer dizer que só tenho esses? Não, esse aqui são os que eu trouxe para que você conheça, mas temos vários aí no mercado.
+
+[02:24] E onde vamos encontrar essas aplicações? Onde eu vou ter de repente um banco de dados, um SGBD ali para eu gerenciar esse banco de dados, em quantas aplicações podemos pensar? Em uma biblioteca, será que é importante eu ter um gerenciamento ali, entender quais livros estão no estoque, estão na biblioteca ou não estão, estão emprestados ou não estão, qual é a quantidade? Fundamental.
+
+[02:49] Mercado, será que é importante ali ter um controle dos clientes, das mercadorias e tudo mais? Claro que sim, então hoje em dia em qualquer aplicação empresarial que você pode pensar, você vai ter ali a necessidade de ter um banco e um SGBD para você fazer esse gerenciamento.
+
+[03:09] E aqui é bastante importante entendermos dois pontos, vamos trabalhar com o passo anterior ao SGBD, que é a modelagem de dados conceitual e ela está muito ligada ao alto nível, já o SGBD está ligado ao baixo nível.
+
+[03:25] Então você pode pensar que um modelo de dados conceitual ele é muito superior, alto nível, só que não, em tecnologia geralmente utilizamos sistemas, alto nível e baixo nível, mas eles estão ligados a forma que nos comunicamos.
+
+[03:41] O alto nível está mais relacionado com a linguagem do usuário, ou seja, a linguagem do ser humano, e já a de baixo nível, está mais ligado as linguagens das máquinas, por isso que chamamos de alto nível e baixo nível, mas os dois níveis têm as suas vantagens e suas desvantagens.
+
+[03:59] Então o alto nível tem a vantagem de estar mais próximo da linguagem do ser humano e o baixo nível às vezes tem um ganho ali de eficiência e tudo mais, como o SGBD ele vai fazer as alterações realmente no banco de dados, ele está mais relacionado com o baixo nível.
+
+[04:14] Então, agora sim, o Pedro e toda equipe da Marta compreenderam qual a diferença do modelo de dados conceitual para o SGBD e como é importante que primeiro demos esse passo da modelagem antes de efetivamente partir para o SGBD.
+
+[04:28] Então Pedro chegou para Marta e perguntou se vamos ter algum software específico para fazer essa modelagem que ele já quer se preparar, só que a Marta falou que isso vai ficar para daqui a pouco então vamos ver isso no próximo vídeo.

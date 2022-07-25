@@ -1,0 +1,21 @@
+[00:00] Então a Marta explicou que a cardinalidade, na verdade, tem a ver com a conectividade, ou seja, como as entidades vão se relacionar, e ela disse que tem tipos de cardinalidade, se clicarmos nesses parênteses aqui com o mouse, percebemos que no canto esquerdo ele trouxe o nome, cardinalidade e aqui em "Cardinalidade", nos parênteses se eu clicar, ele me abre uma opção de checkbox, vou clicar aqui e ele tem tipos, 1,1 0,1, 1,n e 0,n isso aqui está bem definido.
+
+[00:32] Então para que todo mundo entenda quais são os tipos de cardinalidade, a Marta trouxe alguns exemplos para que a coisa fique um pouco mais clara, vamos acompanhá-la nessa explicação.
+
+[00:41] O primeiro passo que ela começou a explicar é o seguinte, imagina que temos um departamento e o colaborador, e a regra de negócio para esse caso específico é o seguinte, o departamento ele é gerenciado por apenas um colaborador, eu não posso ter dois colaboradores gerenciando departamento, mas na empresa posso ter mais de um departamento, por exemplo, o de vendas, de compras, técnico e por aí vai.
+
+[01:12] Mas a regra continua a mesma, para cada departamento eu só tenho um colaborador gerenciando, aí da mesma forma, nos dois sentidos é verdadeiro, então um departamento tenho um colaborador e 1 colaborador só pode gerenciar um departamento também.
+
+[01:27] Daqui temos uma relação de cardinalidade 1 para 1, por que? Porque eu tenho um departamento, sendo gerenciado por um colaborador e um colaborador gerencia um departamento, será que é importante conhecermos então esse tipo de cardinalidade quando vamos fazer essa modelagem? Claro, é superimportante eu entender essas regras de negócio para eu colocar a cardinalidade correta ali na nossa relação.
+
+[01:56] Vamos pensar outro exemplo agora, continuamos com departamento e com um colaborador ou colaboradora, porém, agora não é mais sobre a gerência, agora é quem trabalha no departamento, então no departamento tenho ali um colaborador, colaboradora, trabalhando, mas claro dentro de um departamento e é o normal, eu posso ter vários colaboradores e colaboradoras, quantos? N.
+
+[02:19] Na matemática, vocês sabem que, às vezes, usamos as letras emprestadas, e quando usamos a letra N aqui, na verdade queremos dizer muitos, não é definido, não é um número certo, ao invés de eu falar, 1, 2, 3, eu falo N, que ai eu estou falando que é mais de um.
+
+[02:35] Então nesse caso, eu tenho a cardinalidade de 1 para N, porque em um departamento trabalham, n colaboradores e n colaboradores trabalham em um departamento, então olha só, já mudamos, cardinalidade 1 para N.
+
+[02:52] Vamos analisar agora outras entidades, então tenho pedidos e livros, os pedidos contém livros e livros estão contidos em pedidos, por exemplo, mas concorda comigo que eu posso ter vários livros, em vários pedidos? Ou seja, vamos olhar aqui nos dois caminhos, um pedido pode ter N livros, pode ter muitos livros.
+
+[03:22] Agora N livros podem estar contidos em N pedidos, então, por exemplo, eu posso ter aqui o mesmo livro sendo contido em vários pedidos, e eu posso ter um pedido contendo vários livros, então nesse caso aqui temos uma cardinalidade N para M, por quê? De muitos, para muitos, olha as letras aparecendo aqui de novo, muitos para muitos.
+
+[03:50] Então agora vamos voltar lá no nosso _BrModelo, para no caso do nosso e-commerce ali do clube do livro eu tentar mapear essa cardinalidade transferindo isso lá para o nosso caso concreto.

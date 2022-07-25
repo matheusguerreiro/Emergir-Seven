@@ -1,0 +1,12 @@
+Ao criar relacionamentos dentro do brModelo, Pedro notou a necessidade de identificar a cardinalidade. Mas ele ainda precisa entender como utilizar cada tipo de cardinalidade.
+
+Ajude o Pedro assinalando as alternativas que representem os tipos de cardinalidade.
+
+
+(V) A cardinalidade de um-para-muitos (1:N) acontece quando cada ocorrência da entidade A se relaciona com mais de uma ocorrência da entidade B. Essa cardinalidade é comum no mundo real e no dos negócios e é a mais utilizada na solução de modelo de dados.
+  
+  Alternativa correta! Um exemplo dessa cardinalidade é a relação Cliente/Pedido, na qual cada cliente pode ter vários pedidos em seu nome, mas um pedido pertence somente a um(a) único(a) cliente.
+
+(V) A cardinalidade de muitos-para-muitos (N:N) acontece quando mais de uma ocorrência da entidade A se relaciona com mais de uma ocorrência da entidade B. Já a cardinalidade de um-para-um (1:1) acontece quando cada ocorrência da entidade A se relaciona com somente uma ocorrência da entidade B.
+
+  Alternativa correta! Um exemplo da cardinalidade (N:N) é a relação Cliente/Pedido, na qual a pessoa pode comprar vários produtos e um produto pode ser comprado por várias pessoas. Já a cardinalidade (1:1) é a relação estudante/ID, onde cada estudante possui seu ID e cada ID é atribuído a apenas um(a) estudante.

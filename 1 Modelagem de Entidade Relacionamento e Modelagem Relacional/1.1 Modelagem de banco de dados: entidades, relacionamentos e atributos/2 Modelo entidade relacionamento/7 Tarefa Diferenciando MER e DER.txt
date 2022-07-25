@@ -1,0 +1,8 @@
+O Modelo Entidade e Relacionamento (MER) e o Diagrama Entidade e Relacionamento (DER) são etapas utilizadas na modelagem de banco de dados. Apesar de terem nomes parecidos, cada um exerce uma função diferente nesse processo.
+
+Escolha a alternativa que diferencia as características do MER e DER:
+
+
+(V) O MER é um modelo conceitual usado para descrever os objetos (entidades) com suas características (atributos) e como elas se relacionam entre si (relacionamentos). Já o DER é uma representação gráfica que ajuda a visualizar as informações em situações práticas.
+  
+  Alternativa correta! Enquanto o MER é um modelo conceitual, o DER é a sua representação gráfica e principal ferramenta.

@@ -1,0 +1,8 @@
+Pense em um cenário fictício em que fomos contratados por uma floricultura que precisa de um sistema para controle de vendas. Inicialmente, serão armazenadas informações de cada cliente, tais como: nome, endereço, data de nascimento e idade. Já para cada produto, armazenaremos a descrição, quantidade em estoque e o preço. Nesta floricultura também existem as pessoas colaboradoras, que têm nome, endereço, salário e cargo.
+
+Escolha a alternativa que indica quais são as entidades presentes no projeto da floricultura.
+
+
+(V) Clientes, Produto e Colaborador(a).
+      
+      Alternativa correta! Essas são as entidades do projeto da floricultura. Cada uma delas possui atributos que as descrevem, como o atributo preço da entidade produto.

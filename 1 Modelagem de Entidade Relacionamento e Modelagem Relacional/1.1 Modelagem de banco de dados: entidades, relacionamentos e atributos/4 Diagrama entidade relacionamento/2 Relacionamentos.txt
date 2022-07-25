@@ -1,0 +1,21 @@
+[00:00] Então Pedro observou que quando foi colocado esse relacionamento, na verdade, ele não estava ligado diretamente a nenhuma entidade, e ele perguntou para Marta como fazemos para fazer essa ligação, então ela disse que podemos, na verdade, manipular livremente esse losango aqui no relacionamento, posso colocar ele para cá.
+
+[00:19] E para indicar, por exemplo, que esse relacionamento 1, está demonstrando o relacionamento entre entidade cliente e entidade pedido, podemos vir aqui no canto direito dos artefatos, e ir procurando para baixo até a penúltima opção, que está exatamente escrito aqui, quando colocamos a seta do mouse, "Cria nova ligação entre dois artefatos", então posso clicar aqui, clicar no meu "Relacionamento_1" e em "Clientes", daí ele já faz a ligação.
+
+[00:47] Posso fazer de novo a mesma coisa, clicar aqui no meu "Relacionamento_1", e na minha entidade "Pedidos", e ele também faz a ligação, dessa forma ele está demonstrando que temos a ligação aqui entre essas duas entidades.
+
+[00:59] Há outra forma também de fazermos isso aqui no _BrModelo, eu posso simplesmente selecionar todo mundo aqui, ou seja, deixei o botão esquerdo do mouse pressionado, fiz aqui um retângulo, ele seleciona todo mundo de uma vez e aperto o “Delete”, apagou todo mundo.
+
+[01:15] O que eu posso fazer é clicar aqui de novo nessa ligação, deixar o “Ctrl” do teclado pressionado e com o “Ctrl”, com ele pressionado, eu vou clicar aqui com meu mouse com botão esquerdo em "Clientes", e depois em "Pedido", e ele já me traz o relacionamento, clico aqui na seta do mouse para ele poder selecionar e aí eu posso arrastar para cá, deixar da melhor aqui que eu acho que é mais confortável aqui no nosso desenho.
+
+[01:43] Mas o ponto curioso para Pedro, foi o seguinte, quando colocamos o relacionamento apareceu aqui dois parênteses, com o número zero vírgula n, 0,n ele não entendeu muito bem e perguntou para Marta, o que significava aquilo, e aí a Marta veio explicar não só para ele, mas para toda equipe que aquele parêntese, na verdade, representa a cardinalidade.
+
+[02:06] Mas o que é essa cardinalidade? Cardinalidade não diz muita coisa, então podemos usar um sinônimo para essa palavra que é mais comum para nós no nosso dia a dia que é a conectividade, cardinalidade entre entidades não soa tão comum, mas duas coisas que se conectam para nós faz sentido, e é exatamente isso que a cardinalidade quer dizer.
+
+[02:26] Quer dizer que eu tenho aí duas entidades, duas coisas que de alguma forma elas se conectam, mas o interessante para nós aqui no estudo da modelagem do banco de dados, é entender como essas entidades vão se conectar.
+
+[02:38] Então vamos pensar aqui em um exemplo de um hospital, então aqui esses desenhos estão representando aqui um consultório médico, e ai eu tenho duas entidades, eu tenho a entidade dos médicos e eu tenho a entidade dos doentes, e eu quero entender como essas entidades ela se conectam, como ela se relacionam, qual que é a cardinalidade desse relacionamento?
+
+[03:01] Porque, para nós, é bem claro que médicos consultam pacientes, mas como isso se dá? No sentido de, será que eu tenho apenas um médico consultando um paciente? Como está aqui representado na primeira figura? Um médico fazendo aqui relação com um paciente, ou será que eu tenho aqui de repente um médico atendendo mais de um paciente? Então o médico pode atender muitos pacientes? Será que ele sempre tem que atender pacientes, ou será que não está sendo consultado também?
+
+[03:32] Então é esse tipo de estudo que a cardinalidade vai nos trazer, então vamos entender os tipos de cardinalidade daqui a pouco no próximo vídeo.

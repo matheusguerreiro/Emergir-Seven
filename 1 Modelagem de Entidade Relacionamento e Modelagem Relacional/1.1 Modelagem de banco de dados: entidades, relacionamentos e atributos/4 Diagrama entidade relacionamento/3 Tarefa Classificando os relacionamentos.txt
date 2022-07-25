@@ -1,0 +1,8 @@
+Após identificar as nossas entidades, a equipe da Marta precisa entender como elas vão se relacionar. O relacionamento entre entidades é formado a partir de uma associação entre duas ou mais entidades. Essa associação é criada usando instruções de junção para recuperar dados. Após realizar a associação entre as entidades, Marta e sua equipe precisam identificar o grau destes relacionamentos.
+
+Escolha a alternativa que descreve cada grau de relacionamento existente.
+
+
+(V) O grau binário ocorre quando duas entidades participam de um relacionamento, o grau ternário quando três entidades participam de um relacionamento e o grau N-ário quando quatro ou mais entidades participam de um relacionamento.
+  
+  Alternativa correta! Existem três tipos de grau de relacionamento: binário, ternário e N-nário. O grau binário, o mais comum entre todos, ocorre quando o relacionamento acontece entre duas entidades. O ternário é o relacionamento entre três entidades e o N-ário entre quatro ou mais entidades ao mesmo tempo.

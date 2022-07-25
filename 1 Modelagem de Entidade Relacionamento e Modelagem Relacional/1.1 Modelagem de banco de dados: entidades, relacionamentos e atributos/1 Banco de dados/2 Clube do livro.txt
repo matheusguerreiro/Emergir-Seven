@@ -1,0 +1,19 @@
+[00:00] Então vamos lá, vamos começar, vamos começar com a Marta, a Marta é especialista em banco de dados e agora ela foi contratada pelo Clube do livro, que é um e-commerce que vende, como o próprio nome fala, livros e artigos relacionados ao universo da leitura, ele está crescendo bastante agora, e ele decidiu que ele precisa estruturar e criar o seu banco de dados.
+
+[00:19] Então a Marta vai fazer parte de uma equipe, ela foi contratada como especialista, mas tem várias pessoas trabalhando junto com ela, justamente para fazer esse trabalho de criar, estruturar banco de dados.
+
+[00:30] Dentro dessa equipe temos o Pedro, que já teve uma experiência anterior também com criação de banco de dados, e por ele ter essa experiência, ele já chegou dando uma sugestão, como ele já trabalhou com dois softwares ele falou, pessoal o que vocês acham de trabalharmos ou com MySQL, ou com Oracle?
+
+[00:46] E ai foi que ele se surpreendeu, porque a Marta disse que antes de realmente começarmos a criar o banco de dados, tem um passo fundamental, que é justamente a modelagem de dados, então o que será que significa essa modelagem de dados?
+
+[01:01] A modelagem de dados ela é o processo que vamos visualizar e aí ter insights vamos ter a concepção dos dados, antes de começarmos a criação do banco de dados, isso porque não podemos simplesmente sair criando e jogando os dados ali no servidor, ou na nuvem de qualquer maneira, temos que ter ali uma ideia para fazer o negócio de forma inteligente.
+
+[01:25] Então vamos utilizar aqui, texto, diagramas e símbolos, para que tudo fique bem estruturado, para que evitemos gasto desnecessário de espaço, coisas com duplo sentido, que fique um pouco perdido, então através da modelagem conseguimos deixar ali o banco de dados criado da melhor maneira possível.
+
+[01:48] E aqui vamos desenvolver um modelo que vamos chamar de conceitual, ele também é conhecido como modelo domínio, você pode encontrar esses dois nomes na literatura, esse modelo ele vai focar no entendimento dos requisitos do sistema e do entendimento do negócio também.
+
+[02:05] Então primeiro passo é fundamental entendermos como o negócio funciona para que consigamos depois estruturar o banco de dados, não inverter a ordem das coisas, vamos fazer uma representação visual, isso vai ser fundamental porque vamos conseguir através dessa representação, como eu disse, ter insights, entender todo o andamento do negócio.
+
+[02:27] E para quem está começando agora, esses passos que vamos dar, pode parecer um pouco abstrato, porque vamos começar ali a modelagem entendendo o negócio, como eu disse, esse passo é fundamental para todo mundo que vai trabalhar com dados, como, por exemplo, administradores de banco de dados, que chamamos de DBAs, cientista de dados, analista de sistemas, desenvolvedores, ou seja, todo mundo que vai ter aí contato com dados, é superimportante a pessoa conhecer essa etapa da modelagem de dados conceitual.
+
+[02:57] Como eu disse vamos focar nesse tipo de modelagem, temos outros tipos, como modelagem lógica e física, mas aqui vamos começar com o primeiro passo que é o conceitual, e aí como as empresas tendem cada vez mais precisar de uma estrutura de dados inteligente para se basear naquilo, para ter tomadas de decisões estratégicas, é fundamental que comecemos entendendo muito bem como funciona essa etapa da modelagem de dados conceitual.

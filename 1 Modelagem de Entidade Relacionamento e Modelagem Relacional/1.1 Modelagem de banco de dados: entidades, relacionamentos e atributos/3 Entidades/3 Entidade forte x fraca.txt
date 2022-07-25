@@ -1,0 +1,25 @@
+[00:00] Então a Marta estava falando para equipe sobre os dois tipos de entidades, a entidade forte e entidade fraca, mas qual será que é a diferença entre elas, e outra coisa, como fazemos para mostrar no nosso diagrama entidade relacionamento que eu estou mostrando uma entidade forte ou de uma entidade fraca?
+
+[00:17] Ela começou explicando para equipe que a entidade forte é aquela que existe independentemente de outra entidade, já a entidade fraca depende da existência da outra, mas como assim uma entidade depende da outra?
+
+[00:31] Vamos supor que estamos modelando uma empresa e eu identifiquei duas entidades lá, tem entidade funcionário, e a entidade dependente do funcionário, então para empresa é interessante ela cadastrar o funcionário, superimportante e os dependentes dele, porque tem alguns benefícios ali para os dependentes.
+
+[00:51] Aí eu pergunto, tem como um dependente do funcionário existir sem o funcionário? Sem ele estar atrelado àquele funcionário? Não dá, logo as duas são entidades, mas o dependente do funcionário é uma entidade fraca perante o funcionário.
+
+[01:10] Então vamos avaliar no texto da entrevista que foi feita com a diretoria, quais entidades dependem de outra ou não, para identificar quem é forte, quem é fraca, e tem mais um ponto, mais para frente vamos entender um pouco melhor isso, mas desde já eu quero deixar claro, quando trabalhamos com as entidades, vamos ter as características, ou seja, os atributos daquela entidade, uma entidade forte, possui um atributo tão exclusivo que vamos chamar de chave primária.
+
+[01:39] Já na entidade fraca ela não tem essa chave primária, porque ela vai estar dependendo da entidade forte, mais para frente vamos detalhar isso aqui um pouco melhor, mas eu já quis adiantar para você já ficar ligado nesse ponto.
+
+[01:53] Então um outro ponto, como fazemos para diferenciar a entidade forte da entidade fraca? A entidade forte, vai ter um retângulo como já tínhamos colocado anteriormente, já a entidade fraca, vai ser um retângulo duplo, como se fossem dois retângulos.
+
+[02:09] Indo para o nosso _BrModelo, observamos que temos aqui o nosso quadrado, o nosso retângulo, na verdade, de entidade, já colocamos um aqui, eu também poderia vir aqui na aba, na parte superior do meu programa, na aba diagrama, clicar aqui em nova entidade e clicar em qualquer área aqui na parte central que vai me gerar uma outra entidade também.
+
+[02:28] Só que eu não tenho uma opção para colocar uma entidade fraca direto aqui, o que vamos fazer? Vamos colocar um retângulo dentro do outro para assim ele ficar duplo, é uma artimanha, que vamos utilizar aqui para identificar claramente no nosso diagrama, quem é forte quem é fraco, então eu vou novo aqui no símbolo da entidade, vou clicar aqui e gerar uma terceira.
+
+[02:53] E você observa que eu tenho aqui, ele vai dando nomes automáticos, "Entidade_1", "Entidade_2", "Entidade_3", se eu clicar na "Entidade_2" aqui e olhar no canto esquerdo, eu tenho uma coluna aqui com as características da minha entidade, então aqui eu tenho dimensões, cor, etc., que eu posso alterar, aqui estou trabalhando no meu diagrama, embaixo eu tenho o nome, "Entidade_2", é o nome que está aparecendo lá na entidade, se eu clicar aqui nesse campo, eu posso alterar, inclusive eu posso colocar nada, olha só, posso apagar dar “Enter” e tirei.
+
+[03:34] Então aqui na "Entidade_3", eu vou fazer a mesma coisa, eu vou clicar aqui, selecionar, e apagar e dar “Enter”, tem que dar “Enter”, agora você percebe que a entidade que estava com nome de "Entidade_3" está selecionada, eu consigo tanto posicionar em qualquer lugar aqui da minha área central, quanto mudar a sua dimensão, então vou aumentá-la um pouco pelo canto direito aqui, vou aumentar um pouco o tamanho dela e vou encaixar ela aqui uma dentro da outra, aí eu vou diminuindo para não ficar muito grande, olha só, e pronto.
+
+[04:09] Então conseguimos diferenciar a "Entidade_1", dessa outra entidade que por enquanto está sem nome, porque eu percebo que ela está com um retângulo duplo, ou seja, visualmente eu já consigo identificar no meu diagrama quem é entidade forte, quem é entidade fraca, a "Entidade_1" seria forte, porque é um retângulo simples, e quem não está com nome nenhum ali é entidade fraca porque está com um retângulo duplo.
+
+[04:30] Então agora a equipe já entendeu quais são as diferenças, já sabe como é que faz para identificar o nosso diagrama, então vamos agora dentro do nosso texto tentar abstrair que são as entidades e não só isso, quem são as entidades fortes e fracas e colocar no nosso diagrama entidade relacionamento.

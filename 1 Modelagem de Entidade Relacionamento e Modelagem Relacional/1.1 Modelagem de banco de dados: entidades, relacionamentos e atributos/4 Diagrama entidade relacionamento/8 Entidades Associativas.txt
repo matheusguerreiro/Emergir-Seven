@@ -1,0 +1,23 @@
+[00:00] Nós aprendemos a ter atenção em um relacionamento de muitos para muitos, de N para M, por quê? Em alguns casos que estamos ali analisando o mini mundo, e esse é um dos casos aqui do clube do livro, quando eu tenho um relacionamento de muitos para muitos, isso pode se tornar um pouco bagunçado quando eu vou construir meu banco, que é o nosso caso agora.
+
+[00:20] Por exemplo, eu posso ter aqui muitos pedidos com muitos livros, isso pode ficar confuso, fato é que sempre quando temos um relacionamento de muitos para muitos, podemos tornar esse relacionamento uma entidade, já que ela está representando um fato para nós.
+
+[00:36] Mas essa entidade vai ter um nome especial, vai ser entidade associativa, já que ela está associando aí duas entidades, e ela tenha também uma representação especial aqui no nosso _BrModelo, se eu for aqui no canto direito, eu vou observar um retângulo que representa a nossa entidade, com um losango dentro, que representa a nossa relação.
+
+[00:57] Então essa daqui, esse símbolo, é o que representa a entidade associativa, e como o próprio nome já diz, ela vai associar aí duas entidades, o que vamos fazer? Vamos selecionar aqui agora essa relação do "Contém", vamos apagar, então cliquei, selecionei, apertei o “Delete”, vou criar uma entidade associativa aqui no meio.
+
+[01:20] Agora eu vou vir aqui nessa parte onde eu ligo os artefatos e vou ter um cuidado especial, eu vou pressionar o “Ctrl” porém, quando for clicar aqui nessa relação, tem que ser dentro do losango mesmo, quando eu coloco o mouse ele até fica em amarelo, destacado, então eu vou clicar aqui e agora na entidade e aí ele me liga, porque se eu não fizer isso, vou até fazer um exemplo para nós, vou clicar aqui na ligação, ao invés de clicar no retângulo, aliás ao invés de clicar no losango, eu vou clicar no retângulo, fora, com “Ctrl” pressionado mesmo, e depois a entidade, então ele cria uma outra relação, e não é isso que queremos, vou dar um “Ctrl + Z”, tchau.
+
+[01:55] E vou fazer a mesma coisa agora aqui embaixo, então clico aqui na ligação, com o “Ctrl” aqui pressionado no losango e depois a entidade embaixo, eu vou dar uns nomes aqui para entendermos como vamos resolver isso, então eu tenho o nome da entidade associativa e da relação, então eu vou vir aqui na seta do mouse, clicar nessa entidade associativa e o nome dela eu vou deixar como "Itens_pedido" e dou “Enter”, apareceu aqui.
+
+[02:27] E dá para mudar o nome da relação também, então relação 1, eu vou deixar "Contém" como estava antes, “Enter”, o que eu estou fazendo? Eu estou concentrado agora aqui os pedidos e os livros em itens no pedido, dessa maneira eu consigo ali separar em itens, eu vou quebrando os livros que fazem parte de um pedido só, então fica muito mais claro para eu desmembrar isso daqui.
+
+[02:58] E se você for pensar, se você já comprou algo e olhou a nota fiscal, é super comum ter item no pedido número 1, item no pedido número 2, porque é uma maneira muito prática realmente fazemos isso no dia a dia para resolver o relacionamento muitos para muitos.
+
+[03:13] Vamos pensar agora na cardinalidade deles, então aqui "Pedido", eu posso ter um pedido sem nenhum dos itens do pedido? Não, pedido tem que ter um item dentro dele, então a cardinalidade mínima dele vai ser 1, vou colocar aqui 1.
+
+[03:31] E aqui de itens para livro, eu posso ter de repente um livro que não está em nenhum item do pedido? Também não, tem que ser cardinalidade mínima 1 também, vamos pensar na máxima, pedido, eu posso ter aqui vários itens de pedido em um pedido? Posso, então vai ser N.
+
+[03:53] E eu posso aqui nos "Livros" e nos "Pedidos", eu posso ter vários livros em "Itens_pedido"? Posso também, então vai ser N, e se eu tirasse essa entidade associativa, tem sentido, continuaria N para N, muitos para muitos, mas dessa forma agora eu estou concentrando ali em itens do pedido, estou conseguindo quebrar.
+
+[04:13] Se você quiser saber um pouco mais como funciona a entidade associativa, eu vou deixar um Para Saber Mais escrito para você se aprofundar um pouco mais nesse conhecimento e nessa forma de resolução, quando eu tenho relacionamentos muitos para muitos, entre as entidades, então é isso aí, agora já conseguimos mapear e resolver aqui todas os relacionamentos e as cardinalidades.

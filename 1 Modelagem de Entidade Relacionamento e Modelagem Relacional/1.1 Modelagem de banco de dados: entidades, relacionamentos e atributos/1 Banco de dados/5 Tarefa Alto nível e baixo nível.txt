@@ -1,0 +1,8 @@
+Durante o desenvolvimento do processo de modelagem e na escolha dos modelos que serão utilizados, Marta comentou com Pedro sobre os modelos de alto e baixo nível e deu alguns exemplos.
+
+Pensando nisso, selecione, dentre as opções abaixo, a que descreve as características dos modelos de alto e baixo nível com seus respectivos exemplos.
+
+
+Modelo de alto nível está mais próximo da linguagem humana. Já o de baixo nível está mais próximo da linguagem da máquina. O modelo conceitual, por exemplo, é um modelo de alto nível e os modelos físicos são considerados de baixo nível.
+
+  Alternativa correta! Um exemplo de modelo de alto nível conceitual é a representação da estrutura do banco de dados através de formas geométricas. E um exemplo de modelo de baixo nível físico é a criação de um projeto para a estruturação do banco de dados através de comandos que serão interpretados pela máquina.

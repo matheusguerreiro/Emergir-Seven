@@ -1,0 +1,15 @@
+[00:00] Agora Marta e a equipe dela estão efetivamente prontos para começar a construção do diagrama entidade relacionamento, e qual é o primeiro passo que eles podem dar? O primeiro passo pode ser abstrair do texto da entrevista, quem são as entidades, os atributos e os relacionamentos.
+
+[00:16] Importante é todo mundo entender da equipe dela o que são as entidades, para que, agora, sim, eles consigam abstrair, então vamos entender o que são as entidades. Entidade ela é um objeto único no mundo real, na verdade, ela pode ser tanto um objeto, uma coisa, quanto uma pessoa, vamos ver alguns exemplos?
+
+[00:37] Olha só, clientes de uma empresa pode ser tomado como uma entidade, carros que são vendidos em uma concessionária, em uma loja, podem ser tomados como uma entidade também, na verdade, o produto que alguma loja vende ou que alguma empresa fabrica pode ser tomado como uma entidade, departamento de uma empresa, como, por exemplo, o departamento de vendas, pode ser tomado como uma entidade também.
+
+[01:04] Daqui já conseguimos perceber que entidade pode ser tanto abstrata quanto concreta, a entidade pode ser algo que tocamos ali como pessoas, ou como produto físico, como pode ser abstrato também, algo que não consigamos tocar, como, por exemplo, um departamento, conseguimos tocar no departamento, talvez nas paredes, se for uma empresa física, mas o conceito de departamento não conseguimos tocar, não tem problema, é uma entidade também, mas abstrata.
+
+[01:35] E como representamos essa entidade lá no nosso diagrama? A representação da entidade vai ser feita através de um retângulo, para isso vamos lá no nosso _BrModelo e vamos fazer essa representação agora lá de forma prática.
+
+[01:49] Então está aqui o nosso _BrModelo aberto, então nessa parte central é onde vamos realmente de fato vamos fazer a construção do diagrama, com todos os símbolos e tudo mais.
+
+[02:00] Então temos a primeira parte aqui uma coluna na esquerda com algumas características do que vamos modelar, a parte central onde vamos colocar aqui os nossos símbolos, e na direita temos aqui uma coluna chamada de artefatos, então primeiro eu tenho aqui a seta do mouse para fazermos as seleções e logo embaixo temos aqui um ícone com o nome entity, não está cabendo tudo, mas quando eu posiciono a seta do mouse, está escrito, "Crie uma nova entidade", então eu vou clicar agora nesse ícone e vou clicar em qualquer lugar aleatório aqui na parte central e olha só, ele desenhou um retângulo com o nome "Entidade_1" dentro dela.
+
+[02:40] Então é dessa maneira que observamos se eu tenho uma entidade no meu diagrama, entidade relacionamento, mas tem um detalhe muito importante que, na verdade, não é nem um detalhe, realmente é uma coisa muito importante que a Marta lembrou e começou a comunicar a equipe, é que, na verdade, temos dois tipos de entidades no nosso diagrama, a entidade forte e a entidade fraca, mas qual será a diferença entre elas? Vamos ver isso no próximo vídeo.

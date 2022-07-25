@@ -1,0 +1,5 @@
+Nessa aula, você aprendeu a:
+Identificar um modelo lógico de dados e um modelo físico de dados.
+Diferenciar um modelo de alto nível de um modelo de baixo nível.
+Entender o que são os SGBDs.
+Aplicar as técnicas de modelagem utilizando a ferramenta CASE.

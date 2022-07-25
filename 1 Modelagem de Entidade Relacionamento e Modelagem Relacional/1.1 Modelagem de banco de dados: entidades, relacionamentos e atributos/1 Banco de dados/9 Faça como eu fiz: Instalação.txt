@@ -1,0 +1,9 @@
+Agora é sua vez de seguir os passos apresentados pelo instrutor. Vamos iniciar realizando a instalação da ferramenta brModelo.
+
+Como pré-requisito, para iniciar o executável da ferramenta brModelo no seu ambiente, é necessário que o Java esteja instalado. Você pode realizar a instalação através do link:
+
+Instalando o Java
+Após a instalação do Java, baixe o brModelousando o link a seguir:
+
+brModelo
+Após realizar o download, execute a ferramenta brModelo.

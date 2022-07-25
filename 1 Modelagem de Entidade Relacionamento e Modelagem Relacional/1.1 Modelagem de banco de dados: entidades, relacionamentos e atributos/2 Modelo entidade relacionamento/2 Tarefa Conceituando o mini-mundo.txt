@@ -1,0 +1,8 @@
+Durante a entrevista com a diretoria, Marta fez várias perguntas e coletou muitas informações importantes sobre o negócio para realizar a construção do mini-mundo. Porém, alguns integrantes da equipe nunca ouviram falar sobre isso e gostariam de entender melhor o que este conceito significa.
+
+Marque a alternativa que descreve o conceito de mini-mundo.
+
+
+(V) Representação da estrutura do negócio, espelhando recortes do mundo real.
+      
+      Alternativa correta! O mini-mundo é considerado uma das etapas mais importantes do processo de modelagem dos dados, pois, através desta etapa, entendemos como o banco de dados será estruturado.

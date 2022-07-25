@@ -1,0 +1,23 @@
+A interpretação de um relacionamento muitos-para-muitos pode variar na análise do mini-mundo que estamos modelando. Entretanto, podemos conciliar esses casos por meio do que chamamos de resolver o relacionamento muitos-para-muitos.
+
+Todo relacionamento muitos-para-muitos pode ser entendido como uma entidade. Essas entidades denominam-se associativas, pois elas representam um fato, um relacionamento muitos-para-muitos.
+
+As entidades associativas nos ajudam a organizar e deixar de forma mais explicativa o que acontece dentro de um relacionamento muitos-para-muitos. Por exemplo, quando temos 2 entidades com relacionamento N:M, com pedidos e peças de uma montadora de carros:
+
+alt text: Duas formas geométricas ovais. A primeira, chamada Pedidos, contém três informações, sendo elas, uma abaixo da outra: Pedido_1, Pedido_2, Pedido_3. Na segunda, chamada Peças, temos as informações, uma abaixo da outra: Peça_1, Peça_2, Peça_3.
+
+Um pedido poderia conter várias peças e uma peça poderia estar contida em vários pedidos diferentes.
+
+alt text: Duas formas geométricas ovais. A primeira, chamada Pedidos, contém três informações, uma abaixo da outra: Pedido_1, Pedido_2, Pedido_3. Na segunda, chamada Peças, temos as informações, uma abaixo da outra: Peça_1, Peça_2, Peça_3. Do Pedido_1 partem duas setas cinza, em direção à Peça_1 e Peça_2, respectivamente. Do Pedido_2 parte uma seta vermelha em direção à Peça_2. Do Pedido_3 partem duas setas laranjas, uma para a Peça_1 e outra para a Peça_3.
+
+Quando temos um relacionamento deste tipo, no qual todas as instâncias se relacionam, o conceito de atributo chave não será aplicado, já que podemos ter várias instâncias com o mesmo valor. Ao criar uma entidade associativa entre esse relacionamento, geramos dois novos relacionamentos um-para-muitos (1:n), no qual a entidade associativa será a única que receberá várias instâncias na relação:
+
+alt text: Três formas geométricas ovais. A primeira, chamada Pedidos, contém as informações, uma abaixo da outra: Pedido_1, Pedido_2, Pedido_3. Na segunda, chamada Itens pedido, tem as informações, uma abaixo da outra: Item_1, Item_2, Item_3, Item_4, Item_5. A terceira, chamada Peças, tem as informações, uma abaixo da outra: Peça_1, Peça_2, Peça_3. Do Pedido_1 partem duas setas cinzas em direção ao Item_1 e Item_2, respectivamente. Desses itens, também partem duas setas cinzas em direção à Peça_1 e Peça_2, respectivamente. Do Pedido_2 parte uma seta vermelha em direção ao Item_3. Desse item, parte uma seta vermelha em direção à Peça_2. Do Pedido_3 partem duas setas laranjas, uma para o Item_4 e outra para o Item_5. Desses itens, partem duas setas laranjas em direção a Peça_1 e a Peça_3, respectivamente.
+
+Na nova relação criada entre pedidos e itens pedido a cardinalidade será representada da seguinte forma: um pedido pode estar relacionado a vários itens, porém um item só pode estar relacionado a um pedido. Já a relação entre Peças e itens pedido, a cardinalidade será representada da seguinte forma: uma peça pode estar relacionada a vários itens, mas um item só pode estar relacionado a uma peça.
+
+Assim, teremos a relação entre pedidos e itens pedido como N:1 e a relação itens pedido e peças como 1:N, na qual a entidade associativa faz a intermediação entre as entidades pedidos e peças.
+
+Se você quiser aprofundar mais ainda sobre esse assunto, indicamos o livro:
+
+Banco de dados: Projeto e implementação, do autor Felipe Nery Rodrigues Machado.

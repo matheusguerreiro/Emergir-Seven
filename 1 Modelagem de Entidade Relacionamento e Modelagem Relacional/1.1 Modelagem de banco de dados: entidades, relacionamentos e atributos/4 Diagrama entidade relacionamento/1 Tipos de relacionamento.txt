@@ -1,0 +1,17 @@
+[00:00] Então agora a equipe que já declarou as entidades, e eles estão prontos para entender como as entidades se relacionam entre si, pois é, os relacionamentos dentro do banco de dados, vai mostrar exatamente isso, como as tabelas, ou no nosso caso aqui, como as entidades vão se relacionar.
+
+[00:18] Inclusive isso é tão importante que dá o nome para o nosso tipo de banco de dados que vamos estudar, o banco de dados relacional, temos também ali um estudo dos bancos de dados não relacionais, mas não é o objeto do nosso curso aqui, estamos estudando banco de dados que tem relações entre as tabelas, entre as entidades aqui.
+
+[00:39] E como representamos essa relação, esse relacionamento entre as entidades no nosso modelo? Vimos aqui no canto direito que temos aqui o artefato das entidades, e logo embaixo temos um losango, e se colocamos aqui a seta do mouse em cima, deixa eu ver, aparece "Cria novo relacionamento", então eu vou selecionar aqui esse losango, vou clicar em qualquer parte aqui da nossa área central e apareceu o "Relacionamento_1".
+
+[01:07] Mas o que eu quero chamar atenção é justamente a forma que utilizamos para demonstrar o relacionamento na nossa modelagem, é um losango, percebe? Mas existem alguns tipos aqui, na verdade, tem alguns graus de relacionamento, vamos entender um pouco melhor como é que funciona esses graus?
+
+[01:26] Então temos aqui, de repente, duas entidades, já sabemos que o retângulo é a entidade, entidade colaborador ou colaboradora, e eu tenho aqui outra entidade a função, cada colaborador, cada colaboradora, pode trabalhar em uma função dentro da empresa, eles querem dividir isso aqui em entidades diferentes.
+
+[01:46] Como essas entidades estão se relacionando? Através do relacionamento "Trabalha em", olha só o losango aqui, então eu tenho duas entidades sendo relacionadas aqui, daí vem o grau do relacionamento que é o relacionamento binário.
+
+[02:04] E se eu tivesse três entidades relacionando aqui através do mesmo relacionamento? Então colaborador, colaboradora trabalha em uma função e pode trabalhar em um projeto também, então, dois era binário, se você pensou, três, ternário, você está certo, então temos um relacionamento ternário aqui.
+
+[02:26] E se tivermos agora então quatro entidades se relacionando aqui na mesma relação, então o colaborador, colaboradora trabalha em uma função, pode trabalhar em um projeto 1, ou até também em um projeto 2, pode trabalhar em mais um projeto, nesse caso temos um relacionamento N, então quando eu tenho 4 entidades ou mais, eu vou chamar de relacionamento n-ário.
+
+[02:48] Então a equipe entendeu esse ponto, mas tem um ponto fundamental para que ele seja bem colocado para que a equipe consiga realmente evoluir, que é entender sobre a cardinalidade, mas isso vamos ver no próximo vídeo.
