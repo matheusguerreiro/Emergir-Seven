@@ -1,0 +1,11 @@
+[00:00] Agora que já estamos com a nossa tabela CLIENTE criada, vamos inserir os atributos. Por sinal, vamos chamar de atributos, igual ao modelo conceitual ou como campos que estávamos no modelo lógico? Na verdade, não vamos chamar de nenhuma das duas formas. Vamos chamar de colunas.
+
+[00:15] Então são as mesmas coisas, mas vamos evoluindo o nome para chegar em uma nomenclatura bem próxima da do banco de dados mesmo. Então vamos inserir colunas que são os campos que estávamos trabalhando anteriormente. Para inserirmos essas colunas, como fazemos? Vamos selecionar a tabela. Deixa eu dar um zoom para vermos melhor como funciona, no canto direito temos essa opção.
+
+[00:41] Se eu colocar a seta do mouse em cima, olha o que vai aparecer, "Insert column". Então vou clicar e ele abre outra janela com opções para detalharmos como vai ser essa coluna, esse campo que estávamos trabalhando. Daqui já percebemos como o modelo físico realmente é uma evolução do lógico e ele é bem mais completo. Vamos colocar mais informações.
+
+[01:06] Também posso usar um atalho no SQL Power Architect. Posso fechar essa janela, deixar selecionada a tabela e apertar só a letra C e ele já abre essa janela. C de column ou de coluna. Então aqui também temos de novo o nome lógico e o nome físico. Nesse caso da coluna posso deixar o mesmo nome. Não vou colocar aquele Tb porque Tb faz referência à tabela.
+
+[01:30] Então o primeiro nome que vamos utilizar, o primeiro campo, vamos até olhar de novo no nosso modelo lógico, tenho o cod_cliente. Vou trazer esse primeiro campo para cá como coluna. Vou colocar "cod_cliente". E o nome físico, vou utilizar o mesmo, "cod_cliente". Tenho a opção se quero colocar como Primary Key, se é chave primária. E vimos no modelo lógico que é uma chave primária, então vou deixar selecionado.
+
+[02:04] Aqui tem uma novidade, Type, tipo. Está marcado como varchar. O que é isso? Deixa eu clicar para vermos. Olha quantas opções temos de tipos da coluna, do campo. Está marcando "varchar". Então vamos clicar para investigar. Olha quantos tipos da coluna tenho para selecionar. Vamos fazer o seguinte, vamos dar uma navegada, uma explorada melhor no que quer dizer esses tipos e qual vamos utilizar nessa coluna.

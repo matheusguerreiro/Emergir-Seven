@@ -1,0 +1,46 @@
+Ao desenvolver o modelo conceitual de um projeto, podemos identificar que alguns relacionamentos possuem atributos, que são normalmente conhecidos como atributos de relacionamento. Esses atributos estão diretamente ligados a um relacionamento, mas durante o processo de desenvolvimento do modelo conceitual é necessário mover esses atributos para uma das entidades participantes da relação e eles passam a ser conhecidos como atributos migrados.
+
+Existem regras para que a migração do atributo do relacionamento para uma entidade seja feita. Em relacionamentos do tipo 1:1 ou 1:N podem ser migrados para uma das entidades participantes:
+
+Em relações 1:1 o atributo pode ser migrado para qualquer uma das entidades pertencentes a relação, já que as duas entidades recebem apenas uma instância por vez do relacionamento.
+Vamos utilizar como exemplo o relacionamento a seguir, no qual é necessário armazenar a informação de quando o colaborador(a) começou a gerenciar o departamento.
+
+https://caelum-online-public.s3.amazonaws.com/2516-modelagem-banco-dados-relacional-modelagem-logica-fisica/02/aula2-imagem3.png
+
+Ao lermos a cardinalidade:
+
+Um colaborador(a) gerencia apenas um departamento, ou seja, a entidade colaborador(a) recebe apenas uma ocorrência por vez do relacionamento.
+
+Um departamento pode ser gerenciado apenas por um colaborador(a), ou seja, a entidade departamento recebe apenas uma ocorrência por vez do relacionamento.
+
+Mesmo que conceitualmente ele pertença ao relacionamento “gerencia”, o atributo data pode ser migrado para qualquer uma das entidades participantes da relação, pois as duas entidades recebem apenas uma ocorrência por vez do relacionamento.
+
+https://caelum-online-public.s3.amazonaws.com/2516-modelagem-banco-dados-relacional-modelagem-logica-fisica/02/aula2-imagem4.png
+
+Em relações 1:N o atributo será migrado para a entidade que recebe apenas uma instância por vez do relacionamento.
+Vamos utilizar como exemplo o relacionamento a seguir. Nele é necessário armazenar a informação de quando o colaborador(a) começou a trabalhar para o departamento.
+
+https://caelum-online-public.s3.amazonaws.com/2516-modelagem-banco-dados-relacional-modelagem-logica-fisica/02/aula2-imagem5.png
+
+Ao lermos a cardinalidade:
+
+Um colaborador(a) trabalha apenas para um departamento, ou seja, a entidade colaborador(a) recebe apenas uma ocorrência por vez do relacionamento.
+
+Um departamento pode ter vários colaboradores(as), ou seja, a entidade departamento recebe várias ocorrências do relacionamento.
+
+Sendo assim, migramos o atributo para o lado N da relação, para a entidade colaborador(a), pois esta entidade recebe apenas uma ocorrência por vez do relacionamento.
+
+https://caelum-online-public.s3.amazonaws.com/2516-modelagem-banco-dados-relacional-modelagem-logica-fisica/02/aula2-imagem6.png
+
+Em relações N:M, a regra é um pouco diferente, já que nenhuma das entidades participantes da relação recebem apenas uma instância por vez do relacionamento. Nestes casos, os atributos não são migrados para uma entidade e permanecem no relacionamento, criando assim uma nova entidade, conhecida como entidade associativa. Ela é composta pelos atributos vindos das duas entidades ligadas ao relacionamento e pelos seus atributos próprios.
+Vamos utilizar como exemplo o relacionamento a seguir, onde é necessário armazenar a informação de quantas horas um colaborador(a) trabalha em um projeto.
+
+https://caelum-online-public.s3.amazonaws.com/2516-modelagem-banco-dados-relacional-modelagem-logica-fisica/02/aula2-imagem7.png
+
+Ao lermos a cardinalidade:
+
+Um colaborador(a) trabalha em vários projetos, ou seja, a entidade colaborador(a) recebe várias ocorrências do relacionamento.
+
+Um projeto pode ter vários colaboradores(as) trabalhando, ou seja, a entidade projeto recebe várias ocorrências do relacionamento.
+
+Sendo assim, não migramos o atributo para uma das entidades participantes da relação, já que as duas entidades recebem várias ocorrências por vez do relacionamento que, posteriormente, este relacionamento se tornará uma nova entidade.

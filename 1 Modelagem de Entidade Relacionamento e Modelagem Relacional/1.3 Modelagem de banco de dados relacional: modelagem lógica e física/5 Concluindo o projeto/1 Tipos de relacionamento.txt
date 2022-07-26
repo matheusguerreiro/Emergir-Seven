@@ -1,0 +1,27 @@
+[00:00] Agora a equipe do Clube do Livro está curiosa para saber como colocar a chave estrangeira nas tabelas. Por sinal, quando damos duplo clique para modificar, para alterar a coluna, não tem nenhum sinal para habilitarmos uma chave estrangeira ou em inglês, Foreign Key, FK.
+
+[00:20] E eles perguntaram para a Marta. Eles ficaram bastante curioso. E a Marta respondeu que antes de aprendermos como colocar a chave estrangeira, vamos aprender como fazer os relacionamentos. Como se fosse mágica, a chave estrangeira vai aparecer nas nossas tabelas. Vamos acompanhar eles nesse processo e ver como isso funciona.
+
+[00:37] Para fazermos os relacionamentos vamos ir ao canto direito do software. Tem dois símbolos que representam um relacionamento no modelo físico. O de cima, se posicionarmos a seta do mouse, ele traz como um relacionamento não identificado, não identificador e embaixo como um novo relacionamento identificador. O que vamos fazer?
+
+[01:00] Vamos criar o relacionamento entre a tabela CLIENTE e a tabela PEDIDO. Vamos clicar primeiro no de cima, o relacionamento não identificador. Vamos ver como isso vai se dar. Então vou selecionar essa opção, clicar na tabela CLIENTE, na chave primária que é cod_cliente, selecionei. E vou clicar em qualquer parte da tabela PEDIDO. Vamos ver o que vai acontecer.
+
+[01:21] Então ele trouxe o relacionamento. Agora olha esse detalhe. Surgiu automaticamente uma nova coluna, "cod_cliente" que é justamente a chave primária da tabela CLIENTE com o símbolo de FK, ou seja, é a chave estrangeira. Ele já colocou automaticamente. Isso é legal porque ganhamos até um pouco de eficiência no nosso trabalho, não precisa ficar colocando manualmente. Olha que bacana.
+
+[01:46] Então é isso. Vamos preencher agora todos os relacionamentos das tabelas baseado no modelo lógico e vamos ver agora a chave estrangeira surgindo. Vamos criar agora o próximo relacionamento. Vamos verificar na tabela PEDIDO com a tabela ITEM_PEDIDO. Só que agora vou usar o de baixo para ele trazer como identificador. Olha só a diferença.
+
+[02:06] Vou clicar no cod_pedido que é a chave primária da tabela PEDIDO e vou clicar em qualquer parte da tabela ITEM_PEDIDO. O que aconteceu? Ele trouxe o cod_pedido como chave estrangeira FK, só que tem um P, PFK. Então o que ele faz? Ele já trouxe, já identificou que essa chave estrangeira vai funcionar nessa tabela como chave primária também, como identificador.
+
+[02:31] E é assim que queremos. No modelo lógico cod_pedido era a chave primária e estrangeira, a identificadora. E assim vamos fazer a relação com a tabela LIVRO. O cod_livro e virá como chave primária e estrangeira. Então vamos verificar no canto. Vou clicar na segunda opção, identificador, clicar na chave primária de LIVRO e em qualquer parte da tabela ITEM_PEDIDO.
+
+[02:54] Então ele também trouxe o cod_livro como PFK. Agora vem aquele trabalho da modelagem. Vamos ajustando as tabelas. Vou puxando para cá. Já deixei meio que no esquema, mas temos o poder de ir ajeitando. Vamos fazer esse relacionamento entre EDITORA e LIVRO. Mas, lembrando que LIVRO tinha uma chave identificadora, que tinha uma chave parcial. Então o cod_editora vai vir só como chave estrangeira.
+
+[03:22] Então vamos vir aqui. EDITORA e LIVRO vou colocar sem ser identificador. Vou clicar em EDITORA e em qualquer parte de LIVRO. E ele já trouxe o cod_editora como FK. Bem prático. Vamos ver agora entre ESTOQUE e LIVRO. Então o ESTOQUE tem duas chaves. Tem a chave da cod_editora e a cod_livro e as duas estão funcionando como chave primária e estrangeira. Então vamos trazer essas chaves para cá.
+
+[03:51] Como vamos fazer isso? Clicar como identificador. Primeiro cod_livro vai para cá em ESTOQUE. Vai vir como PFK. E também vou trazer essa chave estrangeira do cod_editora para cá como PFK. Então, na verdade, ela trouxe cod_livro e da tabela LIVRO o cod_livro. Então ele não trouxe isso porque não está como PFK, não tem problema. Podemos alterar manualmente o nome lógico e o nome físico para funcionar como chave primária e estrangeira.
+
+[04:27] Posso alterar, "cod_editora" e "cod_editora". Dou "Ok" e pronto, agora ele está modelado corretamente. Ele marcou duas relações, vou apagar e deixar uma só. Então vamos deixar só como cod_livro mesmo porque ele já está funcionando como uma chave primária e estrangeira. Não preciso colocar duas vezes puxando da entidade forte como fizemos no conceitual porque no modelo físico basta ter uma chave primária e estrangeira e já é o suficiente.
+
+[05:06] Então posso ter uma entidade fraca se conectando com uma outra entidade fraca no modelo físico porque justamente ele está funcionando como uma chave primária. Está faltando agora os relacionamentos com a tabela CLIENTE e a PESSOA FISICA e JURIDICA. Vamos clicar e ele vai ser identificador. Vou trazer cod_cliente para PESSOA FISICA.
+
+[05:27] Trouxe como PFK, primária e estrangeira. E a mesma coisa com a tabela PESSOA JURIDICA. Estão feitos todos os relacionamentos. Adivinha qual foi a dúvida que a equipe teve? A equipe quis saber como ia representar cardinalidade desses relacionamentos já que não está aparecendo aquela opção dos parênteses como temos no modelo lógico e conceitual. Isso vai ficar para o próximo vídeo.

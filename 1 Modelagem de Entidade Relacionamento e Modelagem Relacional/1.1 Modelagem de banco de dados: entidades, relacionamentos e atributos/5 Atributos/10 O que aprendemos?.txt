@@ -1,0 +1,3 @@
+Nessa aula, você aprendeu a:
+Identificar os tipos de atributos.
+Representar os atributos no brModelo.

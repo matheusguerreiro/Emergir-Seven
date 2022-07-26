@@ -1,0 +1,47 @@
+[00:00] Agora a equipe da Ana, vai colocar todos os atributos que estavam faltando nas entidades, então vamos olhar aqui a entrevista para nos basearmos e vamos começar olhando os clientes, e aqui vem aquele ponto que guardamos para mais tarde e essa hora chegou.
+
+[00:17] Então clientes, como se ele é pessoa física ou jurídica, então isso daqui poderiam ser dois atributos, no caso de pessoa física o seu CPF ou RG, eu tenho atributos aqui da pessoa física e CNPJ e inscrição estadual no caso de pessoa jurídica, então também tenho atributos de pessoa jurídica, poderia ser então atributos multivalorados? Poderiam.
+
+[00:43] Mas o que vamos fazer nesse caso, vai ser usar um outro tipo de atributo, vamos para o nosso _BrModelo, que é o atributo de especialização, e temos inclusive um atributo especifico para isso que é esse triângulo aqui com essas três partes ligadas.
+
+[01:01] Então vamos clicar aqui, e vamos clicar aqui em "Cliente", e olha só o que ele fez, ele trouxe duas entidades ligadas a primeira entidade, então isso daqui, na verdade, não são entidades propriamente ditas por causa desse símbolo desse triângulo, são atributos de especialização, são atributos que vão ter uma força um pouco maior do que os outros atributos para ser multivalorados, eles vão carregar atributos dentro de si, mas eles advêm de outra entidade.
+
+[01:28] Então vamos dar uma arrumada agora, uma organizada melhor nisso daqui, então vou clicar nessa "Entidade_2", vou puxar para cá, essa "Entidade_1" eu vou puxar para cá também, vou posicioná-las aqui uma do lado da outra, percebemos que não está tão legal, não está tão bem ligado, eu vou clicar aqui nessa ligação com “Ctrl” pressionado, pegar essa bolinha e colocar nesse verso, vamos ver como ele fica, pronto, ficou assim, ficou um pouco melhor.
+
+[01:58] Então nessa primeira entidade aqui, na verdade, está "Entidade_2", eu vou colocar "Pessoa física" e dou “Enter”, e desse lado aqui, eu coloco "Pessoa jurídica", se tivéssemos apenas um losango aqui e duas entidades ligadas poderíamos pensar que são duas entidades de cara, mas como temos esse triângulo vindo de outra entidade, eu já sei que isso, na verdade, são atributos de especialização, então eles vão carregar atributos dentro aqui, mas que não são entidades soltas, elas pertencem a uma outra entidade.
+
+[02:40] E vimos aqui que para pessoa física, temos dois atributos, eu já vou colocar aqui o primeiro atributo, e segundo atributo vou puxar para cá, então vamos refrescar a nossa memória, vamos ver aqui na entrevista, então se é pessoa física, PF, vamos ter o CPF e o RG, vou colocar uma cor aqui para atributo, vou colocar esse laranja, então pessoa física temos o CPF e o RG.
+
+[03:07] Então "Atributo_1" vai ser o "CPF" e o "Atributo_2" o seu "RG", e "Pessoa jurídica" também temos dois atributos, então vou clicar aqui em "Pessoa jurídica" de novo, outro atributo aqui, puxar para baixo, então pessoa jurídica, vamos lá, vamos relembrar, CNPJ e IE, inscrição estadual, vamos colocar o mesmo laranja aqui, vamos voltar para o _BrModelo, então "Atributo_1", eu vou ter o "CNPJ", “Enter”, e no "Atributo 2", "IE", inscrição estadual.
+
+[03:53] Então para cliente já colocamos todo mundo, nome, telefone, endereço e vamos confirmar aqui nome, endereço, telefone e e-mail, faltou o e-mail, então vamos pintar todo mundo de laranja, vamos voltar para o nosso _BrModelo e colocar mais um atributo aqui que será o e-mail, isso daqui vamos organizando, isso aqui é uma parte até artística porque vamos aqui reorganizando e tudo mais.
+
+[04:30] Por exemplo, eu posso puxar esse losango um pouco para cima, selecionar todo mundo aqui, puxar um pouco para cá, olha só, vai ficando meio torto ali, depois podemos ir arrumando, eu vou selecionar todo mundo aqui, vou puxar um pouco para cá também, e aí eu tenho que ir arrumando essas linhas, então deixa eu arrumar essa daqui, empurrar essa daqui, pronto.
+
+[05:00] Então tudo isso eu faço com “Ctrl” selecionado, vamos ver se ele vai, então vou fazendo os ajustes, isso aqui é um trabalho que você vai fazendo com calma, e aí eu vou querer muito que vocês compartilhem comigo no fórum o resultado final um print para ver quem aí conseguiu organizar melhor.
+
+[05:21] Então aqui os atributos de cliente já preenchemos, e os atributos de pedido? Vamos dar uma olhada aqui na nossa entrevista, pedido ele não fala basicamente muita coisa sobre ele, nosso cliente pode comprar um ou mais livro através do nosso pedido.
+
+[05:38] Então o que podemos colocar? No caso faríamos de novo a pergunta para a diretoria com quem fizemos a entrevista, no caso a Marta fez essa entrevista, e é super comum isso, na primeira entrevista nem sempre vem todos os atributos que você quer e as entidades e você vai perguntando de novo, vai criando o melhor ajuste para construir a coisa mais alinhada.
+
+[05:59] Então para colocarmos aqui na entidade de pedidos, vamos colocar a data do pedido que o clube do livro falou que para ele é importante saber isso, a princípio, então vou colocar "Data", “Enter”, e vamos colocar também o valor do pedido, para o clube do livro é interessante ser armazenado isso daqui nessa entidade, então "Valor_pedido", sempre vou colocando esse underscore porque não é bom que deixemos espaços.
+
+[06:32] Agora vamos ver aqui na entidade livro, vamos olhar na nossa entrevista, o produto principal são livros, esses livros tem informações associadas a ele como título, categoria, ISBN, o ano de publicação, o valor, a editora que publicou o livro, bem como o autor ou autora da obra, então temos vários atributos aqui, então vamos lá, vamos colocar todos os atributos aqui na nossa entidade.
+
+[07:03] Então primeiro título, então vou colocar o atributo aqui, eu vou colocar aqui embaixo, "Título", “Enter”, vamos colocar aqui agora nome do livro, então vou puxar para cá, "Nome_livro", eu lembro também do ISBN, então vamos colocar aqui, "ISBN".
+
+[07:40] O que mais estava pedindo lá? Título, categoria, vou clicar aqui, vou puxar um pouco para cá, vamos ajustando, "Categoria", “Enter”, vou puxar esse relacionamento aqui mais para cima, não peguei todo mundo, selecionar todo mundo aqui, puxar um pouco mais para cima, para dar um espaço aqui melhor.
+
+[08:09] Isso aqui também eu vou ligar na parte de cima para termos um espaço melhor aqui, não foi, com “Ctrl” pressionado, agora foi, vamos deixar assim por enquanto só para ver como vai ficar e vamos ajustando, então categoria, título, nome, livro, ISBN, o ano de publicação, então vamos colocar aqui, "Ano_publicação", vamos lá, o valor então vamos colocar aqui mais uma, "Valor", “Enter”.
+
+[08:58] Editora que publicou o livro bem como o autor ou autora, então vamos lá, vamos colocar aqui agora "Autor" e a editora eu não vou colocar como um atributo, poderia colocar, mas como já identificamos a editora como uma outra entidade, eu vou fazer uma ligação, essa ligação já existe, na verdade, mas vamos apresentar essa ligação daqui a pouco, então vamos guardar esse atributo.
+
+[09:34] Vamos ver os atributos da editora agora? Vamos lá, então os livros são fornecidos pelas editoras, precisamos ter guardados o telefone da editora, o nome de contato, o e-mail, e no máximo dois telefones, então acho que essa informação está até duplicada aqui, telefone, nome da editora, e no máximo dois telefones, então telefone da editora, nome do contato e e-mail.
+
+[10:01] Então vamos lá, aqui na editora vou colocar o telefone, no máximo dois telefones, então o que vamos fazer? "Telefone", “Enter”, é multivalorado? Sim, cardinalidade mínima 1, máxima 2, e-mail, vamos colocar aqui agora, "E-mail" e “Enter”, quem mais? O nome do contato, "Nome_contato", a princípio é isso, por que eu estou falando que a princípio? Porque vamos ver que podemos ir acrescentando atributos, não tem problema, vamos ver isso daqui a pouco, mas ainda faltam atributos para o estoque.
+
+[10:54] Para o estoque, deixa eu conferir aqui nossa entrevista, ele quer saber se o livro está disponível ou não antes de efetuar a operação, o que eu vou colocar? Eu vou colocar a quantidade de livros em estoque, então eu vou colocar aqui nesse atributo que "Qtd_estoque", ou seja, a quantidade inicial em estoque, esse é o primeiro atributo que vamos deixar guardado aqui.
+
+[11:19] Então esse aqui é o nosso primeiro esboço, nossa primeira construção do nosso modelo, mas o Pedro fez uma pergunta que a Marta não estava esperando e era fundamental para conseguirmos fechar aqui o nosso modelo, que é o seguinte, como é que vamos colocar aqui atributos que identifiquem, ou seja, que sejam identificadores das nossas entidades? Como podemos representar isso?
+
+[11:44] E a Marta achou aquilo realmente genial, é superimportante colocarmos os atributos conhecidos como chaves primárias e vamos ver isso no nosso próximo passo.

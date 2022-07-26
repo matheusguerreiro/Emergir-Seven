@@ -1,0 +1,14 @@
+A Marta elogiou bastante a evolução da Joana e como ela vem se desenvolvendo acerca de como fazer a modelagem de bancos de dados. Agora, depois de aprender o que é a modelagem física e como criar uma tabela no SQL Power Architect, ela recebeu a função de implementar o modelo físico do Clube do Livro e, para isso, precisa traduzir o modelo lógico em modelo físico.
+
+Para preenchermos junto a ela as tabelas do nosso modelo físico, precisamos estar bem atentos nos tipos de dados e como queremos que esses sejam futuramente armazenados em nosso banco de dados.
+
+Com base no que aprendemos até aqui, escolha as alternativas que melhor descrevem os tipos de dados e como podem ser utilizados:
+
+
+(V) Em um modelo físico, podemos utilizar o tipo VARCHAR para descrever uma coluna de código do cliente, visto que esse tipo permite o uso de dados alfanuméricos, ou seja, tanto números como letras.
+      
+      Alternativa correta! O tipo VARCHAR permite o uso de dados alfanuméricos, sendo muito comum utilizá-los em casos como este.
+
+(V) Em um modelo físico, podemos utilizar o tipo FLOAT para descrever uma coluna de preço de um produto, visto que esse tipo permite o uso de dados tanto no formato inteiro quanto em decimal.
+
+      Alternativa correta! O tipo FLOAT permite o uso de dados tanto no formato inteiro quanto em decimal, sendo muito utilizado tanto para valores quanto para quantidades expressadas com valores decimais.

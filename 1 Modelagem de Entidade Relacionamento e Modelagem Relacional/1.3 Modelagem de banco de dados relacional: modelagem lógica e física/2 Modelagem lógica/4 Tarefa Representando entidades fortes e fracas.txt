@@ -1,0 +1,16 @@
+A cada novo aprendizado, a Joana se sente ainda mais confiante para ajudar na construção do modelo lógico do Clube do Livro. Junto a ela, aprendemos como construímos as entidades fortes e fracas (relações) da modelagem de dados como as apresentadas logo abaixo.
+
+https://caelum-online-public.s3.amazonaws.com/2516-modelagem-banco-dados-relacional-modelagem-logica-fisica/02/aula2-imagem2.png
+
+Entretanto, para conseguirmos construir o nosso projeto no modelo físico mais a frente, é muito importante ter a certeza se compreendemos corretamente como diferenciá-las no modelo lógico.
+
+Com base no que aprendemos e de acordo com o software brModelo, escolha quais alternativas melhor definem a diferença entre as entidades fortes e fracas no modelo lógico:
+
+
+(V) Toda entidade forte possui uma chave primária, que na modelagem lógica do brModelo é representada por uma chave preta. Já uma entidade fraca necessita de no mínimo uma chave estrangeira, representada por uma chave verde.
+
+      Alternativa correta! Seguindo o brModelo uma chave primária é representada por uma chave preta e uma chave estrangeira é representada por uma chave verde.
+
+(V) Uma entidade fraca sempre depende de uma entidade forte para sua existência, representada por uma chave estrangeira (na cor verde), mas ela pode possuir uma chave identificadora, conhecida como chave parcial, sendo que esta é representada por uma chave preta.
+
+      Alternativa correta! Seguindo o brModelo uma chave parcial é representada por uma chave preta e uma chave estrangeira é representada por uma chave verde.

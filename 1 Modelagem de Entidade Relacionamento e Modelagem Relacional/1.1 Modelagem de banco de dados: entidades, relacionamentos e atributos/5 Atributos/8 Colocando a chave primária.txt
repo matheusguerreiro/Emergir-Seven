@@ -1,0 +1,12 @@
+Marta explicou ao Pedro que a chave primária se refere a um ou mais campos cujos valores, considerando a combinação de valores em caso de mais de um campo, nunca se repetem na mesma tabela. Por isso, pode ser usada como um índice de referência para criar relacionamentos com as demais tabelas do banco de dados.
+
+Com base no que estudamos, selecione as alternativas que descrevem as características de uma chave primária.
+
+
+(V) A chave primária não pode ser composta por atributo opcional, ou seja, atributo que aceite nulo.
+
+      Alternativa correta! Atributos que aceitam nulo não podem fazer parte de uma chave primária, já que essa chave serve como um identificador dentro do projeto.
+
+(V) Não pode haver duas ocorrências de uma mesma entidade com o mesmo conteúdo na chave primária.
+
+      Alternativa correta! A chave primária precisa ser única para que seja possível utilizá-la como referência com as demais tabelas do banco de dados.

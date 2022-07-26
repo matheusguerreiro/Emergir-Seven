@@ -1,0 +1,12 @@
+Uma das integrantes do time da Marta, a Joana, estava buscando compreender as características que diferenciam os Modelos Lógicos de Dados (MLDs) dos Modelos Físicos de Dados (MFDs). Para isso, a Marta compartilhou com ela um material para aprofundar seus estudos e prepará-la para a implementação do projeto do banco de dados do Clube do Livro. Vamos ajudar a Joana!
+
+De acordo com o que aprendemos nas aulas, quais alternativas melhor definem as características e diferenças entre os Modelos Lógicos de Dados (MLDs) e Modelos Físicos de Dados (MFDs)?
+
+
+(V) O Modelo Físico de Dados (MFD) é largamente utilizado em projetos tanto ágeis quanto tradicionais e apresenta o projeto do banco de dados com uma maior riqueza de detalhes frente ao Modelo Lógico de Dados (MLD).
+
+      Alternativa correta! O Modelo Físico de Dados (MFD) é largamente utilizado por apresentar detalhes como as tabelas associativas, por indicar os tipos de dados de cada campo e as chaves que serão necessárias para traçar os relacionamentos.
+
+(V) O Modelo Lógico de Dados (MLD) é raramente utilizado em projetos ágeis, pois o foco desse modelo está em descrever os conceitos de domínio e de envolvidos em um banco de dados.
+
+      Alternativa correta! O Modelo Lógico de Dados (MLD) raramente é utilizado em projetos ágeis, ao contrário do Modelo Físico de Dados (MFD).

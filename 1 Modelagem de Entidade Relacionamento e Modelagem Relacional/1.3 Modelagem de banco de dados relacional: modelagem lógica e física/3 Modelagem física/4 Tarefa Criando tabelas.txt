@@ -1,0 +1,8 @@
+Agora que Joana começou a aprender o que é um modelo físico do projeto de um banco de dados, ela ficou empolgada para começar a colocar as mãos à obra.
+
+De acordo com o que aprendemos nas aulas, quais seriam os passos para a criação da tabela do modelo físico dentro do software SQL Power Architect?
+
+
+(V) Clicar em New Table (ou digitar a tecla T) e arrastar dentro da área na tela para desenhar a tabela e criar o nome lógico (como referenciamos na modelagem), o nome físico (como vamos implementar no banco de dados) e uma chave primária.
+
+    Alternativa correta! Parabéns! O modo de criar uma tabela no SQL Power Architect segue exatamente esse caminho.

@@ -1,0 +1,12 @@
+Marta comentou com Joana sobre a existência das colunas dentro do modelo físico, que serão responsáveis por armazenar as informações das tabelas, mas Joana gostaria de entender melhor de onde surgiram as colunas e quais eram suas características.
+
+Com base no que aprendemos até aqui, escolha as alternativas que melhor descrevem as características corretas das colunas:
+
+
+(V) As colunas representam os atributos ou campos das entidades (agora chamadas de tabelas) dentro do modelo físico. Ao adicioná-las iremos escolher um nome lógico e físico.
+
+      Alternativa correta! O que era chamado de atributo ou campo no modelo lógico agora será chamado de coluna no modelo físico.
+
+(V) Na construção das colunas iremos determinar seu tipo que determinará as características dos dados contidos em cada coluna.
+
+      Alternativa correta! Determinar o tipo de cada coluna será essencial na construção do nosso banco de dados para conseguirmos identificar os dados contidos em cada coluna.

@@ -1,0 +1,9 @@
+Assim como no modelo lógico, podemos encontrar diversas formas de representar o modelo físico em um projeto de banco de dados. No SQL Power Architect os atributos são representados na vertical, o campo que é chave primária recebe o símbolo de PK e o campo que é chave estrangeira recebe o símbolo de FK. As relações são representadas com símbolos semelhantes a pés de galinha, ou tridentes:
+
+https://caelum-online-public.s3.amazonaws.com/2516-modelagem-banco-dados-relacional-modelagem-logica-fisica/05/aula5-imagem2.png
+
+Outros softwares podem utilizar uma representação diferente para o modelo físico, a exemplo do MySQL Workbench, em que os atributos são representados na vertical. As relações entre as tabelas são representadas com símbolos semelhantes a pés de galinha, ou tridentes, como no SQL Power Architect, já o campo definido como chave primária recebe o símbolo de uma chave na cor amarela e a chave estrangeira recebe o símbolo de um losango na cor laranja.
+
+https://caelum-online-public.s3.amazonaws.com/2516-modelagem-banco-dados-relacional-modelagem-logica-fisica/05/aula5-imagem3.png
+
+Também podemos considerar a utilização do SGBD para representar o modelo físico, ou seja, após a criação do modelo lógico passamos diretamente para a implementação do projeto em um SGBD.

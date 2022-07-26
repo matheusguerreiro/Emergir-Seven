@@ -1,0 +1,15 @@
+[00:00] A equipe do Clube do Livro está montando a tabela e na hora de preencher a coluna eles se depararam com algo bem novo que é o tipo da coluna. O que será que significa esses tipos? Esses tipos fazem referência ao domínio. Em geral, o domínio designa o tipo de dado que vai ser aceito naquela coluna.
+
+[00:21] Então quando vamos montar o banco de dados, já vou designar qual o tipo de dado que tem que entrar naquele campo, naquela coluna. Não vou deixar totalmente aberto. Então temos alguns tipos que são os principais que vamos trabalhar. O primeiro deles é o varchar. Já vamos começar a nos acostumar com essa nomenclatura porque daqui para frente você vai utilizar bastante isso no mundo dos bancos de dados.
+
+[00:46] Então, no varchar vamos aceitar dados do tipo alfa numéricos, tanto letras quanto números. A diferença é que esses números não vão ser tratados como números. Vão ser tratados como texto. Mas como um número pode ser tratado como texto?
+
+[01:03] Ele vai ser um número desenhado, mas não consigo fazer cálculos com ele. Não consigo fazer 2 mais 2 se ele está como tipo texto. Então ele vai estar marcando ali. Qual é a vantagem de utilizar um número como texto? A vantagem é que se eu for colocar um campo, por exemplo, de CPF e aquele CPF começa com 0, quando coloco como texto ele fica com o 0 primeiro. Se coloco como número, ele vai ignorar esse 0 à esquerda, então vai dar problema no CPF da pessoa.
+
+[01:31] Então temos que ficar bem atentos a isso. É um problema bem recorrente. Mas vamos fazendo e nos acostumando. Além do varchar, temos outros tipos de domínio bastante utilizados, como, por exemplo, o tipo date. Então o date como o próprio nome já sugeri, é para data.
+
+[01:52] Se deixo aquele domínio, o tipo daquela coluna como data, só vai aceitar informações no formato de data. Outro bastante usado é o integer. Então se eu deixar definido como integer, só vai aceitar números inteiros. E se eu quiser trabalhar com números decimais? Tem essa opção também. Tem duas opções que trabalhamos com números decimais. Tem o decimal, decimal, ou o float que é um ponto flutuante e ele também consegue trabalhar com números decimais.
+
+[02:27] Então esses são os principais que vamos utilizar no nosso projeto. Mas se você quiser explorar um pouco mais os outros tipos que vamos utilizar nos bancos de dados, vou deixar um Para Saber Mais para vocês se aprofundarem um pouco nessa área dos domínios.
+
+[02:43] Agora que já entendemos com a equipe do Clube do Livro como funciona o tipo, já conseguimos preencher todas as colunas da tabela de CLIENTE.

@@ -1,0 +1,33 @@
+[00:00] Agora a equipe do Clube do Livro quer entender como vamos apresentar cardinalidade nos relacionamentos. E a Marta disse que a cardinalidade meio que já está lá aparecendo. Vamos aprender uma nova forma de representar essa cardinalidade. Vamos ver com eles como isso funciona.
+
+[00:16] Se agora repararmos, tenho novos símbolos aparecendo nos relacionamentos. Símbolos que são totalmente novos. Não vimos esses símbolos ainda. Esses símbolos são comumente conhecidos como pé de galinha. Ou até algumas pessoas chamam de tridente também. Por quê? Porque nesse parte meio que se assemelha a isso.
+
+[00:38] Na verdade, essa simbologia já está representando, para nós, a cardinalidade. Quando tem esse traço único, ele está fazendo uma analogia ao número 1. E quando tem esses três que parece o tridente ou o pé de galinha, está fazendo analogia àquela letra n ou m. Quais eram os tipos de relacionamentos que vimos? 1 para 1, 1 para n ou n para m.
+
+[01:03] Então tenho basicamente o número 1 ou a letra n ou m. Então aqui tenho um único traço que lembra o 1 e esse tridente, esse pé de galinha, se nos esforçarmos um pouco com a imaginação lembra a letra m ou a letra n. É isso que eles estão representando. Se olharmos esse relacionamento entre CLIENTE e PEDIDO do jeito que ele veio, como padrão ele sempre vem assim, está dizendo que é 1 para n.
+
+[01:30] A cardinalidade mínima, como vamos representar? Quero primeiro o número dos parênteses. Vamos olhar para o modelo lógico. Temos dois números nos parênteses. Então vimos o segundo que é máxima e a mínima tinha duas opções, ou era 0 ou 1. Como representamos esse 0 e 1?
+
+[01:50] Se temos esse símbolo que parece um 0, parece uma bola, ele realmente quer dizer que é 0. E se ele não tiver nada, quer dizer que é 1. Então se formos fazer uma leitura do jeito que está, tenho a cardinalidade mínima de 1 e mínima de 0. Máxima de 1 e máxima de n. Agora que já entendemos como funciona isso, vamos verificar e ir ajustando as cardinalidades como está no nosso modelo lógico e no conceitual.
+
+[02:22] Vamos ver a relação de CLIENTE para PEDIDO. Olha só, aqui realmente a mínima é 1 e aqui a mínima é 0, como está no modelo. A máxima é 1 e a máxima é n. Então deu certo. A mínima 1 e mínima é 0 e máxima 1 e máxima n. Aqui deu certo. Qual é a interpretação que fazemos? Vamos sempre treinando essa leitura para ver se isso já está dentro de nós.
+
+[02:46] Um cliente pode fazer n pedidos, assim como n pedidos podem ser feitos por um cliente. Verdade. Posso ter um cliente sem nenhum pedido, se ele só faz o cadastro no e-commerce, está valendo. Não posso ter um pedido existente que não foi feito por nenhum cliente. Não dá. Então essa é a interpretação que fazemos da cardinalidade. Vamos ver agora PEDIDO para ITEM_PEDIDO.
+
+[03:10] Vamos verificar. Mínima 1 e mínima 1. Mínima 1 e aqui a mínima está 0. Então vamos ter que mudar isso. Vamos olhar a máxima. A máxima está 1 e a máxima está n. Está legal, então vamos ter que mudar só a mínima. Como faço para alterar essa cardinalidade? Vamos dar um duplo clique em cima da relação. Se dou um clique único, ele fica em laranja destacado e está mostrando as chaves sendo relacionadas.
+
+[03:39] Agora se eu der um duplo clique, ele abre para nós uma caixa fazendo com que possamos fazer várias alterações no relacionamento. Então está o tipo identificador ou não identificador, se ele é PFK ou não. Posso fazer algumas alterações em cima com label, com cor se eu quiser dar mais destaque na minha modelagem. Mas vamos focar na parte da cardinalidade.
+
+[04:02] Então tenho a cardinalidade da tabela PEDIDO exatamente 1. E aqui está 0 ou mais. Na verdade, vou colocar como 1 ou mais. Vamos alterar. Olha só, aquele símbolo da bola, do 0, sumiu. Agora está o traço 1 indicando que a cardinalidade mínima é 1. Vamos ver se ficou certo. Ficou, 1 ou n e 1 e 1.
+
+[04:27] E de ITEM_PEDIDO para LIVRO? Mínima 1 ou n. Vamos verificar. Então 1 ou n, não. Na verdade, está 0 e n. Vamos dar um duplo clique. Não é ITEM_PEDIDO. Temos sempre que nos atentarmos em qual tabela estamos olhando, qual a direção.
+
+[04:45] Então a ITEM_PEDIDO está aqui, está 0 ou mais. Não, é 1 ou mais. Ajustamos. Vamos ver agora a de LIVRO. A de LIVRO é 1 e 1. Então aqui está certo, está só com o número 1. Posso ter n itens de pedido com o mesmo livro e 1 livro pode aparecer e n itens de pedido. Certo. Vamos ver LIVRO para EDITORA. A cardinalidade de LIVRO para EDITORA. Não está aparecendo os parênteses, ele saiu. Mas vamos fazer juntos esse exercício.
+
+[05:25] Então EDITORA está 1 e 1. Vamos olhar agora a cardinalidade de LIVRO para EDITORA. Em LIVRO tenho 1 e n. Vamos lá. Colocando o modelo físico, na verdade, está n ou 0. Na verdade, não. Então a cardinalidade mínima do LIVRO é 1 ou mais. Deixa eu voltar para vermos. 1 ou mais. E da EDITORA é exatamente 1, 1,1. Aqui já está, na verdade. Está feito.
+
+[06:04] O que isso quer dizer na nossa interpretação? Uma editora pode ter n livros e posso ter n livros pertencentes a uma editora. Uma não pode existir sem a outra. Vamos ver na nossa tabela de ESTOQUE. Tenho 1 e n, 1 ou mais. Vou fazer essa leitura para facilitar para nós. Em LIVRO tenho 1 ou mais. Vou dar duplo clique. 1 ou mais, "Ok".
+
+[06:32] Em ESTOQUE 0 ou 1. Então a mínima aqui realmente era 0, mas não é 0 ou mais, é 0 ou 1. Pronto, está ajustado. E vamos ver a tabela de CLIENTE para PESSOA FISICA. Vamos dar uma olhada. Então, CLIENTE exatamente 1, PESSOA FISICA 0 ou 1. Exatamente 1, e aqui está 0 ou mais. Vamos alterar, 0 ou 1. Qual é a interpretação? Vamos treinar.
+
+[07:05] Tenho uma relação de 1 para 1. Porém, não sou obrigado a ter pelo menos uma pessoa física. Posso ter 0 pessoas físicas. Ou seja, todo mundo pode ser pessoa jurídica se for o caso ou vice-versa. Por isso a cardinalidade é a mesma. Exatamente 1 ou 0 ou 1. Exatamente 1, dou duplo clique, 0 ou 1. Dessa forma, a cardinalidade está toda ajustada no modelo físico. Ele está pronto para implementarmos no SGBD.

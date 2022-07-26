@@ -1,0 +1,37 @@
+[00:00] Então a Marta comentou com toda a equipe que existe mais de um tipo de atributo e todo mundo ficou curioso, e ela resolveu explicar nos seus mínimos detalhes para todo mundo entender.
+
+[00:08] Primeiro passo é o seguinte, o atributo ele pode ter um valor único e vamos chamar ele, pode chamar ele, na verdade, de atômico, é como se fosse um átomo e se voltarmos lá para as aulas de química, lembramos que o átomo era indivisível e tudo mais, e é por isso que tem essa referência, então quando eu tenho um único valor ali no meu eu vou chamar ele de atômico.
+
+[00:30] Mas, nem sempre ele vai ter um valor único, eu posso ter um atributo aqui com mais de um valor, e eu vou chamar ele de multivalorado, pois é, vamos pegar uns exemplos aqui para ficar um pouco mais claro, vamos lá voltar para o nosso diagrama.
+
+[00:44] E aqui começamos colocando aqui os atributos de "Cliente", vamos voltar aqui para a nossa entrevista, está aqui, então está falando o seguinte, queremos coletar os dados pessoais de nossos clientes, que é a nossa entidade, como se ele é pessoa física ou jurídica? No caso de pessoa física o seu CPF, RG e no caso jurídico CNPJ e inscrição estadual.
+
+[01:08] Além disso, para todo, queremos coletar e armazenar o seu nome, endereço, telefone e e-mail, então se voltarmos aqui para o nosso diagrama, eu sei que um atributo pode ser o nome, e daí como eu faço para mudar o nome dele?
+
+[01:24] Igual fizemos com as outras entidades e relacionamentos, clico aqui no "Atributo_1", venho no nome no canto esquerdo, no nome dele, e vou deixar como "Nome" também, dou “Enter”, já mudou aqui e aqui eu posso fazer os ajustes, posso puxar próximo para cá, posso ir modelando, fazendo o desenho dai cada pessoa vai ter a sua habilidade desenvolvida ou em desenvolvimento aqui para deixar melhor ajustado, mas vamos deixar aqui por enquanto "Nome".
+
+[01:52] Eu tenho agora o telefone, então vou colocar outro atributo aqui, vou clicar na minha entidade "Cliente" e vou agora mudar o nome para "Telefone", só que, pensando bem, a pessoa que fizemos a entrevista disse o seguinte para nós, olha tem pessoas que querem colocar mais de um telefone, então seria um atributo com mais um valor, o que eu posso fazer para representar esse atributo multivalorado? Eu posso vir aqui no canto esquerdo mesmo, eu tenho "Nome", "Observação", tem algumas informações aqui, "Identificador", "Opcional", "Composto," ou "Multivalorado".
+
+[02:31] Então se eu vir aqui em "Multivalorado", e ele estar em "não", e eu marcar "sim", olha só, ele agora abriu parênteses de cardinalidade, então o atributo pode ter cardinalidade também? Sim, se ele for multivalorado eu posso indicar qual é cardinalidade mínima, e eu quero no mínimo que tenha um telefone, poderia marcar 0 também se a pessoa não tivesse nenhum, mas aqui eu quero que seja ao menos um, e o número máximo, não quero que seja N não, eu quero que sejam 2, também porque mais que dois não precisa.
+
+[03:03] Então olha só no atributo eu coloco mais especificamente o número mínimo e máximo, poderia colocar N se fosse o caso, mas aqui eu vou deixar 1 e 2, então é um atributo multivalorado.
+
+[03:15] Agora o endereço também pode ser um atributo multivalorado no sentido de que eu posso ter desdobramentos desse endereço, então eu posso ter rua, bairro, cep, cidade, enfim, eu posso desdobrar esse endereço, como eu posso representar esse atributo multivalorado também aqui no nosso diagrama?
+
+[03:35] Vamos aqui no canto direito, embaixo do atributo, eu tenho aqui um atributo com outras bolinhas saindo deles e já está escrito, cria novo atributo multivalorado, então vou clicar nele, vou clicar aqui em cliente, e olha só, ele me abriu um atributo com outras opções de atributo.
+
+[03:51] Então nesse "Atributo_1" eu vou selecionar, vou colocar o nome de "Endereço", “Enter” e aqui vou começar a destrinchar esse endereço, então vou colocar aqui "Rua", embaixo vou colocar "Bairro", aí acabou os atributos, não tem problema, eu posso agora criando atributos, eu clico em atributos, só que em vez de clicar na entidade, eu vou ligar ele agora aqui no próprio atributo.
+
+[04:22] Então cliquei, apareceu um "Atributo_1" meio bagunçado, vou trazer para baixo, e vou colocar agora, "Cidade", quantos eu posso colocar? Quantos eu quiser, então, eu vou deixar ele meio alinhado aqui, vou deixar ele assim, "Estado", o e-commerce atende o Brasil inteiro, então outro atributo aqui, estado, “Enter” e por aí vai.
+
+[04:50] Então são as duas formas que eu tenho para representar o atributo multivalorado, posso colocar uma cardinalidade nele se eu quiser mais telefones ou eu posso destrinchar esse meu atributo aqui, colocando endereço, como, por exemplo, no endereço, e outros desdobramentos, rua, bairro, cidade, estado e por ai vai.
+
+[05:09] Além disso, também temos os nossos atributos armazenados, o que é um atributo armazenado? É o que fizemos aqui, então coloco o nome, deixo ele disponível, a pessoa coloca o nome, telefone, a pessoa coloca o telefone e eu vou armazenando essas informações.
+
+[05:26] Mas eu também posso ter um tipo de atributo derivado dessas informações, vou te dar um exemplo, vamos supor que tem um campo para você colocar sua data de nascimento e tem um campo com a data de hoje, esses dois atributos são armazenados, colocamos essas informações, um campo, um atributo derivado, pode ser o meu aniversário, ou a minha idade atual, e como é que eu sei a minha idade atual? Dia de hoje menos a data do meu nascimento, então é um atributo que vai estar lá no nosso banco de dados, mas ele foi derivado de outros atributos armazenados.
+
+[06:02] Além disso, temos um atributo muito importante de estudarmos que é null, que em inglês significa nulo, então esse atributo ele é superimportante, porque ele é diferente de um atributo vazio ou um atributo com vários espaços que não enxergamos cheio de espaços ali, eu vou interpretar esse atributo, na verdade, como não aplicável, ou como um desconhecido, então vamos supor que determinado campo dentro do meu banco, peça uma informação que para aquela pessoa não tem sentido, não é aplicável, então naquele sentido vai ficar como null.
+
+[06:39] Então eu tenho dois desdobramentos para pensarmos, eu tenho um campo que pode ser obrigatório, não aceito nulo, not null, a pessoa tem que colocar a informação ali, e eu tenho o campo opcional, que aí ele vai aceitar o null, vai aceitar ali uma resposta que não seja aplicável de repente.
+
+[06:58] Então conseguimos voltar aqui para o nosso diagrama e agora terminar de completar aqui os atributos olhando a nossa entrevista, então vamos fazer isso daqui a pouco.

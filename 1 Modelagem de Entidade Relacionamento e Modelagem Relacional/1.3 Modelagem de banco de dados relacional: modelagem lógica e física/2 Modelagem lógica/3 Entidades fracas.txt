@@ -1,0 +1,29 @@
+[00:00] Vamos lá. Já ajudamos a equipe do Clube do Livro a criar as duas tabelas das entidades fortes no nosso modelo lógico e agora vamos colocar as tabelas que vem das entidades fracas. Mas qual é a diferença? A diferença é que nas entidades fracas tínhamos a presença da chave estrangeira.
+
+[00:18] Então agora vamos representar as tabelas com as presenças das chaves estrangeiras. Vamos olhar no nosso modelo conceitual. Tinha Cliente fazendo uma ligação com a entidade Pedido. Então vamos criar uma tabela, uma relação para Pedido. Viemos no canto superior direito, "Criar nova tabela", clicar mais ou menos aqui embaixo e vamos mudar o nome dela agora.
+
+[00:42] Vou ao mouse, seleciono. Vou mudar o nome agora para "PEDIDO". No modelo conceitual era bem claro porque olhávamos quando tinha o retângulo duplo e já identificava que era uma entidade fraca. No modelo lógico e depois no físico também, identificamos uma entidade fraca quando tenho a presença da chave estrangeira.
+
+[01:02] E é isso que vamos fazer agora. Então vamos olhar no nosso modelo conceitual, o Pedido tinha um código cliente que era a chave estrangeira. Olha só, era o mesmo código cliente que vinha da entidade CLIENTE e tinha um identificador porque a entidade fraca não tem chave primária, mas ela tem uma chave parcial que é um identificador dessa entidade e somado com a chave estrangeira vai fazer esse papel de chave primária porque ela sozinha não tem força de chave primária.
+
+[01:30] Então o que vamos fazer? Vamos trazer esse Cod_pedido, mas no modelo lógico não consigo marcar isso como chave parcial, pelo menos não nesse software. Então vamos colocar o desenho de chave primária para funcionar como um identificador. Então, vamos colocar chave primária, mudar o nome, seleciono aqui, "cod_pedido" em minúsculas e dar "Enter".
+
+[01:54] Então esse daqui é o identificador. E a chave estrangeira, vou clicar embaixo da chave primária pintada de preto, logo embaixo dela tem uma chave verde "Cria novo campo (chave estrangeira)". Faço o mesmo procedimento. Seleciono ela, clico na tabela e vamos dar um nome para ela de "cod_cliente". É o mesmo atributo que está vindo da tabela CLIENTE. Veio para cá como chave estrangeira.
+
+[02:23] E se na minha relação, na minha tabela não tivesse nenhum identificador, o que eu iria fazer? Aí a chave estrangeira poderia funcionar como chave estrangeira e chave primária ao mesmo tempo. Como já tenho o identificador cod_pedido, vou deixar ela só como chave estrangeira mesmo e o resto vamos criar os campos da mesma maneira.
+
+[02:41] Então vamos olhar em Pedido. Tinha Data e Valor_pedido. Então vamos lá colocar esses campos, "data" e "valor_pedido". Então está criada a nossa tabela de PEDIDO. Voltando para o nosso modelo conceitual também tenho a entidade Estoque e a entidade Livro. Então vamos criar essas duas tabelas. A tabela de Livro e a tabela de Estoque.
+
+[03:19] Vou fazer da mesma maneira. As duas estão selecionadas, então posso selecionar todo mundo ao mesmo tempo, clicar e ir arrastando e aí consigo mexer em todo mundo. Ou posso clicar fora e deixar só uma tabela selecionada. A tabela PEDIDO está insistindo em ficar selecionada. Vamos clicar fora e agora sim consigo arrastar só EDITORA.
+
+[03:41] Então agora vou criar a tabela Livro. Vamos dar um nome para ela, "LIVRO", "Enter". Vamos verificar quem vai vir como chave estrangeira e se ela tem algum identificador dela lá no modelo conceitual. Então em Livro tenho Cod_editora que é realmente a chave estrangeira vindo de Cod_editora e tenho um Cod_livro.
+
+[04:09] Então ele é o identificador da nossa tabela nova, da tabela LIVRO. Então vou trazer Cod_livro como chave primária já sabendo que é uma chave parcial e depois a chave estrangeira Cod_editora. Vamos lá. Então vou selecionar só em LIVRO. Vamos deselecionar só essa tabela. Então vou trazer como chave parcial, mas como chave primária aqui, "cod_livro". E como chave estrangeira, "cod_editora". E agora vamos preencher os outros campos dele.
+
+[05:32] Muito bem. Então colocamos agora todos os outros campos com o cuidado de não colocar acentos, como, por exemplo, em "titulo", "ano_publicacao" e por aí vai. Por quê? Porque lá no modelo conceitual era uma linguagem de alto nível mais próxima do usuário, estávamos só fazendo a arquitetura, a modelagem. Aqui já estamos nos preparando para a criação do bando de dados.
+
+[05:57] Então vou tomar esses pequenos cuidados agora já seguindo um padrão, uma boa prática do nosso mundo de modelagem. E por fim, vamos colocar agora o Estoque. Então no Estoque temos Cod_editora como chave estrangeira, Cod_livro como chave estrangeira e Qtd_estoque. Não temos um identificador só dele nesse caso.
+
+[06:21] Então vamos colocar essas duas chaves estrangeiras como duas chaves estrangeiras e chaves primárias. Então vamos lá, vamos criar nossa tabela. Vamos abrir um espaço para Estoque. Vou seguir a mesma ideia. Nome "ESTOQUE" em maiúsculo. Chave primária e estrangeira, quem é mesmo? Esqueci. Cod_editora. Vamos lá, "cod_editora", "Enter". E vai ter outra, quem é? Cod_livro. Então "cod_livro", "Enter".
+
+[07:12] E o outro campo que era Qtd_estoque, "qtd_estoque". Muito bem, agora já temos representas as nossas tabelas das entidades. Falta colocarmos as ligações, os relacionamentos e também está faltando os atributos de especialização e também essa relação associativa que criamos. Então vamos ver isso no próximo vídeo.

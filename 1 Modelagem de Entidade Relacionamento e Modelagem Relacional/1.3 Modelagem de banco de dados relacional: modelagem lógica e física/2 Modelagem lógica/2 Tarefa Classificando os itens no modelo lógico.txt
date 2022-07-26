@@ -1,0 +1,10 @@
+Agora que a Marta iniciou a construção do modelo lógico, ela irá transferir as informações do modelo conceitual já estruturando em forma de tabela. Antes de seguir esse passo, Joana apresentou algumas dúvidas quanto à classificação dos atributos e entidades dentro desse novo modelo.
+
+Com base no que aprendemos, classifique os dados do modelo lógico a seguir determinando a relação/tabela, o atributo chave primária e os atributos simples para ajudar a Joana a entender esse processo.
+
+https://caelum-online-public.s3.amazonaws.com/2516-modelagem-banco-dados-relacional-modelagem-logica-fisica/02/aula2-imagem1.png
+
+
+(V) 1 - relação/tabela; 2 - atributo chave primária; 3 - atributo simples, 4 - atributo simples, 5 - atributo simples, 6 - atributo simples.
+
+          Alternativa correta! Colaborador(a) é a tabela e o atributo que é único para cada ocorrência da tabela é o ID_Colabolador(a), é ele que nos ajudará a identificar cada linha da tabela. Já os outros atributos podem ser classificados como atributos simples.

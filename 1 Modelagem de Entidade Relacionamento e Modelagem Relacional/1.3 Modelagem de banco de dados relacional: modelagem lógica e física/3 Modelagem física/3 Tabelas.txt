@@ -1,0 +1,23 @@
+[00:00] A equipe relembrou que lá na modelagem lógica tínhamos tratado as entidades como relações. E agora na modelagem física, como vamos tratar essas relações? E como fazemos para gerar essas novas relações no SQL Power Architect? Afinal o software é novo para nós.
+
+[00:17] O primeiro ponto, já estávamos tratando as relações como tabela lá na modelagem lógica mesmo porque o BRMODELO chamava assim. Mas agora na modelagem física o nome, propriamente dito, é tabela. Então aqui realmente vamos tratar como tabela o que era entidade antes e o que era relação também.
+
+[00:33] E como fazemos para gerar essas tabelas? Aqui está o software, o SQL Power Architect que está na tela e ele tem algumas semelhanças com o BRMODELO. Por exemplo, no canto superior direito tem uma coluna e aqui vou criar os símbolos que tenho para utilizar na modelagem física.
+
+[00:53] E para criarmos tabela, vou até dar um zoom, é nessa opção que vamos criar uma nova tabela. Vamos clicar. E agora tenho esse símbolo da espécie de uma cruz. Então posso clicar e arrastar até o tamanho que quiser. Não importa, ele vai abrir essa janela para nós. Também tem a opção de um atalho.
+
+[01:18] Então se eu fechar e apertar a letra T, ele vai ficar em cruz e posso também clicar e abrir essa nova tabela. Antes de gerar a tabela, vou mexer um pouco com as propriedades dela. Vamos dar uma analisada juntos. Primeiro tenho o nome lógico. O software, pelo menos na versão que baixei está todo em inglês. Se você não fala inglês não tem problema porque dá para entendermos algumas nomenclaturas. São bem próximas do português.
+
+[01:46] Então tenho o Logical Table Name, o nome lógico da tabela e o nome físico. O nome lógico posso dar qualquer nome porque é o que vou fazer referência na nossa modelagem. E já o nome físico é o nome que quero implementar já no banco de dados. É legal mantermos o nome bem parecido para não ficarmos nos confundindo. Mas para gerar um certo padrão, vou deixar o nome lógico como nome que era da entidade e o nome físico vou colocar Tb de table ou de tabela.
+
+[02:17] Vamos começar criando a nossa primeira entidade que era CLIENTE. Vamos dar uma olhada no modelo lógico e começar focando por CLIENTE nessa tabela. Vou realmente deixar o nome lógico como "CLIENTE". Vou usar o mesmo padrão que é em maiúsculo. E o que vou fazer no nome físico? Vou colocar "Tb_CLIENTE". Essa é a diferenciação que vou fazer.
+
+[02:41] Toda vez que tiver Tb, sei que estou fazendo referência ao nome físico, ao nome que vai ser implementado no banco de dados. Toda tabela é legal gerar, na verdade, o software faz com que eu tome esse caminho, eu já gerar com uma chave primária da tabela independente do que vamos trabalhar. Toda tabela tem que ter uma chave primária.
+
+[03:02] Então também vou deixar como padrão "Tb_CLIENTE_pk". "Pk" de Primary Key que como é tudo em inglês, chave primária. Então tenho o nome lógico, tenho o nome físico e tenho a chave primária da tabela que já vem quando ela é criada. Essa chave primária nem vai aparecer para nós. Mas o software entende que tenho que ter uma chave primária da tabela.
+
+[03:29] Nesse Remarks são os comentários que posso criar. Se você está trabalhando sozinho é uma coisa. Então se o projeto também não é muito grande, tudo bem. Agora, quando você trabalha em uma equipe um pouco maior, é interessante que você crie comentários para que a outra pessoa que vá trabalhar com essa modelagem saiba do que você está falando.
+
+[03:50] Ou você pode deixar algum recado do que você está pensando em fazer com aquilo. Posso dizer, por exemplo, só a título de exemplo, "Essa tabela é referente a entidade cliente". Só para mostrar como funciona. Posso mudar a cor, a cor do texto, a cor da tabela e tudo o mais. E vou dar "Ok".
+
+[04:15] Aqui ele já me gerou a tabela CLIENTE. E agora para colocar os atributos que estávamos chamando de campos, como faço agora na modelagem física? Vamos ver como isso funciona.

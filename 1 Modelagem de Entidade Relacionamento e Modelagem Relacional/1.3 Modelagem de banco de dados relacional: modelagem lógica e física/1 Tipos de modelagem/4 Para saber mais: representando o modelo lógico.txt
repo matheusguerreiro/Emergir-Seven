@@ -1,0 +1,11 @@
+O modelo lógico de dados é criado a partir das descrições dos dados representadas em um modelo conceitual. Ele descreve como os dados serão armazenados no banco de dados, identificando as entidades, os atributos, as chaves primárias e estrangeiras e os seus relacionamentos.
+
+Há duas formas que podemos utilizar para representar o modelo lógico: a forma horizontal ou a forma vertical. Durante o curso foi utilizado a representação vertical, onde os atributos (que mais a frente serão chamados de campos) são representados um abaixo do outro, os atributos chaves são identificados e os relacionamentos são representados através de linhas ligando uma relação à outra:
+
+https://caelum-online-public.s3.amazonaws.com/2516-modelagem-banco-dados-relacional-modelagem-logica-fisica/01/aula1-imagem1.png
+
+Na forma horizontal, os atributos (campos) são apresentados um ao lado do outro, os atributos chave são sublinhados nas relações e os relacionamentos são representados através de uma seta, que sai da relação dependente e chega à relação proprietária. Já as cardinalidades não são representadas, como no exemplo a seguir:
+
+https://caelum-online-public.s3.amazonaws.com/2516-modelagem-banco-dados-relacional-modelagem-logica-fisica/01/aula1-imagem2.png
+
+As duas formas são válidas e podem ser utilizadas para representar o modelo lógico de dados. Normalmente a forma mais utilizada é a forma vertical, por ser semelhante a representação final das relações em um banco de dados.

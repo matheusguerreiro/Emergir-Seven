@@ -1,0 +1,41 @@
+[00:00] Vamos construir o nosso modelo lógico no BRMODELO. E o primeiro passo que vamos dar é trazer as entidades no modelo conceitual para o modelo lógico. E aqui vem o primeiro ponto de referência, não vamos mais tratar as entidades com o nome de entidades no modelo lógico.
+
+[00:18] O nosso que vamos dar agora para as entidades é de relação. Segundo a literatura o correto é chamarmos como relação. Porém, como havia dito que às vezes tem uma variação de software para software e como o modelo lógico é muito próximo do modelo físico, às vezes os softwares podem tomar o nome de um lá do modelo físico já no modelo lógico.
+
+[00:38] É o caso do BRMODELO. Ele trata a relação já como tabela. Mas não tem problema. Às vezes durante o vídeo vou chamar de relação e, às vezes, de tabela, mas você sabe que estamos tratando da mesma coisa.
+
+[00:51] Para criarmos essa relação ou tabela, podemos ir ao canto direito na primeira opção. Coloco a seta do mouse e já aparece "Criar nova tabela". Vou clicar nessa opção e clicar em qualquer área do espaço central.
+
+[01:05] Ele já trouxe uma espécie de tabela. Como disse, na literatura vamos chamar de relação, mas aqui já vamos chamar de tabela direto. Ele traz o nome de "Tabela_1". Posso vir em cima da opção de "Criar nova tabela" e tem a seta do mouse, vou clicar porque aí consigo selecionar, arrastar e fazer tudo o que quero. Já posso mudar o nome dessa tabela.
+
+[01:31] Lá no modelo conceitual, vamos começar trazendo as entidades fortes agora como tabelas. A primeira entidade forte que tenho é CLIENTE, depois tenho Pedido como entidade fraca, ESTOQUE como entidade fraca, LIVRO como entidade fraca e depois EDITORA como entidade forte. Vamos começar modelando as entidades fortes.
+
+[01:53] Vamos criar relações para elas. Vamos começar com CLIENTE. O que vou fazer? Volto para o modelo lógico na aba de cima, seleciono a minha tabela e vou ao canto esquerdo no nome. Assim como fazíamos nas entidades, posso alterar o nome. Vou deixar o nome como "Cliente" e dou "Enter".
+
+[02:13] Então agora aqui vai ser a nossa tabela ou relação CLIENTE. A partir de agora vamos começar a notar que boas práticas de diferenciação do nome da tabela para os campos, para os atributos. Então quando estivermos traçando o nome da tabela, vamos deixar a letra maiúscula, todas as letras maiúsculas.
+
+[02:31] E quando for mexer nos atributos, que aqui vamos chamar de Campos, vão ser letras minúsculas. Então, tenho a tabela criada da entidade CLIENTE. O próximo passo, vamos colocar os atributos. No modelo conceitual temos vários atributos colocamos. No modelo lógico agora vamos mudar o nome, agora não é mais atributo. Se viermos no canto superior direito, ele está tratando como Campos.
+
+[02:59] Então posso clicar aqui e inserir um campo na minha tabela. Mas antes de mais nada, o que sabemos sobre a entidade forte? Sabemos que ela tem um campo identificador conhecido como chave primária. Então, vou começar trazendo esse campo de chave primária para o modelo lógico, que no caso colocamos como "Cod_cliente". Criamos esse código.
+
+[03:24] Vou vir no modelo lógico e embaixo de campo tem o desenho de uma chave pintada de preto, "chave primária". Então esse campo identificador vai ser tratado como chave primária. Vou clicar nessa chave, clicar em cima da tabela CLIENTE e ele já me trouxe um desenho de uma chave primária.
+
+[03:42] Vou clicar na opção do mouse, selecionar esse campo e posso mudar o nome dele. Então o nome dele é "Cod_cliente", o código do cliente e "Enter". Já consigo fazer as seleções. Posso deixar como chave primária. Já está porque já clicamos na chave ou posso deixar como chave estrangeira. Vamos ver daqui a pouco também.
+
+[04:05] Então já inserimos o campo da chave primária. E os outros campos, o que vou fazer? Agora sim vou em cima da chave e tenho o desenho de camp, mas é o "Criar novo campo". Clico, seleciono a tabela e ele traz outro campo. Então vou clicar na seta do mouse, selecionar e mudar o nome. Qual é o próximo campo?
+
+[04:24] O campo de nome mesmo. Volto para cá e vou alterar o nome no canto superior esquerdo, "nome", "Enter". Assim vou fazendo com todos os outros atributos, transformando para campos. Vamos lá. Vamos ver o próximo atributo, “Telefone”. Mas telefone é um atributo multivalorado, tenho dois possíveis campos para telefone.
+
+[04:53] Então o que vou fazer? Quando tenho atributo multivalorado, vou colocar dois campos para cada atributo. No campo vou mudar o nome. Está selecionado. Vou colocar "telefone_1", criar um novo campo. Criei dois, não tem problema, vou mudar o nome deles, "telefone_2". Assim tenho os dois atributos de forma direta.
+
+[05:21] Voltando. Tenho o e-mail. Já estava criado um campo. Vou mudar o nome dele, "email". Temos que ficar atentos. Não é legal usarmos sinais de acentuação como o acento, hífen, esse tipo de coisa. Então vou deixar e-mail dessa forma mesmo. E eu tinha um atributo composto. Então tinha endereço que se dividia em outros atributos. O que vamos fazer agora?
+
+[05:47] Vamos ignorar o atributo endereço e vou colocar todos os subatributos diretamente na tabela. Poderia tomar outro caminho, poderia criar outra relação. Mas aqui vamos ignorar esse campo e vamos colocar direto os atributos. Vamos lá preencher todos eles.
+
+[06:22] Muito bem. Então está criada a nossa tabela, a nossa relação de CLIENTE. Posso colocar ela posicionada do jeito que eu quiser no nosso modelo. Vou aproveitar e já criar a próxima relação da entidade forte, a Editora, que vem para cá como uma relação, como uma tabela da mesma maneira já criando a chave primária.
+
+[06:42] Então vamos voltar no modelo lógico. Vou criar uma nova tabela, clicar na seta do mouse, renomear. Então "EDITORA", tudo em maiúsculo e dou "Enter". Já vou adicionar direto uma chave primária. Vou fazer um pouco diferente agora. Vou colocar um campo diretamente. O nome desse campo era "cod_editora", "Enter". E aqui posso mudar a opção.
+
+[07:10] "Chave primária - Não", na verdade, é "Sim". Então vou deixar como chave primária. Vamos colocar agora os outros campos também.
+
+[07:32] Estão criadas as duas relações que vem das entidades fortes com as chaves primárias sendo representadas. E para trazermos as entidades fracas, qual é a diferença para trazermos para o nosso modelo? Vamos ver como isso funciona.

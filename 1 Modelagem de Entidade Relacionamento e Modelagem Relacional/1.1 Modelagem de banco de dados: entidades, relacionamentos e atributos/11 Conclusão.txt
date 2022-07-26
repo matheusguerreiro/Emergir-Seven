@@ -1,0 +1,15 @@
+[00:00] Eu estou aqui para te dar os parabéns por ter concluído o curso de modelagem de banco de dados relacional, entidade, atributo e relacionamento. Nesse curso começamos realmente ali do zero, a estruturação desse modelo conceitual de banco de dados e você finalizou aprendendo uma série de conceitos. Então vamos relembrar tudo que vimos nesse curso.
+
+[00:22] Então acompanhamos a Marta que era uma especialista de banco de dados e ela começou a trabalhar no clube do livro que é um e-commerce que vende aí basicamente livros e artigos relacionados ao Mundo da Leitura, ela tinha a equipe dela e ela foi compartilhando o seu conhecimento com a equipe.
+
+[00:38] Então aprendemos o que era modelagem de dados, entendemos que existem alguns conceitos, alguns tipos de modelagens de dados e vamos nesse curso trabalhar com modelagem de dados conceitual, que é o nosso primeiro passo.
+
+[00:50] Então primeiro entendemos qual a diferença da modelagem para o SGBD que é o sistema gerencial de banco de dados, vimos que tem a sua diferença, e que para fazer essa modelagem escolhemos um software chamado de _BrModelo, então aprendemos a mexer software também.
+
+[01:05] Mas para fazer a modelagem entendemos o que é esse conceito do mini mundo, esse recorte do mundo real, aprendemos, já começamos a desenvolver as habilidades aqui de abstração, fazer esse resumo das informações mais importantes e começamos a aprender conceitos superimportantes como a cardinalidade, então aprendemos o que é uma cardinalidade 1 para 1, 1 para N, N para M, e como representar isso no nosso _BrModelo.
+
+[01:33] Então aprendemos aqui a representar as entidades, o que é as entidades? Entidade forte, entidade fraca, o que é o relacionamento entre essas entidades e as suas cardinalidades, como vimos, 1 para 1, 1 para N, N para M, cardinalidade mínima, cardinalidade máxima, olha só quantos conceitos importantíssimos para sua vida agora nesses estudos de banco de dados, você vai precisar disso, isso é o alicerce, é a base.
+
+[01:58] Por isso que esse curso é feito com tanto carinho, para que você consiga ter uma boa base, para que você aprofunde nos seus estudos, também aprendemos o que são atributos, como identificar isso ali de um texto que fazemos a entrevista, e o que são as chaves identificadoras, a chave primária, a chave parcial e construir o nosso modelo aqui no nosso _BrModelo.
+
+[02:20] Então é isso o desafio fica para você fazer o seu modelo bem bonito compartilhar, pode marcar no LinkedIn, pode deixar aqui no fórum, eu vou adorar acompanhar o progresso de cada um de vocês, o fórum está sempre aberto para trocarmos ideias, interagir, entre nós mesmos, e é isso, eu desejo que você agora, esse seja só o primeiro passo, e que você continue nos seus estudos e pode contar comigo para tudo, tchau.

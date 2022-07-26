@@ -1,0 +1,10 @@
+O clube do livro adicionou alguns produtos além dos livros e pediu que Marta acrescentasse mais uma tabela ao modelo físico. Como o projeto já está no meio do caminho, Marta pediu que fossem passados com detalhes como deveria ser essa nova tabela.
+
+Informaram que a tabela terá todas as informações sobre os produtos extras como o código do produto, que será gerado por uma sequência de 20 números e letras, o nome do produto e a quantidade do produto em estoque.
+
+Levando em conta o que aprendemos durante a aula, como ficaria a classificação dessa tabela e suas respectivas colunas, excluindo por enquanto possíveis relacionamentos, dentro de um modelo físico?
+
+
+(V) https://caelum-online-public.s3.amazonaws.com/2516-modelagem-banco-dados-relacional-modelagem-logica-fisica/04/aula4-imagem1.png
+
+      Alternativa correta! Essa seria a forma correta de representar a tabela de produtos extras dentro do modelo físico. As colunas “Cod_produto_extra” e “Nome_produto_extra” são do tipo varchar, já que esse tipo permite o uso de dados alfanuméricos, ou seja, tanto números como letras. A coluna “Estoque_produto_extra” será do tipo integer pois se trata da quantidade de produtos no estoque, que será representada por um número inteiro.

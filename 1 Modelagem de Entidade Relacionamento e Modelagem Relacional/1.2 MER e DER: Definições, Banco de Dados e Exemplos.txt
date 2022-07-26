@@ -1,0 +1,73 @@
+Em um projeto de banco de dados temos várias formas de planejar sua criação, seu design e organizar como ele será modelado. Sabe quando você pega um banco de alunos, com matrículas, nomes e cursos? Então, o schema do banco de dados, muitas vezes, foi modelado não só por ferramentas ORM, mas por softwares que fazem esse tipo de desenho específico, o Modelo Entidade Relacional, como o abaixo:
+
+https://www.alura.com.br/artigos/assets/mer-e-der/imagem-1.png
+
+Neste artigo, vamos entender um pouco sobre o MER (Modelo Entidade Relacionamento) e DER (Diagrama Entidade-Relacionamento), que são o ponto de partida depois que temos os requisitos do projeto em mãos, vamos entender melhor como transformar os requisitos (objetos do mundo real) em um esqueleto do banco de dados.
+
+O que é o MER ?
+O MER (Modelo Entidade Relacionamento) é utilizado para descrever os objetos do mundo real através de entidades, com suas propriedades que são os atributos e os seus relacionamentos.
+
+Mas o que são entidades?
+As entidades representam um objeto do mundo real e que possuem uma existência independente, como: pessoas, empresa, carro, casa, entre outras coisas que podem ser representadas por uma entidade. Podemos considerar que existem três tipos de entidades, as entidades fortes, que não dependem de outras entidades para existirem.
+
+Já as entidades fracas, dependem de outras entidades para existir, ou seja, elas não possuem existência própria ou não possuem atributos próprios para identificação, dependendo assim, dos atributos chave das entidades fortes. E por último as entidades associativas, que são utilizadas quando existe a necessidade de associar uma entidade a um relacionamento.
+
+E o que são atributos?
+Os atributos descrevem as propriedades das entidades. A entidade pessoa pode ter como atributo o nome, data de nascimento, idade, endereço. Como as entidades, também existem alguns tipos de atributos, que são: os atributos simples, atributos compostos, atributos multivalorados, atributos derivados e atributos chave. Agora veremos cada um deles:
+
+Atributo Simples
+
+Atributos simples são indivisíveis, ou seja, são atributos atômicos, um exemplo seria o atributo CPF, ele não pode ser dividido em partes menores para formar outros atributos, ele é indivisível.
+
+Atributo Composto
+
+Atributos Compostos podem ser divididos em partes menores, que representam outros atributos, como o atributo endereço, ele pode ser subdividido em atributos menores, como, por exemplo, cidade, estado, rua, CEP.
+
+Atributo Multivalorado
+
+Um atributo Multivalorado pode ter um ou N (vários) valores associados a ele, como, por exemplo, o atributo telefone de um cliente, ele pode ter um ou vários telefones.
+
+Atributo Derivado
+
+Atributos derivados dependem de outro atributo ou até mesmo outra entidade para existir, como, por exemplo, o atributo idade e o atributo data de nascimento, para descobrimos a idade de uma pessoa precisamos da sua data de nascimento, então, consideramos o atributo idade como derivado do atributo data de nascimento.
+
+Atributo Chave
+
+O atributo chave é utilizado para identificar de forma única uma entidade, ou seja, os valores associados a esse atributo são distintos dentre o conjunto de entidades. Como exemplo, podemos utilizar o CPF de uma pessoa, ele é único e pode ser utilizado como atributo chave, já que cada pessoa recebe um número de CPF distinto.
+
+E os relacionamentos?
+As entidades podem se relacionar entre si, havendo assim uma associação, que conhecemos como relacionamento, que normalmente são representados por verbos. Como, por exemplo, “uma pessoa trabalha para uma empresa”. Também podemos classificar os relacionamentos em três tipos:
+
+Relacionamento UM PARA UM (1:1): Onde uma entidade X se associa unicamente a uma ocorrência da entidade Y.
+Relacionamento UM PARA MUITOS (1:N): Onde uma entidade X se associa a várias ocorrências da entidade Y, porém, a entidade Y pode apenas se associar a uma ocorrência da entidade X.
+Relacionamento MUITOS PARA MUITOS (N:N): Onde a entidade X o pode se associar a várias ocorrências da entidade Y e a entidade Y pode também se associar a várias ocorrências da entidade X.
+O DER (Diagrama Entidade-Relacionamento)
+O DER (Diagrama Entidade-Relacionamento) é utilizado para representar em forma gráfica o que foi descrito no MER (Modelo Entidade Relacionamento).
+
+Praticando um pouco
+Agora vamos praticar um pouco, para isso, pense num cenário fictício em que fomos contratados por uma instituição, e a mesma, precisa ter um sistema para controle de cursos, sabemos que precisamos ter informações dos alunos, dos cursos e de professores. De cada aluno, será necessário armazenar: seu nome, matrícula, data de nascimento e idade, de cada curso será necessário armazenar a descrição e quantidade de alunos inscritos, e do professor, o seu nome. O primeiro passo a dar é identificar e descrever as entidades, os atributos:
+
+Nesse cenário podemos identificar como entidades: aluno, curso e professor.
+Portanto, os atributos da entidade aluno serão nome, data de nascimento e idade.
+Nesse caso, a entidade da entidade curso serão descrição e quantidade de alunos inscritos.
+A entidade Professor tem como atributo único o nome. Assim podemos representar de forma gráfica as entidades e os atributos identificados, como na imagem abaixo:
+
+https://www.alura.com.br/artigos/assets/mer-e-der/imagem-2.png
+
+Após identificar e descrever as entidades e os atributos, agora é possível identificar os relacionamentos existentes.
+
+Relacionamento entre Aluno e Curso
+Um curso pode ter vários alunos inscritos e um aluno pode estar inscrito em um curso.
+
+Relacionamento entre Professor e Curso
+Um curso pode ser coordenado por um professor e um professor pode coordenar um curso.
+
+Relacionamento entre Professor e Aluno
+Um professor pode orientar vários alunos e um aluno pode ser orientado por um professor.
+
+A representação final do Diagrama ficará da seguinte forma:
+
+https://www.alura.com.br/artigos/assets/mer-e-der/imagem-3.png
+
+Conclusão
+Entendemos neste artigo, que para ter um bom projeto de banco de dados é necessário descrever de forma clara os objetos do projeto (MER), para que seja possível representar, da forma mais próxima da realidade, os requisitos levantados (DER).

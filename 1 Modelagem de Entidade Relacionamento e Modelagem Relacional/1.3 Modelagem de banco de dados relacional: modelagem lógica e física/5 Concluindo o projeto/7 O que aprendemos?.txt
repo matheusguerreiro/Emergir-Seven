@@ -1,0 +1,5 @@
+Nessa aula, você aprendeu a:
+Diferenciar relacionamentos identificadores e não identificadores;
+Representar a cardinalidade dos relacionamentos;
+Diferenciar a representação do modelo físico de acordo com o software utilizado;
+Construir um modelo físico.

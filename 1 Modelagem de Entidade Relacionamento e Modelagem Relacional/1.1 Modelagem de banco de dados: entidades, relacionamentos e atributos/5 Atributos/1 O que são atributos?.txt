@@ -1,0 +1,15 @@
+[00:00] Então o modelo conceitual do e-commerce do clube do livro já está ficando bem completo, a equipe da Marta está gostando bastante, mas alguém da equipe perguntou para ela se conseguimos colocar as características de cada entidade, no nosso diagrama, e assim, como assim características?
+
+[00:17] Vamos abrir de novo aqui o nosso doc das entrevistas e por que eles perguntaram isso? Justamente porque percebemos que tem características aqui, por exemplo, os livros, esses livros têm informações associadas a ele, como título, categoria, o código dele, o ISBM, o ano de publicação, entre outras coisas, então será que conseguimos colocar essas características aqui dentro do nosso diagrama?
+
+[00:40] E a resposta é sim, a Marta respondeu a eles que sim, e essas características, assim, de forma técnica, correta, vamos chamar de atributo, pois é, os atributos são as características das nossas entidades, então vamos explorar um pouco mais a fundo esse conceito dos atributos.
+
+[01:00] Os atributos, eles são sempre ligados as entidades, como eu disse são as características, o que vai ali montar a entidade, por sinal, eles são tão ligados um ao outro que eu não posso ter uma entidade sem um atributo, sem a sua característica, porque se eu tivesse uma entidade que não tivesse nenhum atributo, ela não precisa ser uma entidade em si, ela pode ser um atributo, uma característica de uma outra entidade.
+
+[01:23] Por exemplo, o livro que estávamos pensando aqui, o livro eu tenho várias características sobre ele, código, autor, título, entre outras, mas eu não tivesse nenhuma, ele poderia ser apenas uma característica, um atributo de outra entidade, daí podemos fazer o caminho inverso também, se eu não tivesse ali, por exemplo, uma dúvida se aquilo é uma entidade ou não, eu posso pensar, eu tenho atributos para relacionar com essa entidade?
+
+[01:54] Se eu não tivesse atributos, eu não tenho nem dúvida que aquilo é uma entidade, e podemos pensar nisso também na entidade de estoque, estoque poderia ser um atributo de livro, mas como eu quero relacionar aqui algumas características, alguns atributos que para o clube do livro são bem claros, são bem importantes, como, por exemplo, quantidade do estoque, se existe o estoque ou não e a quantidade dos livros que estão em estoque, como ele tem ali atributos eu deixei ele como uma entidade.
+
+[02:22] E como fazemos para representar esses atributos no nosso diagrama? Vamos representar esses atributos através de uma bolinha, e temos aqui um símbolo específico para isso, então na nossa coluna direita aqui dos artefatos, eu venho descendo, e aqui eu tenho uma bolinha, seria o quarto de baixo para cima, então aqui eu tenho "Criar novo atributo", eu vou clicar aqui nessa opção, vou vir aqui em "Cliente" por exemplo, e clicar na entidade, olha só, ele já me trouxe uma bolinha escrito "Atributo_1".
+
+[02:53] Mas, será que só temos um único tipo de atributo? É só clicar aqui e colocar todos os atributos? Ou será que temos outros tipos? Vai ficar para o próximo vídeo.

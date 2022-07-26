@@ -1,0 +1,10 @@
+Após identificar as entidades e seus relacionamentos, é necessário relacionar as características de cada entidade, conhecidas como atributos. Para isso, vamos utilizar o mesmo cenário fictício da aula 03, no qual uma floricultura nos contratou porque precisa ter um sistema para controle de vendas.
+
+Inicialmente, serão armazenadas informações de cada cliente, tais como: nome, endereço, data de nascimento e idade. De cada produto armazenaremos a descrição, a quantidade em estoque e o preço. Além disso, a floricultura também tem colaboradores(as) com nome, endereço, salário e cargo.
+
+Escolha a alternativa que indica quais são os atributos presentes no projeto da floricultura.
+
+
+(V) Os atributos de cliente são nome, endereço, data de nascimento e idade. Os de produto são descrição, quantidade em estoque e preço. E os de colaborador(a) são nome, endereço, salário e cargo.
+
+  Alternativa correta! Os atributos são todos os campos que identificamos como características e que podemos utilizar para descrever a entidade.

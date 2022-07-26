@@ -1,0 +1,16 @@
+Estamos quase lá! E, claro, você, assim como a Joana que nos acompanhou durante os nossos estudos sobre os modelos lógicos e físicos de um banco de dados, aprendeu bastante sobre todo esse conteúdo.
+
+E, para não deixar a peteca cair, nossa companheira de estudos veio com mais um desafio para auxiliar a nossa jornada. Como seria interpretada a representação da cardinalidade do exemplo abaixo, que a Joana retirou de seu material de estudos?
+
+https://caelum-online-public.s3.amazonaws.com/2516-modelagem-banco-dados-relacional-modelagem-logica-fisica/05/aula5-imagem1.png
+
+Com base no que aprendemos, escolha quais alternativas melhor definem a representação da cardinalidade no exemplo que apresentamos:
+
+
+(V) A cardinalidade mínima da tabela produto é 0 e a máxima é 1, representada no modelo na extremidade mais distante, ao lado da tabela de estoque.
+
+      Alternativa correta! A cardinalidade é representada na extremidade oposta à tabela. No exemplo, o círculo e o traço na vertical nos diz que a cardinalidade da tabela produto, contida na outra extremidade, é (min: 0, max: 1).
+
+(V) A cardinalidade mínima da tabela estoque é 1 e a máxima é N, representada no modelo na extremidade mais distante, ao lado da tabela de produto.
+
+      Alternativa correta! A cardinalidade é representada na extremidade oposta à tabela. No exemplo, o tridente (pé de galinha) e o traço na vertical nos diz que a cardinalidade da tabela estoque, contida na outra extremidade, é (min: 1, max: N).

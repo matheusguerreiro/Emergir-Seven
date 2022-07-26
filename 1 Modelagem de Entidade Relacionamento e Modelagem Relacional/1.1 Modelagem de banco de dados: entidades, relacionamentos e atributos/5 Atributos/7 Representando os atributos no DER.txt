@@ -1,0 +1,35 @@
+[00:00] Então Pedro perguntou para Marta como fazemos para colocar ali, para identificar os atributos que são os mais importantes, únicos, que identificam ali as nossas entidades, e a Marta ficou surpresa com a colocação dele, porque realmente isso é fundamental para construção do nosso modelo, é tão importante esses atributos que eles têm um nome especial que justamente vamos dar o nome de chave primária.
+
+[00:24] As chaves primárias são justamente isso, são os atributos que são únicos, exclusivos da entidade e por ele ter essa importância, tem alguns passos, alguns cuidados que temos que tomar, primeiro, esse atributo, ele nunca se repete, então ele é único da entidade, número 1, número 2, não pode ser nulo, não pode null, tem que ter um valor lá, e terceiro ponto, só as entidades fortes é que possuem chave primária, olha que coisa importante, então essa já é uma diferenciação que vamos ter aqui das entidades fortes para as entidades fracas, somente as entidades fortes possuem chave primária.
+
+[01:05] Mas eu não posso ter atributos que são ali que de repente identificam entidade fraca? Posso, só que eles não vão ter o nome de chave primária, eles vão ter o nome de chave parcial, eles não têm força suficiente porque a entidade é fraca, ela está ligada a uma forte, então para complementar esse identificador da entidade fraca, vamos usar essa chave parcial, mais a chave primária da entidade forte.
+
+[01:28] Então vamos lá, vamos para o nosso modelo e vamos tentar identificar aqui os atributos principais, e de cara já vai vir um ponto superimportante, na nossa entidade de cliente, eu poderia ter um atributo que é muito usado como chave primária aqui para o meu cliente que seria de repente o CPF, o CPF ele é único, ele é exclusivo, ele é ligado só a uma pessoa, mas como eu tenho atributos de especialização, e não é todo mundo que vai ter cpf, não é uma boa ideia utilizarmos ele aqui.
+
+[01:56] Então o nome de repente pode se repetir com mais pessoas, são os homônimos, telefone, e-mail, o que poderíamos fazer nesse caso e também é uma solução muito utilizada, é criar um atributo chave, criar uma chave primária aqui, um código, que ele vai funcionar único e exclusivamente para aquele cliente, e é supernormal, às vezes fazemos algum tipo de cadastro e temos o nosso código, o nosso RA na faculdade, o nosso código do convênio, enfim, é supernormal criarmos códigos para serem usados como chaves primárias.
+
+[02:31] Então aqui na nossa entidade de cliente, é uma entidade forte, ela vai ter chave primária, eu vou colocar um atributo a mais aqui, e vou dar o nome de código cliente, então para ficar mais curto eu vou deixar "Code_cliente", vou dar um “Enter”.
+
+[02:50] Mas como eu sei que isso daqui é minha chave primária? Eu vou marcar ele como identificador, e aqui no _BrModelo, em outras literaturas também fazemos assim, eu vou pintar essa bola de preto, então mo canto esquerdo aqui, onde eu coloco o nome, tem a direção, tamanho, eu tenho um campo de identificador e está marcado como não, não é identificador, mas sim, ele vai ser identificador dessa entidade, então vou clicar aqui e vou marcar, ficou pintado de preto aqui e ai batemos o olho e já sabemos que é a chave primária.
+
+[03:25] E no pedido? No pedido eu tenho a data e valor pedido, porém, ele é minha entidade fraca, então vamos construir uma chave para ele, mas uma chave parcial porque ele é uma entidade fraca e eu sei que eu vou ter que puxar a chave primária da entidade forte que ele está ligada, e quem é essa entidade forte? Cliente.
+
+[03:43] Então vamos criar aqui um código do pedido, então vou colocar uma bolinha aqui no atributo, e vou marcar como identificador, então ela está pintada de preto, porém, como é uma entidade fraca, eu vou puxar a chave primária de cliente, então vamos puxar outro atributo aqui, colocar aqui, e vou colocar o mesmo nome, "Code_cliente", tem que ser igual e também vou pintar como identificador.
+
+[04:12] Então aqui eu tenho um conjunto de chaves como identificadoras, tem problema isso? Não tem problema, posso ter um conjunto ali, tanto na entidade forte, quanto na entidade fraca, mas na entidade fraca eu sei que eu tenho a chave parcial e eu tenho que juntar ali com a chave primária código cliente da entidade forte.
+
+[04:33] Vamos ver agora aqui, vamos ver a entidade forte da editora, editora tem o telefone, e-mail, nome, contato, vou usar a mesma estratégia, vou criar um código da editora, então vou clicar aqui, vou criar um novo atributo, vou colocar "Code_editora", “Enter”, e vou marcar como identificador, ele já pinta para mim ali, já é a chave primária da editora, chave primária porque é uma entidade forte.
+
+[05:01] E no livro, eu tenho aqui algumas características que poderiam me servir como únicas do livro, de repente, o ISBN, que é um código exclusivo dele, mas no caso eu vou criar um código livro, porque talvez aqui fique mais confortável para o clube do livro trabalhar, e vou puxar a chave primária código editora também.
+
+[05:32] Vou criar aqui embaixo então vou colocar "Code_livro", “Enter”, e aqui em cima vou encaixar aqui com "Code_editora", mas está separado, não tem problema, aqui eu vou pintar o "Code_editora" como identificador e o "Code_livro" também, então aqui eu já sei que essas duas chaves aqui formam as chaves identificadoras dessa entidade fraca.
+
+[06:01] Eu vou arrumar agora essa ligação aqui, vamos ver se eu movimento e ele encaixa melhor, ele encaixa, só que vamos ver aqui, pronto, não está tão bonito assim, ele arrumou aqui agora, vou deixar aqui assim, ficou um pouco melhor.
+
+[06:42] E temos aqui o estoque como entidade fraca, então o que eu vou fazer? Eu vou puxar aqui o mesmo identificador no "Code_livro" que eu marquei aqui, então vou colocar aqui, "Code_livro", porque eles são atrelados, e também vou puxar aqui o código editora, porque ele é a chave primária da minha entidade forte, "Code_editora".
+
+[07:18] E eu vou pintar aqui como preto, identificador "Code_editora", identificador "Code_livro", e por que eu não tenho aqui um atributo aqui específico para estoque? Porque o estoque ele está totalmente atrelado ao livro, então o código livro ele já me serve para o estoque, então está aqui finalizamos o nosso modelo conceitual.
+
+[07:42] Então a partir de agora você é supercapaz de olhar para esse modelo identificar quem são as entidades fortes, as fracas, os relacionamentos, e as cardinalidades mínimas e máximas, os atributos, as chaves primárias, olha só quanta coisa.
+
+[07:57] E meu desafio final para você é você deixar isso daqui com uma outra estrutura, com uma outra cara mais organizada, e compartilhar, pode me marcar, eu vou adorar, conferir, participar, e vamos participando, então é isso aí.

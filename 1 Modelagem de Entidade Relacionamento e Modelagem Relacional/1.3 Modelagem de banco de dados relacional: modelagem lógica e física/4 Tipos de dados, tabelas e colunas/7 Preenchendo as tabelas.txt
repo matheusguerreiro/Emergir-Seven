@@ -1,0 +1,27 @@
+[00:00] Vamos continuar preenchendo o modelo físico representando todas as tabelas. A próxima tabela que temos após LIVRO vai ser EDITORA. Então EDITORA era uma entidade forte, tem chave primária. Vamos representar ela aqui. Uma nova tabela, vai ser "EDITORA" em maiúsculo, "Tb_EDITORA" e "Tb_EDITORA_pk".
+
+[00:35] Está criada. Agora vamos olhar as colunas. A primeira coluna, chave primária cod_editora. C, "cod_editora", "cod_editora", chave primária vou deixar varchar. Como todos os outros códigos, 10 caracteres, "Ok". Os próximos campos, telefone_1 e telefone_2. Vamos lá, "telefone_1", "telefone_1", não é chave primária. Vou deixar como varchar. Já discutimos isso porque pode ter parênteses, pode ter hífen.
+
+[01:20] Vou deixar 14 caracteres, mas vou permitir que seja nulo porque nem todo mundo é obrigado a ter telefone. Na nossa regra de negócio, tinha que ter pelo menos um telefone de contato. Vou deixar o primeiro como não aceitando nulo e o segundo aceitando nulo. Mas pelo menos um tem que ter obrigatoriamente.
+
+[01:44] Vamos fazer isso agora com o segundo, "telefone_2", "telefone_2", varchar, de 14 também. Mas agora, esse sim, vamos marcar como podendo ser nulo. Vamos continuar, email e o nome de contato. Primeiro o email, "email" sem o hífen. Vai ser um varchar. Pode ser um email comprido, então vou deixar 30, "Ok". E o nome de contato, "nome_contato", "nome_contato", varchar, vou deixar 50 e não pode ser nulo.
+
+[02:34] O email me arrependi. Vou deixar 50 também. Pode ser um email comprido igual o nome. Fizemos a tabela de EDITORA. Está pronta. Vamos para a tabela de estoque. Na tabela de ESTOQUE percebo que tenho dois campos como chave estrangeira e a quantidade de estoque. Então vai ser só isso para representarmos na tabela.
+
+[02:59] Vou colocar o t, marquei, "ESTOQUE". O nome da tabela, "Tb_ESTOQUE" e a chave primária da tabela, "Tb_ESTOQUE_pk", "Ok". Como disse, duas chaves estrangeiras e só qtd_estoque, "qtd_estoque", "qtd_estoque", não é chave primária. Quantidade em estoque não pode ser metade de um livro, tem que ser um número inteiro. Agora está faltando quem?
+
+[03:42] Os atributos de especialização que transformamos em tabela e vão ser mantidos como tabela também no modelo físico. Então, primeiro, a PESSOA FISICA. Vamos lá. Vou colocar só "FISICA", nome físico também só "FISICA". Nome físico da tabela, na verdade, é o "Tb_FISICA", "Tb_FISICA_pk". Agora sim está certo. Vamos ver os campos dela, CPF, RG e uma chave estrangeira. A chave estrangeira vamos guardar.
+
+[04:29] Então CPF e RG. Coluna, "cpf", "cpf", não é chave primária, varchar. Vai ter que ser varchar. Por que vai ter que ser varchar? CPF não é só um número? CPF é só um número, mas e se ele começar pelo número 0? Já discutimos sobre isso um pouco. Se começa pelo número 0 e deixo como número, ele vai ignorar porque à esquerda é como se não fosse nada. Mas quando coloco como um campo alfa numérico ele vai considerar o 0.
+
+[05:02] Por isso é importante o CPF deixarmos como varchar. C para coluna, "rg", "rg" e pelo mesmo motivo vamos deixar como varchar. Não colocamos a precisão. Vamos colocar no RG uma precisão de 15. Sei que é menos. Sei que tem uma variação também. Vou deixar 15 para sobrar, mas não muito. CPF vou dar duplo clique. Vou deixar a precisão aqui também de 15, "Ok".
+
+[05:31] Por fim, a última tabela que é a PESSOA JURIDICA. Vamos colocar. Está selecionado, então vou clicar fora. Agora sim. Vou colocar, "JURIDICA". "Mas no modelo lógico estava 'PESSOA'". Não tem problema. Se eu quisesse alterar aqui, posso alterar também. Posso deixar igual. Vamos deixar igual, "PESSOA_JURIDICA". Vamos fazer isso lá também. Vamos alterar, "PESSOA_JURIDICA".
+
+[06:06] E o nome da tabela, "Tb_PESSOA_JURIDICA". Se eu tivesse deixado o nome diferente da tabela do modelo lógico, tem problema? Não. Vou dar um duplo clique para alterarmos, vou colocar "PESSOA_FISICA". Não tem problema. Mas vamos deixar no mesmo padrão só para deixar como uma boa prática. Alteramos. Então esse é o legal, conseguimos ir alterando isso ao longo do projeto.
+
+[06:38] PESSOA JURIDICA, quais são os campos? CNPJ e IE, inscrição estadual. Duplo clique não. Agora é C de coluna, "cnpj", "cnpj", vou deixar como varchar porque pode começar por 0. Não tenho um conhecimento tão profundo assim se tem algum CNPJ que começa por 0. Mas vamos prevenir isso. Vou deixar um campo de 20 caracteres. Não tenho certeza dos números certos dos caracteres de CNPJ.
+
+[07:09] Se você que está assistindo esse curso, sabe, deixa nos comentários do fórum para mim porque vou gostar de saber e conhecer isso. CNPJ e IE, inscrição estadual. A inscrição estadual é a mesma coisa, "ie", "ie", vou deixar como varchar também, vou deixar 20. Se você soube deixa no fórum porque alguém que também esteja assistindo esse curso pode aprender essa informação.
+
+[07:35] Fora isso é chave estrangeira. Então, já conseguimos modelar todas as tabelas. Está faltando colocar as chaves estrangeiras. A equipe do Clube do Livro estava se perguntando quando eles vão colocar a chave estrangeira e por que guardamos isso e como fazemos para fazer as relações, desenhar os nossos relacionamentos, na verdade. A Marta explicou que esses passos vão ser o diferencial do modelo físico. Mas isso vai ficar para a próxima aula.

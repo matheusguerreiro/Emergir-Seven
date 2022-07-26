@@ -1,0 +1,13 @@
+[00:00] Agora a Marta vai dar continuidade com a modelagem de banco de dados do Clube do Livro. Agora que eles já percorram e construíram o modelo conceitual, estão prontos para dar os próximos passos. Mas quais são esses próximos passos? Os próximos passos são a construção do modelo lógico e a construção do modelo físico.
+
+[00:20] Vamos entender um pouco melhor desses modelos. Vamos lá. O primeiro passo que damos é a construção do modelo conceitual. Então o modelo conceitual já está construído. Vamos dar uma olhada para relembrarmos. Então esse modelo é de alto nível porque está muito próximo da linguagem do usuário, a linguagem humana.
+
+[00:38] E é nesse passo que foi realmente levado em consideração as regras do negócio. Então o que é interessante para o negócio, enxergar, armazenar, como as informações vão se relacionar. Nesse passo também é importante definirmos quem são as entidades, quem são os atributos e quem são os relacionamentos e como se dão as cardinalidades e tudo o mais.
+
+[00:59] E o modelo lógico? O modelo lógico é construído baseado no modelo conceitual e vai nos ajudar a implementarmos o banco de dados em si. Então vamos pegar esses conceitos que já temos no modelo conceitual e vamos implementar um pouco mais de informação. Vamos dar uma olhada em um modelo lógico que temos aqui e que vamos trabalhar durante o curso e olha como ele já tem uma cara mais próxima de um banco de dados.
+
+[01:24] Então mudamos um pouco o jeito que as informações estão sendo colocadas aqui. Como vamos colocar a chave primária, chave estrangeira. Esse tipo de coisa. E o modelo físico? O modelo físico está muito próximo do banco de dados em si. Então ele realmente se assemelha bastante, ele está pronto para ser implementado e temos mais informações ainda.
+
+[01:47] O modelo lógico acrescentamos informações em relação ao modelo conceitual e o modelo físico, pegamos o modelo lógico e acrescentamos mais informações ainda. Então aqui temos várias características para trabalharmos. Por exemplo, o domínio que é o tipo do campo, se é varchar, se é integer, se é double. Vamos ver tudo isso no curso.
+
+[02:05] Se é null, se é Not null, se é PK, se é FK. O que é a chave estrangeira e a chave primária e aqui vamos demonstrar um pouco diferente os símbolos de relacionamento. Então com tudo isso posto ficou bem claro para toda a equipe do Clube do Livro. Eles estão prontos para dar o próximo passo que é a modelagem lógica. Então vamos lá com eles.

@@ -1,0 +1,8 @@
+Marta iniciou a criação dos relacionamentos entre as tabelas, determinando os relacionamentos identificadores e não identificadores, porém algumas pessoas da equipe ainda não entenderam muito bem a diferença entre esses dois tipos de relacionamento.
+
+Com base no que aprendemos durante a aula, marque a alternativa que descreve a diferença entre esses dois tipos de relacionamento:
+
+
+(V) O relacionamento identificador é aquele na qual uma ocorrência da entidade fraca, precisa estar associada a exatamente uma ocorrência da entidade forte e não pode existir sem ela. Nesse caso, esse relacionamento é utilizado para representar uma chave primária estrangeira. Já no relacionamento não identificador, cada ocorrência da entidade fraca pode ser identificada sem a necessidade de saber a qual ocorrência da entidade forte está associada. É utilizado para representar apenas chaves estrangeiras.
+
+      Alternativa correta! Essas são as diferenças entre esses dois tipos de relacionamento.

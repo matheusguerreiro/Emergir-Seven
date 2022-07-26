@@ -1,0 +1,37 @@
+[00:00] Vamos continuar preenchendo a coluna cod_cliente. Já tinha colocado o nome lógico e o nome físico. Definimos como chave primária e agora vamos ao tipo. Baseado no que já aprendemos, qual o tipo que podemos colocar no cod_cliente? Poderia ser um número. Então poderia ser um integer, um número inteiro? Poderia.
+
+[00:23] E se esse código começasse com 0? Seria um problema. Já vimos sobre isso. E se nesse código eu quisesse misturar letras? É comum em códigos colocarmos "1a, 23b", algo do tipo. Então para evitar esse tipo de situação, vamos definir como varchar.
+
+[00:41] É claro que é interessante nesse ponto estarmos em contato constante com a regra de negócio, tanto para quem está gerindo o negócio informar para nós como ele quer esse código ou tanto para nós informarmos: "Estamos criando esse campo de código, essa coluna de código do CLIENTE e vamos aceitar letra, vamos aceitar número e letra, esse tipo de coisa".
+
+[01:00] Além disso, podemos definir a precisão, ou seja, quantos caracteres quero permitir que tenha essa coluna. Então vamos definir 20, por exemplo. Então percebe que temos essa liberdade e estamos muito próximos da característica do banco que estou montando. Logo embaixo tenho outro campo, Allows Nulls, ou seja, se permito que esse campo seja nulo ou não.
+
+[01:23] Está desmarcado. Não quero que ele seja nulo. Mas se eu marcar, era para ele deixar essa coluna como nulo. Por que quando marco ele não está deixando? Será que deu algum problema? Não. É porque defini essa coluna como chave primária. Lembra que uma das regras fundamentais da chave primária é que ele não pode ser nulo, senão perde o sentido.
+
+[01:46] Não posso ter essa coluna como nulo e nem a informação duplicada. Ela tem que ser única e exclusiva. Nesse caso nem dá para deixar como nulo. Não vamos permitir que seja nulo esse campo. Tem algumas outras informações que não vamos utilizar agora. Tem outro campo para comentários. Lembra que sempre podemos ir comentando isso.
+
+[02:10] Entre você pecar pela falta de informação e pelo excesso, é melhor você pecar pelo excesso de informação. Quanto mais descritivo você puder deixar, melhor é para o trabalho em time, para o conjunto. Então sempre que achar conveniente ou estiver na dúvida se coloca um comentário ou não, coloca que isso vai ajudar outras pessoas lá na frente ou até mesmo você a relembrar alguns pontos.
+
+[02:34] Vamos dar "Ok". E foi criada a coluna. Olha a diferença dessa coluna para o campo que fizemos no modelo lógico e no conceitual. No lógico, na verdade. Vamos analisar. No lógico só tinha o nome do campo e se era chave primária ou não. Vamos agora olhar no modelo físico. Tem a coluna, tem o tipo, tem o domínio dela, tem quantos caracteres aceito, Not null, ou seja, não aceito campo nulo e a PK, uma Primary Key que é uma chave primária.
+
+[03:07] Então olha quantas informações conseguimos ir agregando. Vamos continuar preenchendo a tabela CLIENTE. Vou selecionar, apertar o C e vamos colocar a próxima coluna. A próximo coluna era nome. Vou deixar o mesmo nome lógico, "nome" e o mesmo nome físico, "nome". Não é chave primária? E o tipo? "Nome" é texto, então não tenho dúvida, vou deixar como varchar mesmo.
+
+[03:37] Precisão? Vou colocar 50 porque garanto que mesmo nomes compridos vão entrar, nomes completos e esse tipo de coisa. Permito nulo nesse campo? Olha só, não é chave primária, agora poderia permitir. Mas não vou permitir porque nome é muito importante para nós.
+
+[03:54] E poderia deixar no comentário: "Somente o primeiro e último nome". Poderia ser, é uma regra de negócio. Poderia deixar isso comentado. Vou dar "Ok". Not null. Vamos lá. O próximo campo que vai virar coluna, telefone_1 e telefone_2. Vamos lá, C, "telefone_1", não é chave primária. "Telefone" não começa com 0, então posso colocar como integer porque também telefone não vai ter vírgula, não vai ser número quebrado.
+
+[04:46] E se na minha coluna eu quiser que tenha aquele hífen ou até mesmo os parênteses com o DDD? Seria um problema. Então vamos deixar isso como varchar porque varchar aceita tudo. Olha como temos que ir analisando e pensando nos possíveis problemas.
+
+[05:03] Qual é a precisão que quero de telefone? Deixa eu ver. DDD, 2, o celular tem 9. Então vou deixar 11 para ficar bem certo. "Mas se tiver os parênteses e o hífen?" É verdade. Então parênteses 13 e o hífen 14. Vamos deixar 14. Claro que posso ir alterando. Posso deixar como nulo? O telefone posso deixar como nulo. Tem pessoas que não tem telefone.
+
+[05:31] Então vou permitir que seja nulo. E ok. Percebe que ele não veio com o Not null. Ou seja, ele aceita o nulo. Vamos lá, vamos colocar agora o outro telefone, "telefone_2", "telefone_2". A mesma coisa, precisa ser varchar, não é chave primária, precisão de 14, aceito nulo e ok. Repara um outro detalhe, cada vez que vamos fazendo algum incremento, alguma mudança na tabela, do lado esquerdo tenho os passos que vou dando.
+
+[06:15] Então criei a tabela CLIENTE e fui adicionando colunas. Então ele vai marcando todos os passos que dou. De repente, se eu quiser verificar o que fiz naquele passo, posso clicar e voltar. Ou se eu pensar melhor, "Isso não é Varchar, não era 14, quero 15", posso dar um duplo clique e aí ele volta para eu fazer as alterações que preciso.
+
+[06:43] Vamos continuar preenchendo. "Email". Importante, não vou colocar hífen. "Email" não é chave primária, o tipo é varchar porque estamos colocando texto. Vou definir uma precisão de 50 caracteres. Agora vamos para endereço, rua, bairro, cidade e estado. "Rua", "rua", não é chave primária, é varchar, vou definir também como 50. "Bairro", "bairro", varchar, vou definir como 20. "Cidade", "cidade", não é chave primária, vou definir como 15.
+
+[07:47] Isso daqui você pode ir pensando com calma, caso a caso. Estamos andando um pouco rápido para irmos preenchendo essa tabela, definindo alguns valores. Mas é claro que, na prática do dia a dia, você pode pensar com mais carinho quantos caracteres você quer delimitar para não ter excessos.
+
+[08:04] Então por final, "estado", "estado", vou colocar 10 caracteres. Vamos ver se não estou colocando pouco. Então está criada a nossa tabela CLIENTE com todas as especificações. E já começamos a ver uma clara diferença para o modelo físico, em comparação ao modelo lógico e ao modelo conceitual.
+
+[08:33] No próximo vídeo vamos continuar preenchendo todas as tabelas do modelo físico.

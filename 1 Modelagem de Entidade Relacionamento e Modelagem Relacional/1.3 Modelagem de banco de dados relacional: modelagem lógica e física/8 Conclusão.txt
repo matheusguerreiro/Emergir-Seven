@@ -1,0 +1,11 @@
+[00:00] Estou aqui para te dar os parabéns por você ter concluído o nosso curso de Modelagem Lógica e Física de Dados aqui na Alura. Nesse curso aprendemos uma série de coisas muito importantes para concluirmos o processo total de modelagem dos dados.
+
+[00:14] Então relembramos a modelagem conceitual que já foi feita do Clube do Livro, que é um e-commerce que vende os livros, que tem um livro como o principal produto. É um e-commerce de sucesso. Aprendemos como construir um modelo lógico se baseando no modelo físico.
+
+[00:30] Quais são as diferenças, como fazemos para implementar esse modelo lógico com essa aparência das tabelas, colocar chave primária, estrangeira e fazer toda essa representação. Além disso, também aprendemos como construir o modelo físico que realmente se assemelha muito ao banco de dados em si. Ele está pronto para ser implementado no SGBD.
+
+[00:52] Então aprendemos como converter as nossas entidades do modelo conceitual em relações e depois em tabelas, em como converter os atributos em colunas. O que é o domínio das colunas, qual é o tipo, varchar, integer, date, decimal. Como colocamos a simbologia do PK, do FK, da chave primária, da chave estrangeira, o que são esses símbolos dos relacionamentos, como identificamos se é um para muitos, a cardinalidade mínima, se é 1 ou 0.
+
+[01:23] Ou seja, implementamos, na verdade, estruturamos o banco de dados na modelagem física. Ele está pronto para ser implementado pela SGBD. Então é isso. Espero que você tenha aproveitado bastante todo esse conhecimento. A partir de agora você está pronto para continuar praticando essa modelagem.
+
+[01:40] Te incentivo muito a olhar algumas coisas do mundo real e praticar esse processo de modelagem. Isso vai ser um grande referencial para você. Se você não fez ainda, volta atrás e dá uma olhada nos Para Saber Mais e em todas as atividades porque isso também vai te dar uma bagagem extra bem legal. E é isso. Nos encontramos nos próximos passos.

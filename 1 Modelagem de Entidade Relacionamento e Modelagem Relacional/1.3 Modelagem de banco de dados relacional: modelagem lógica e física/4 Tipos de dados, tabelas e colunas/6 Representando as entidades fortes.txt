@@ -1,0 +1,37 @@
+[00:00] Vamos lá. Já colocamos a tabela de CLIENTE. Vamos agora continuar preenchendo as outras tabelas sempre tomando como base o modelo lógico. Se olharmos o modelo lógico que está aqui atrás, colocamos a tabela de CLIENTE. Vamos tomar o caminho de baixo, vamos colocar a tabela de PEDIDO.
+
+[00:17] PEDIDO sabemos que é uma entidade fraca. Era uma entidade fraca. Por isso temos a chave estrangeira e a chave parcial. Vamos começar colocando a tabela PEDIDO. Vou vir no lado direito, "New Table", nova tabela, clicar, arrastar, soltar. "PEDIDO" em maiúsculo e no singular também. Nome físico, "Tb_PEDIDO" e na chave primária vamos manter o mesmo padrão.
+
+[00:44] Então "Tb_PEDIDO_pk" de Primary Key. Dou "Ok". Já consigo manipular a tabela. Agora vamos colocar, só com o atalho, com o C para criar uma nova coluna. Então a primeira coluna, vamos olhar no modelo lógico, vai ser o cod_pedido que é uma chave parcial. Então, "cod_pedido". O nome físico vai ser o mesmo, "cod_pedido".
+
+[01:14] Vou marcar como chave primária. Na verdade, sabemos que tecnicamente era uma chave parcial, mas aqui faz a função de chave primária. E o tipo desse cod_pedido? Poderia ser um número, mas se eu quiser colocar letra vou deixar como varchar porque aí vale todo mundo, um campo alfa numérico. Vou deixar um limite de caracteres de 10.
+
+[01:40] Então já criamos o cod_pedido. O que mais temos? Cod_cliente que na verdade é uma chave estrangeira da tabela CLIENTE. O que vamos fazer nesse ponto? Vamos guardar todas as chaves estrangeiras para daqui a pouco colocar. Aí você vai perceber que esse vai ser o pulo do gato do modelo físico.
+
+[02:00] Então sempre que tivermos uma chave estrangeira agora, vamos dar uma aguardada porque daqui a pouco elas vão aparecer. Vamos pular para data. C de novo, "data", o nome físico também vai ser "data". Não vai ser chave primária. Já tenho um tipo específico para isso, é o Date. Então selecionei. Quando é Date não precisa colocar nada de precisão porque data é data. Ela vai ter o formato tradicional e ok.
+
+[02:30] O que mais temos? Valor_pedido. Vamos lá, "valor_pedido", "valor_pedido". Não é chave primária. E o valor do pedido, o que podemos colocar? Valor, número. Número inteiro ou número decimal? Acho que o decimal porque o livro pode ter um valor de 19,90, 29,90 e por aí vai.
+
+[02:58] Vamos selecionar Decimal. Está marcado. Criamos a tabela PEDIDO. Vamos continuar a representação. A próxima tabela, item_pedido. Se formos observar também tem duas chaves estrangeiras, cod_pedido e cod_livro porque ela era entidade associativa, estou associando duas entidades. Então vamos pular esses atributos que vão ser as colunas e vamos colocar só as colunas dele mesmo, qtd_pedido e valor_item.
+
+[03:29] Vamos lá. Agora para ser um pouco diferente, vou clicar só na letra T e ele já faz essa cruz, puxo, arrasto, solto e ele já criou a tabela para nós. Então "ITEM_PEDIDO". Nome físico? "Tb_ITEM_PEDIDO". E a chave primária, "Tb_ITEM_PEDIDO_pk". Criamos a tabela. Vou posicionando aqui mais ou menos na ordem que vai ficar. Agora vamos criar uma nova coluna.
+
+[04:06] Vou vir em um lugar um pouco diferente. Vou do lado direito. Vou sempre alterando para irmos pegando esses atalhos que temos, as possibilidades que temos para trabalhar no SQL Power Architect. Qual vai ser a primeira coluna? Vamos pular as chaves estrangeiras. Qtd_pedido. Vamos lá, "qtd_pedido" e aqui também, "qtd_pedido". Não é chave primária. Quantidade e pedido.
+
+[04:35] Quantidade é um número inteiro. Não dá para ter um pedido 1,2 pedido ou 1,5. Não, é 1 pedido, 2 pedidos e por aí vai. Então vamos marcar o integer que é o tipo inteiro. E quando marco integer não preciso ter precisão. O que mais temos? Valor_item. Vamos lá, C, "valor_item", "valor_item". Não vai ser chave primária. E o tipo do valor_item? Aí sim pode ser um número decimal. Então vamos colocar Decimal de novo e dou "Ok".
+
+[05:14] Então as chaves estrangeiras vão esperar um pouco. Vamos continuar. Próxima tabela. A próxima tabela vai ser LIVRO. Vou na ordem. Vamos lá criar uma nova tabela para LIVRO, "LIVRO". Nome físico, "Tb_LIVRO" e a chave primária também, "Tb_LIVRO_pk". Está aqui a tabela. Vamos ver agora as colunas. Então cod_livro. LIVRO era uma entidade no projeto conceitual. Forte ou fraca? Fraca.
+
+[05:52] Então temos a chave parcial do cod_livro. Vamos colocar. Isso faz diferença para nós no dia a dia? Não, porque todo mundo vai entrar aqui como chave primária. Mas é só para seguirmos o mesmo padrão, para irmos relembrando. Mas vou marcar ele como chave primária. "Cod_livro" e a mesma história. Vou deixar varchar porque se eu quiser usar alguma letra no meio do código eu posso.
+
+[06:14] Vou deixar a precisão de 10. Vamos continuar. Cod_editora, chave estrangeira. Vamos guardar. Daqui a pouco ela vai aparecer. Valor. Vamos lá, "valor", "valor". O valor vamos deixar como Decimal já que o valor pode ser número quebrado, número que não é inteiro. Estamos deixando sempre como Not null. É importante falar isso também porque vamos observando o que pode ser nulo e o que não pode ser nulo. Valor não pode ser nulo.
+
+[07:02] Ano da publicação. Vamos lá, também é uma coisa importante, "ano_publicacao". É para tirar as acentuações para não dar nenhum problema. O ano_publicacao poderíamos deixar como Date. Porém, o Date tem aquele formato da data, dia, mês e ano e aqui só quero ano. Então vou deixar número inteiro, integer. Aí a pessoa coloca o número do ano mesmo. Vamos ver a próxima coluna, categoria, "categoria", "categoria".
+
+[07:43] Não é chave primária. Varchar porque vamos escrever ficção, sei lá, direito e esse tipo de coisa. Vamos deixar uma precisão de 25 caracteres. Não é nulo também. O que mais temos? Título. Muito bem, "titulo", "titulo" também. Vai ser um varchar. Pode ser um título grande, vou deixar 50 caracteres. O que mais? Nome do livro.
+
+[08:21] Então, "nome_livro", "nome_livro", varchar, vou deixar 50 também. O que mais? Isbn, "isbn", "isbn". Isbn é um código número, até onde eu saiba. Então vou deixar como integer. Qual a precisão? Não vou colocar precisão porque ele não é varchar. Mas se eu quisesse alterar esse tipo, depois eu consigo? Consigo. Dou "Ok".
+
+[09:02] De repente, fomos confirmar a regra de negócio, fui pesquisar melhor esse campo, essa coluna e percebo que não é um número. Tem caracteres alfa numéricos, alfabéticos. O que posso fazer? Dou um duplo clique na coluna e volto para poder alterar esse tipo. Vamos seguir. Por fim, o autor. Vamos lá, "autor" no lógico e no físico.
+
+[09:32] É um varchar. O nome do autor vou deixar em 25 caracteres. Como disse, podemos ir alterando isso depois. Então fizemos a nossa tabela LIVRO. Vamos parar agora. Ainda temos mais algumas tabelas para continuarmos preenchendo. Mas vamos continuar preenchendo no próximo vídeo.

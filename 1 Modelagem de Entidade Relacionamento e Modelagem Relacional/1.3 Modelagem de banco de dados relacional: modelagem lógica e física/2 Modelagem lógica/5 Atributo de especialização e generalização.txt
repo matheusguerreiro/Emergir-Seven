@@ -1,0 +1,45 @@
+[00:00] Vamos lá. Complementando agora o nosso modelo lógico, vimos que tem a entidade associativa e tem PEDIDO. Como vamos representar essa entidade associativa no modelo lógico? Simples. Vamos criar uma tabela, uma relação para ela também. Então deixa só selecionar o PEDIDO, abrir um espaço. Vamos fazendo assim. Vamos abrindo espaço.
+
+[00:26] Vou criar uma nova tabela justamente com esse nome "ITEM_PEDIDO". Usamos essa estratégia na modelagem conceitual para eliminar aquele problema de relação muitos para muitos. Então como criei essa entidade, ela está conectando a tabela CLIENTE e PEDIDO, não é isso?
+
+[00:48] Ou melhor, conectando a tabela PEDIDO e LIVRO, ela vai ter como chave estrangeira cada uma das chaves identificadoras, as chaves primárias de cada uma das tabelas. Então vamos lá. Vindo aqui, qual vai ser a primeira chave estrangeira?
+
+[01:06] Vai ser cod_livro. Deixa eu posicionar melhor ela, entre PEDIDO. Só selecionar, puxar para cá, só para ficar um pouco mais claro para visualizarmos. Primeiro vou puxar como chave estrangeira dela o cod_pedido e depois o cod_livro. Porém, elas vão funcionar como chaves estrangeira e chave primária porque ela não tem nenhum identificador.
+
+[01:35] Então vou puxar chave estrangeira e chave primária ao mesmo tempo. Vou puxar logo duas de cara. Já sei que são duas. Primeiro vou colocar como "cod_pedido". E a outra vai ser "cod_livro". Então tenho esse conjunto de chaves.
+
+[01:57] Por sinal, temos a possibilidade de dar um nome quando tenho um conjunto de chaves. Então você percebe que embaixo ele abriu um campo com todas as chaves. Posso clicar e ele vai dizer "Tipo - IR chave estrangeira" e "Nomear - Não". Decidi não nomear. Mas poderia selecionar esse campo, dizer que sim e criar um nome para esse grupo, mas não vamos nomear. Mas se você quiser explorar, isso é outra possibilidade.
+
+[02:27] E agora tenho essas duas chaves estrangeiras nessa nova relação que criamos. Já que vamos criar uma tabela, faz muito sentido pensarmos se quero colocar outros campos aqui. E é super normal isso no dia a dia, no seu trabalho você ir refinando isso. Cada passo desse é uma possibilidade de você ir refinando, melhorando.
+
+[02:46] Então para essa tabela, eu acho que faz sentido termos a quantidade do pedido. Então vou criar um novo campo. Um campo simples. Vou e seleciono e coloco "qtd_pedido". Será que faz sentido colocarmos um campo com valor de cada item? De repente, faz. Então vamos nomear "valor_item". Criamos a nossa relação.
+
+[03:19] Então agora vamos fazer as ligações. Para fazer as ligações é muito parecido com o que fazíamos no modelo conceitual. Embaixo da chave primária estrangeira tenho a opção de criar relacionamento entre duas tabelas e vamos fazer exatamente isso. Vou ligar CLIENTE a PEDIDO. Então vou selecionar CLIENTE e PEDIDO. Criei uma relação.
+
+[03:39] Vamos trabalhar com as cardinalidades. Então Cliente e Pedido, tinha a cardinalidade mínima 1 e a mínima 0, máxima 1, máxima n. Então era de 1 para n. Então vamos lá. Cliente era 1 porque tinha que ter 1 cliente. Poderia ser 0 Pedido de 1 para n. Está representado aqui. Agora vamos criar um espaçamento mais interessante. Está com as duas selecionadas.
+
+[04:16] Então ele já traz essa seleção dupla de cara. Para selecionar uma só, clico na que não quero mexer e depois vou ajustando. Depois Pedido, ele fazer a relação com item_pedido. E depois o item_pedido com o Livro. É isso que vamos fazer agora. Então vou criar uma relação do PEDIDO para item_pedido e depois item_pedido para LIVRO.
+
+[04:44] Vamos ver as cardinalidades. Então a mínima era de 1 para n e aqui também, 1 para n. Então vamos lá. A mínima era 1 e aqui também era 1. Tinha que existir. Ele está com as duas selecionadas. Espera aí. Agora sim. 1 para 1, seleciona a outra, desseleciono esse e 1 para n. Aqui é a mesma coisa. Desseleciono essa, 1 para n e desseleciono essa, 1 para 1.
+
+[05:45] Dessa forma, temos a ligação. De fato, se formos interpretar essa tabela, essa ligação, podemos ver que em um PEDIDO posso ter n itens e n itens podem ter 1 LIVRO. Se eu tivesse ligado direto PEDIDO com LIVRO ia ter um problema de muitos para muitos. Daqui já tínhamos resolvido isso no nosso modelo conceitual.
+
+[06:08] Vamos ver agora. Então Livro está ligado com Editora. Então n Livros podem pertencer a uma editora. Então n para 1. Vamos clicar, desselecionar isso, puxar um pouco para cá e criar uma relação de Livro para Editora. Qual é a mínima? Aqui é 1 e aqui é 1. Vamos mexer na cardinalidade mínima, 1 e aqui também ter que ser 1. Acabei mexendo. Deixar 1 para 1.
+
+[06:50] Vamos deixar assim. Tem que desselecionar. Sempre tenho que lembrar isso. E aqui é 1 para n e 1 para 1. Está certo. O Livro também se relaciona com Estoque. Vamos criar essa relação. Vou selecionar, tirar essa seleção, puxar um pouco para cá, criar relação Livro para Estoque. Vamos mexer agora na cardinalidade. Mínima é 1 e aqui é 0. Então perceba que o que fizemos lá atrás já estamos ganhando tempo nessa etapa.
+
+[07:26] Então aqui 1 é 0. E tenho n e 1 na máxima. Vai ser, na verdade, n e aqui está certo. Vamos ver. Certo. Então está aqui o modelo lógico praticamente pronto. E a equipe estava quase esquecendo de um detalhe. E os atributos de especialização na nossa entidade Cliente? Tinha Pessoa física e Pessoa jurídica.
+
+[07:53] Para trazermos esses dois conceitos para o modelo lógico, vamos criar outras relações novas também com Pessoa física e Pessoa jurídica. E vou trazer a chave primária de Cliente como chave estrangeira em Pessoa física e Pessoa jurídica. Então vamos fazer isso. Vou criar uma relação, mudar o nome dela, "PESSOA FISICA", "Enter". Quem são os campos dela? Sei que tem dois. Deixa eu ver.
+
+[08:27] CPF e RG. Então vamos lá, "cpf", "rg", "Enter". E quem vou trazer como chave estrangeira? O Cod_cliente. Então ele vai vir como chave estrangeira e chave primária nesse caso porque ele não tem chave identificadora. Então "cod_cliente", "Enter". Aqui vamos ter que dar uma arrumada também.
+
+[09:00] Vou deselecionar essa, puxar um pouco para baixo, tirar essa, puxar um pouco para cima. Vai ficar um pouco apertado. Vou puxar um pouco para baixo isso. Não vai caber na mesma tela, mas não tem problema. Vamos criar agora uma nova tabela de Pessoa jurídica, "PESSOA JURIDICA". "Enter".
+
+[09:28] Dois novos campos aqui também. Quais eram os campos? CNPJ e IE, inscrição estadual. Vamos mudar o nome, "cnpj, "Enter" e "ie" inscrição estatual. O nome veio errado. Vamos selecionar todo mundo, "ie". E também chave estrangeira junto com a chave primária de Cod_cliente, "cod_cliente". E como elas vão se relacionar?
+
+[10:05] Claro, elas vão se relacionar com a tabela CLIENTE. Estava selecionando ali embaixo, mas não tem problema. Vamos criar uma relação aqui e outra relação aqui. E como vai ficar a cardinalidade dessas duas entidades? Vamos pensar que como elas estão ligadas vai ser 1 para 1. Agora CLIENTE tem que obrigatoriamente existir.
+
+[10:36] Então a cardinalidade de CLIENTE vai ser 1,1. A mínima tem que existir. Sou obrigado a ter um cliente pessoa física? Não. Posso ter só pessoa jurídica. Nesse caso, pode ser 0. Então, teremos a ligação de 1 CLIENTE diretamente ligado com 1 da PESSOA FISICA. Então, vou mudar. É 0, n? Não, é 0, 1. E a mesma ideia para PESSOA JURIDICA. Vamos mexer nessa cardinalidade, 1,1 e aqui, na verdade, é 0,1. Pronto.
+
+[11:28] Dessa maneira já criamos a modelagem lógica dos bancos de dados do Clube do Livro. O próximo passo agora é transformar essa modelagem lógica em modelagem física. Então vamos ver como isso funciona.

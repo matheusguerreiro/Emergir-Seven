@@ -1,0 +1,8 @@
+O processo de modelagem de banco de dados não se inicia pela construção do modelo lógico, ele segue alguns passos anteriores que irão ajudar na construção desse modelo, passos esses que acompanhamos no projeto desenvolvido por Marta até aqui.
+
+Com base no que aprendemos até agora, quais são esses passos e sua ordem no processo de modelagem de banco de dados?
+
+
+(V) Entrevista com o usuário, criação do mini-mundo, modelo conceitual, modelo lógico e modelo físico.
+      
+      Alternativa correta! Seguindo esses passos nessa ordem é possível modelar um banco de dados atendendo todos os requisitos do usuário.
