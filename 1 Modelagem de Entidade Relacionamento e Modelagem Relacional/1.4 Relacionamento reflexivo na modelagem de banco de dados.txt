@@ -1,0 +1,23 @@
+O processo de modelagem de banco de dados demanda saber traduzir da melhor maneira as informações que nos foram passadas. Desse modo, conseguiremos criar um banco de dados que agregará valor e será de grande utilidade para o(a) nosso(a) cliente.
+
+A modelagem de banco de dados é dividida em algumas etapas, uma delas é a construção do modelo conceitual, que nos ajudará a entender com mais detalhes a estrutura do negócio que estamos modelando.
+
+No modelo conceitual, existem formas de representarmos todo e qualquer tipo de situação que possa ocorrer dentro de um projeto através de entidades, atributos e relacionamentos.
+
+Ao desenvolver o projeto de modelagem do banco de dados de uma empresa, a pessoa responsável por passar todas as informações do negócio necessárias para determinar as entidades e os relacionamentos existentes no projeto, informou que dentro da categoria de colaboradores(as) existem gerentes, com a função de gerenciar colaboradores(as) mas também se enquadram dentro do quadro de colaboradores(as). Como podemos representar essa relação deixando evidente a informação passada?
+
+A entidade Colaborador(a) terá um relacionamento com ela mesma, já que o gerente, que faz parte dessa entidade, gerencia outros funcionários. Se representarmos isso no modelo conceitual, apenas utilizando entidades e relacionamentos simples, pode ficar um pouco confuso, pois seria necessário representar duas vezes a mesma entidade:
+
+https://www.alura.com.br/artigos/assets/relacionamento-reflexivo-modelagem-banco-de-dados/imagem1.png
+
+O relacionamento reflexivo ou auto relacionamento é a forma utilizada para representar essas associações entre objetos da mesma classe, ou seja, quando temos a ocorrência de uma entidade que está associada com outras ocorrências da mesma entidade. Podemos dizer também que os relacionamentos reflexivos são uma forma de demonstrar uma relação hierárquica contida dentro de uma entidade.
+
+Esses relacionamentos podem ter qualquer tipo de cardinalidade, dependendo da situação a qual eles representam. Pensando no projeto de modelagem que estamos desenvolvendo, no qual temos dentro da entidade colaborador(a) o gerente, como ficaria essa representação no modelo conceitual?
+
+https://www.alura.com.br/artigos/assets/relacionamento-reflexivo-modelagem-banco-de-dados/imagem2.png
+
+Dessa forma, conseguimos elucidar que um(a) colaborador(a), no caso a pessoa gerente, gerencia outros colaboradores(as) sem a necessidade de criar uma nova entidade que a represente, já que esse cargo também faz parte da classe de colaboradores(as).
+
+Com os relacionamentos reflexivos, encontramos uma maneira de representar algumas situações dentro de uma empresa/negócio e deixar a modelagem do banco de dados ainda mais alinhada com a realidade a ser representada.
+
+Se você se interessou pelo assunto e gostaria de aprender mais sobre modelagem de banco de dados e como aplicar esses conceitos na prática, sugerimos a formação de Modelagem de banco de dados que aborda todas as etapas desse processo.

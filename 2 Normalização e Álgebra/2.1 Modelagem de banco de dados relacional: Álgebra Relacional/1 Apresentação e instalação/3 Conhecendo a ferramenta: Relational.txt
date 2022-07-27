@@ -1,0 +1,19 @@
+Durante a conversa, Josefina estava explicando que não podemos inserir a álgebra relacional em qualquer software ligado à modelagem de dados e ao banco de dados. Existe um software específico para a álgebra relacional, o Relational, que utilizaremos no nosso curso.
+
+O Relational é uma ferramenta educacional, que permite o trabalho com a álgebra relacional. Além de ter uma interface bastante intuitiva, que facilita fazer testes, consultas e expressões. O download da ferramenta pode ser feito direto do site, disponível neste link, ou podemos buscar este site no Google.
+
+Ao acessarmos o site, na parte centro-esquerda da tela, nós selecionaremos a opção "Downloads". Na próxima tela, de "Downloads", encontraremos várias versões da ferramenta e poderemos escolher de acordo com o sistema operacional que estamos usando, Debian, Windows, dentre outros. No nosso caso, optaremos pelo Windows.
+
+Então, selecionaremos "Windows download" e aparecerá uma janela perguntando se desejamos salvar o arquivo. Para prosseguir, apertaremos "Salvar arquivo" e faremos o download. Terminado, poderemos instalar a ferramenta. No canto superior direito, localizaremos o ícone de seta do Firefox, onde fizemos o download e acessaremos a pasta.
+
+A depender do navegador web que estivermos utilizando, esta pasta estará em lugares diferentes da tela. No Google Chrome, provavelmente ficará na parte inferior. Então, ao dar um clique na pasta, abriremos uma janela de instalação. O Windows perguntará se permitimos que o aplicativo faça alterações no dispositivo. Nós apertaremos em "Sim".
+
+Ele abriu a janela para fazermos o setup. Nós aceitaremos a licença ativando a opção "I accept the agreement" e apertaremos "Next" para continuar. Na página "Select Destination Location", ele pergunta se desejamos instalar em outra pasta, ou deixar na pasta padrão. No nosso caso, deixaremos na pasta padrão e apertaremos "Next".
+
+Na próxima página, ele pergunta se daremos outro nome ao software ou se manteremos o padrão. Deixaremos o padrão e vamos seguir apertando "Next". Em seguida, ele pergunta se queremos criar um atalho no desktop, isto é, na área de trabalho. Vamos aceitar e apertar "Next" outra vez. Por fim, apertaremos "Install".
+
+Ele fará toda a instalação. Durante esse processo, o Python será instalado. Ele precisa do Python para rodar. Agora é só aguardar. Podemos verificar na tela do prompt de comando que o Python está sendo instalado. Assim que a instalação terminar, terminará também a do Relational.
+
+O Relational foi instalado e agora estamos na sua interface. Ao lado esquerdo da tela, temos o campo "Operators" com todas as operações da álgebra relacional. Na parte inferior, na horizontal, temos um campo onde digitaremos nossas consultas. Na metade inferior da tela, visualizaremos todos os históricos de consultas que digitamos. Na outra metade da tela, superior, visualizaremos os resultados da nossa consulta.
+
+Na lateral direita, temos os atributos, "Atributes", relações, "Relations" e a parte onde importaremos a nossa base de dados no Relational. No próximo vídeo, visualizaremos a base de dados e a importaremos para o Relational. Assim, conseguiremos partir para a prática, colocar a "mão na massa"!!

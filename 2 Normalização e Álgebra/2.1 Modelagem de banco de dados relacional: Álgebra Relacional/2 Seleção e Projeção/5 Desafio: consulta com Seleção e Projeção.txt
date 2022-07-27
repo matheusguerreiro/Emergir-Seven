@@ -1,0 +1,20 @@
+Chegou o momento da Josefina desafiar o Artur a colocar em prática o que ela o ensinou. Foi proposto que ele informasse o nome e a quantidade dos livros com itens em estoque maior ou igual a cinco.
+
+Vamos ajudar Artur nesse desafio?
+
+Compartilhe com a gente a solução no fórum! :)
+
+VER OPINIÃO DO INSTRUTOR
+Opinião do instrutor
+
+Com as informações em mãos, o Artur projetou os campos que foram pedidos, no caso:
+
+nome do livro e quantidade estoque
+Depois disso, ele fez uma seleção dentro da projeção com a condição necessária para encontrar a quantidade de estoque maior ou igual a cinco.
+
+π nome_livro, qtd_estoque (σ qtd_estoque >= 5 (livros))COPIAR CÓDIGO
+Realizando esses passos, é possível finalizar e repassar as informações solicitadas no desafio.
+
+Caso o seu Relational esteja reconhecendo as colunas numéricas como string, você pode usar essa consulta:
+
+π nome_livro, qtd_estoque (σ qtd_estoque >= '5' (livros))

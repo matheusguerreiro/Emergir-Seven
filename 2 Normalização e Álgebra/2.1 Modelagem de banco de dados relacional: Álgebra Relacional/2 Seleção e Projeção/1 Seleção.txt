@@ -1,0 +1,42 @@
+Até aqui, conhecemos um pouco da equipe do Clube do Livro, instalamos e fizemos overview da ferramenta Relational. Além disso, exploramos um pouco a base de dados. Agora o Arthur está pronto e animado para aprender os conceitos de álgebra relacional.
+
+Na conversa de Arthur com a Josefina, surgiram algumas questões. Uma delas foi o que podemos fazer com álgebra relacional? Para responder, a Josefina resolveu ensinar ao Arthur a operação de seleção.
+
+A Operação de seleção nos retorna tuplas que satisfazem uma condição. Ou seja, precisamos de um filtro para que a seleção nos retorne o resultado desejado. Ela traz as tuplas que satisfazem as condições e descarta as demais. Josefina perguntou se o Arthur ainda tinha alguma dúvida e ele disse que queria saber o que é uma tupla.
+
+id	nome	idade
+Tupla ➝	1	Maria	25
+2	Daniel	33
+Na terminologia de bancos de dados relacionais, "tupla" significa "linha", ou seja, a tupla é um registro na tabela. Já os cabeçalhos das colunas são chamados de Atributos.
+
+Atributos ➝	id	nome	idade
+1	Maria	25
+2	Daniel	33
+Todo conjunto que forma a tabela é chamado de Relação ou Entidade.
+
+Relação ou Entidade ↓
+
+id	nome	idade
+1	Maria	25
+2	Daniel	33
+Então, Josefina prosseguiu para a explicação da sintaxe da fórmula da operação de seleção.
+
+σ <condicao_selecao>(R)COPIAR CÓDIGO
+O símbolo sigma σ é usado para representar a seleção. A <condicao_selecao> é onde colocaremos a condição para que as tuplas sejam retornadas. Já o (R) é onde informaremos a tabela em que buscaremos a condição de seleção.
+
+Dentro da condição de seleção, temos ainda algumas cláusulas que precisamos entender para continuar. São elas: o <nome_atributo>, que é o nome da coluna; o <operador_comparacao>, referente aos operadores, igual (=), maior que (>), menor que (<), maior ou igual (≥), menor ou igual (≤) e diferente (!=); e o <valor_constante>, que é o valor que adicionaremos para buscar as tuplas. Agora colocaremos esses conhecimentos em prática no Relational.
+
+Com o Relational já aberto, o Arthur importou a base de dados e a Josefina conseguiu mostrar o funcionamento da operação de seleção. Na lateral esquerda da tela, em "Operators", na penúltima linha, encontramos a operação de seleção "sigma (σ)". Vamos selecioná-la e digitar, no campo que está na parte inferior da tela, o nome do atributo nome_livro seguido do operador de comparação ==. Portanto: σ nome_livro ==.
+
+O Relational não reconhece o símbolo de igual sozinho, =, como igual. Nós precisamos escrever dois símbolos juntos, ==, para que ele possa reconhecer e fazer a comparação. Como estamos fazendo a busca pelo nome do livro, uma string, então temos que usar aspas simples. Portanto, digitaremos duas aspas simples, '' e, dentro delas, escreveremos o nome do livro: 'Percy Jackson e o Ladrão de Raios'.
+
+σ nome_livro == 'Percy Jackson e o Ladrão de Raios'COPIAR CÓDIGO
+Um detalhe interessante é que o Relational é Case Sensitive. Quer dizer que precisamos escrever conforme a tabela. Se escrevermos algo com letra minúscula e na tabela estiver com maiúscula, ele não reconhecerá e nem fará a busca. Após digitarmos o nome do livro, precisamos colocar, entre parênteses, o nome da tabela: (livros).
+
+σ nome_livro == 'Percy Jackson e o Ladrão de Raios'(livros)COPIAR CÓDIGO
+Agora podemos apertar "Enter" ou o botão "Execute". Em seguida, será retornado não só o nome do livro, mas, sim, todos os atributos que fazem parte dele. Com a operação de seleção, também podemos usar os operadores lógicos "and", "or" e "not", que significam "e", "ou" e "não". Nessa consulta, usaremos o operador "or" para trazermos mais um livro junto ao Percy Jackson.
+
+Para isso, após o nome do livro, digitaremos or e o nome do atributo, isto é, o nome da coluna or_nome_livro, depois, "igual igual", abrir aspas, escrever o nome do livro que desejamos trazer, que é o "Sangue de Lobo", e apertar "Enter" outra vez.
+
+σ nome_livro == 'Percy Jackson e o Ladrão de Raios' or_nome_livro == 'Sangue de Lobo'(livros)COPIAR CÓDIGO
+Desta maneira, ele retornará os dois livros, "Percy Jackson" e "Sangue de Lobo", com seus respectivos atributos. Com isso, o Arthur está apto a usar o operador de seleção, independentemente se a busca for pelo nome do livro, pelo preço ou pelo autor e se sente confiante para dar os próximos passos na álgebra relacional, que acompanharemos no vídeo a seguir.

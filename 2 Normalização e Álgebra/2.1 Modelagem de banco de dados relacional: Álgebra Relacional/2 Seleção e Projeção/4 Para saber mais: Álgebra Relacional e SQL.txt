@@ -1,0 +1,5 @@
+A álgebra relacional é uma derivação da álgebra de conjuntos em relação às operações. Ela ajuda a identificar os componentes de uma tupla por nome (chamado o atributo) ao invés de uma coluna de chaves numéricas, na qual é chamada a relação na terminologia de banco de dados.
+
+Ela recebia pouca atenção até a publicação do modelo relacional de dados de E.F Codd, em 1970. Em junho desse mesmo ano, Codd publicou um artigo chamado Relational Model of Data for Large Shared Data Banks ("Modelo de dados relacional para grandes bancos de dados compartilhados") que foi publicado na Revista ACM ("Association for Computing Machinery") Vol. 13.
+
+Este artigo demonstrou os fundamentos da teoria dos bancos de dados relacionais usando tabelas ("linhas" e "colunas") e operações matemáticas para recuperá-los destas tabelas (UNION, SELECT, SUM). Ou seja, Codd propôs a álgebra relacional como uma base para a linguagem SQL. Dessa forma, podemos dizer que o SQL é uma linguagem de consulta de banco de dados derivado da Álgebra Relacional.

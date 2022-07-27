@@ -1,0 +1,15 @@
+Josefina continuou com as explicações e mais dúvidas foram surgindo. O Arthur perguntou sobre a possibilidade de, ao invés de fazermos uma seleção, trazendo os dados referentes apenas a um livro, pudéssemos trazer certos atributos de todos os livros.
+
+Se estivermos interessados em trazer determinados atributos de uma relação, podemos usar a operação de projeção, que projeta os atributos da relação.
+
+π <lista_atributos> (R)COPIAR CÓDIGO
+O símbolo "pi (π)" é indicado para representar a projeção. Já a <lista_atributos> são as colunas que desejamos trazer. O (R) é a entidade, ou seja, a tabela que estamos buscando na lista de atributos. Vamos até o Relational verificar como isso funciona!!
+
+Diferentemente da seleção, que seleciona algumas linhas e remove outras, a projeção seleciona algumas colunas e remove outras. A seleção não traz tuplas repetidas, ou seja, se tivermos um livro cadastrado mais de uma vez, ele não trará os dois registros, apenas um. A projeção faz a mesma coisa: se tivermos duas tuplas com o mesmo livro cadastrado, ele trará apenas um e descartará a tupla repetida.
+
+Na lateral esquerda, em "Operators", temos a operação de projeção, "pi (π)". Vamos selecioná-la e digitar as tabelas que desejamos trazer. Lembrando que todos os atributos precisam ser separados por vírgula. Então, escreveremos π nome_livro, preco, qtd_estoque. Em seguida, colocaremos o nome da nossa tabela entre parênteses, (livros).
+
+π nome_livro, preco, qtd_estoque (livros)COPIAR CÓDIGO
+Agora apertaremos "Enter" e todos os livros que existem na tabela "livros" serão retornados com o nome, preço e quantidade de estoque.
+
+A operação de projeção é muito interessante para trazer apenas colunas selecionadas, mas também podemos utilizá-la com outras operações da álgebra relacional, em consultas mais robustas. Agora que Arthur, por meio da Josefina, conseguiu entender como funciona a projeção e seleção, quais serão os próximos desafios? Vamos acompanhar nos próximos vídeos!!

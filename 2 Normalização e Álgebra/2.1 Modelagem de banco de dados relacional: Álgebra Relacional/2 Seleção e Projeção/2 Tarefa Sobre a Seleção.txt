@@ -1,0 +1,12 @@
+Seguindo com seus estudos, Artur verificou que a condicao_selecao é composta com algumas cláusulas:
+
+< nome_atributo >< operador_comparacao >< valor_constante >
+
+Temos como nome_atributo a coluna na qual queremos buscar a informação. O operador_comparacao são os operadores de comparação e o valor_constante é o que queremos buscar.
+
+Por Artur ter conhecimento em outros tipos de linguagem de programação e ter trabalhado com outros operadores de comparação, ficou em dúvida de quais poderiam ser utilizadas na álgebra relacional. Vamos ajudá-lo a relembrar esse conteúdo selecionando a opção que contém os operadores de comparação da álgebra relacional abaixo?
+
+
+(V) >, <, >=, <=, = , !=
+
+      Alternativa correta! Esses são os operadores de comparação que podemos usar nas condições.

@@ -1,0 +1,34 @@
+No decorrer dos anos, as ferramentas utilizadas para o desenvolvimento de projetos de bancos de dados foram ficando cada vez mais completas, disponibilizando funções que facilitam e complementam os projetos desenvolvidos. Um exemplo disso é o Power Architect, que pode ser utilizada para criar o modelo físico de um projeto e realizar a engenharia reversa para a construção dos bancos de dados.
+
+https://www.alura.com.br/artigos/assets/engenharia-reversa-power-architect/imagem1.png
+
+O Power Architect também possui funcionalidades para projetos desenvolvidos na área de BI (Business Intelligence), como a geração automática de metadados ETL (Extração, Transformação e Carga de Dados), e suporte a esquemas OLAP para projeto de Data Warehouses.
+
+Essas são apenas algumas das funcionalidades disponibilizadas no Power Architect. Neste artigo, vamos conhecer como utilizar a engenharia reversa para facilitar o processo de criação de um projeto de banco de dados.
+
+O que é e como posso utilizar a engenharia reversa no meu projeto?
+Após desenvolver o modelo físico de um projeto, partimos para a criação do banco de dados no SGBD que foi escolhido para a implementação. Normalmente, a criação do banco de dados com suas tabelas e restrições são efetuadas manualmente, informando comando por comando no SGBD.
+
+Para facilitar este processo, o Power Architect disponibiliza a engenharia reversa, em que, através do modelo físico de dados, podem ser gerados automaticamente os comandos SQL para a criação do banco de dados, incluindo todas suas tabelas e restrições no SGBD.
+
+É importante ressaltar que existem apenas algumas opções de SGBDs disponíveis na ferramenta para que seja gerada a engenharia reserva. Elas são o PostgreSQL, Oracle, SQL Server, MySQL, H2 Database e HSQLDB. Então, antes de utilizar o Power Architect, verifique se o seu SGBD escolhido está entre as opções disponíveis.
+
+Como realizar a Engenharia reversa no Power Architect?
+Ao finalizar o modelo físico do projeto, acesse no menu superior a opção Ferramentas e selecione a opção Engenharia Reversa.
+
+https://www.alura.com.br/artigos/assets/engenharia-reversa-power-architect/imagem3.png
+
+Na nova janela disponível, informe na opção Gerar DDL para o banco de dados para qual SGBD o script será gerado, e em Database informe o nome do banco de dados.
+
+https://www.alura.com.br/artigos/assets/engenharia-reversa-power-architect/imagem4.png
+
+Ao clicar em OK, o script SQL será gerado.
+
+É possível copiar o código disponibilizado em SQL e colar diretamente no SGBD para a criação do banco de dados (clicando na opção Copiar), bem como salvar todo o script em um arquivo SQL para posteriormente realizar a criação do banco de dados (clicando no botão Salvar).
+
+https://www.alura.com.br/artigos/assets/engenharia-reversa-power-architect/imagem5.png
+
+Conclusão
+Como estudamos neste artigo, diversas ferramentas podem ser utilizadas para facilitar e complementar um projeto de banco de dados como a ferramenta Power Architect.
+
+Através da engenharia reversa, podemos gerar automaticamente scripts SQL para realizar a implementação do banco de dados no SGBD de forma rápida, deixando o processo ainda mais prático.

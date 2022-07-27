@@ -1,0 +1,4 @@
+Nessa aula, você aprendeu a:
+Compreender a importância da Álgebra Relacional;
+Instalar a ferramenta Relational;
+Importar a base de dados no Relational.

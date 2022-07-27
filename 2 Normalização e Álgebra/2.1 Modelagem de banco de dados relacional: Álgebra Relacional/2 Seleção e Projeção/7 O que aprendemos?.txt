@@ -1,0 +1,4 @@
+Nessa aula, você aprendeu a:
+Diferenciar os conceitos da Seleção e Projeção;
+Colocar em prática os conceitos da Seleção e Projeção;
+Conhecer a origem da Álgebra Relacional.
