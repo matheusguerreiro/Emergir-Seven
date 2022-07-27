@@ -1,0 +1,3 @@
+Nessa aula, você aprendeu a:
+Compreender a dependência de junção;
+Reconhecer e aplicar a quinta forma normal.

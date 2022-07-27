@@ -1,0 +1,13 @@
+Antes de acompanharmos Helena e sua equipe, precisamos entender as diretrizes informais. Elas são um conjunto de regras que nos ajudam a identificar a qualidade de um projeto de banco de dados. A primeira delas, é: Semântica clara com esquemas fáceis de explicar.
+
+Por exemplo, se tivéssemos uma tabela de clientes e fornecedores, seria complicado entender a qual assunto ela se refere. Não é recomendável que uma tabela tenha dados diferentes, dois ou mais assuntos. Isso gera ambiguidades e dificuldades para que o sistema gerenciador do banco de dados compreenda o que está acontecendo, ocasionando a redundância de dados e ocupando bastante espaço em disco. Por outro lado, uma tabela com apenas um dado, como de clientes, é bem mais intuitiva e de fácil compreensão.
+
+A segunda diretriz é Evitar informações redundantes. Significa que não podemos ter informações redundantes nas tabelas do banco de dados. Isso pode causar anomalias de inserção, remoção e alteração, gerando um retrabalho no banco de dados. Nós precisaríamos reinserir valores e dados e teríamos problemas para alterá-los.
+
+Sendo assim, precisamos projetar bancos de dados em que não seja possível que essas anomalias aconteçam. Em um sistema gerenciador de banco de dados a manutenção seria mais fácil.
+
+A terceira diretriz é Impossibilitar valores NULL nas tuplas. Ter valores brancos/nulos dentro de uma tabela do banco de dados pode acarretar vários problemas, como desperdício de espaço em disco, dificuldade de entendimento dos atributos e problemas nas operações de junção e agregação dentro do gerenciamento do sistema. Portanto, sempre que possível, precisamos evitar criar atributos que recebam valores em branco com frequência.
+
+A quarta e última diretriz é a Atenção ao surgimento de tuplas falsas. Ao fazermos uma junção de tabelas dentro de um banco de dados, precisamos usar a chave estrangeira. Além disso, sempre que criarmos uma tabela em relação com outra, precisamos estar certos que a junção entre elas será feita com chave primária e chave estrangeira. A junção não pode ser feita com outros atributos da tabela ou poderíamos ter tuplas falsas.
+
+Sabendo disso, Helena e sua equipe podem prosseguir e começar a normalizar o banco de dados do clube do livro.

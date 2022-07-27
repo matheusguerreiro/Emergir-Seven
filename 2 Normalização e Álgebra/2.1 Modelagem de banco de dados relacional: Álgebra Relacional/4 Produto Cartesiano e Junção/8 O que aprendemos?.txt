@@ -1,0 +1,3 @@
+Nessa aula, você aprendeu a:
+Implementar Produto Cartesiano;
+Diferenciar, Junção; Junção esquerda e direita; e Junção total.

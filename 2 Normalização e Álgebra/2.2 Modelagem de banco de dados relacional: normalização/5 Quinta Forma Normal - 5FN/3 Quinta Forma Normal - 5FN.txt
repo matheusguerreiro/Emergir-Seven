@@ -1,0 +1,48 @@
+Finalmente chegamos na aula sobre a quinta forma normal. Assim como nas aulas anteriores, começaremos com uma questão.
+
+O que é a Quinta Forma Normal?
+
+Helena explicou que, assim como a dependência de junção, a forma normal é uma forma rara e difícil de encontrar. Por isso, também é difícil encontrarmos materiais que se aprofundem sobre ela. Para compreendê-la, precisamos estar bem familiarizados com a dependência de junção e com a decomposição sem perda.
+
+Uma tabela está na Quinta Forma Normal - 5FN se estiver na quarta forma normal e se não houver dependência de junção. Vamos observar a tabela abaixo, composta pelos atributos: "vendedor", "empresa" e "produto".
+
+vendedor	empresa	produto
+1	Redragon	mouse gamer
+1	Redragon	teclado gamer
+1	Multilaser	teclado gamer
+Podemos dizer que essa tabela já está na quarta forma normal, pois os atributos multivalorados "empresa" e "produtos" são dependentes entre si. Se pensarmos também que o vendedor vende um produto específico para cada empresa, a tabela também está na quinta forma normal.
+
+A Quinta Forma Normal trata de casos onde as informações podem ser recuperadas através de tabelas menores. Ela não é muito diferente da quarta forma normal, isso não existir uma constante simétrica que atue como regra de negócio dentro da tabela em questão. Portanto, se não existir essa constante simétrica e a tabela estiver na quarta forma normal, ela também estará na quinta forma normal.
+
+Vamos supor que uma nova regra de negócio é aplicada.
+
+vendedor	empresa	produto
+1	Redragon	mouse gamer
+1	Redragon	teclado gamer
+1	Multilaser	teclado gamer
+1	Multilaser	mouse gamer
+Se o vendedor vende um produto x para uma empresa y, automaticamente ele está vendendo o produto x para a empresa y. Por exemplo, se o vendedor estiver vendendo um mouse para a Redragon, automaticamente ele está vendendo mouses da Redragon. A partir disso, podemos dizer que essa tabela não está na quinta forma normal, porque uma constante simétrica foi aplicada.
+
+A constante simétrica é: o vendedor vende mouses da Redragon. Se ele vende o mouse da Redragon, esse mouse vai ser da Redragon, isto é, ele vai ser vendido como um mouse da Redragon. Logo, ele vende mouses da Redragon. O que podemos fazer para colocar essa tabela na quinta forma normal?
+
+Nesse caso, precisamos separar o que ele vende e para quem ele vende. Esse esquema em questão gera repetição de dados. Sabemos que esse vendedor vende mouse e teclado para a Redragon e para a Multilaser, então, podemos reunir essas informações em um produto cartesiano. Portanto, ao enquadramos na quinta forma normal, teremos as seguintes tabelas:
+
+vendedor	produto
+1	mouse gamer
+1	teclado gamer
+ 
+vendedor	empresa
+1	Redragon
+1	Multilaser
+Nelas, o vendedor o produto que ele vende e onde o vendedor vende para aquela empresa. Além disso, temos uma tabela da empresa e o produto que está sendo vendido.
+
+empresa	produto
+Redragon	mouse gamer
+Redragon	teclado gamer
+Multilaser	teclado gamer
+Multilaser	mouse gamer
+Resumindo, na quinta forma normal precisamos aplicar a constante simétrica, se existir uma nova regra de negócios na tabela, e atribuir as responsabilidades a esquemas específicos, por exemplo: o vendedor vende o produto; vende para determinada empresa; e a empresa compra e vende esse determinado produto.
+
+Assim, eliminamos a repetição de dados e dividimos a tabela em três: vendedor e produto; vendedor e empresa; empresa e produto.
+
+Agora a nossa tabela está na quinta forma normal. Nos encontramos no próximo vídeo!!

@@ -1,0 +1,8 @@
+A quinta forma normal trata os casos onde uma determinada informação pode ser reconstruída de informações menores combinadas. Para aplicarmos a quinta forma normal em uma tabela, precisamos estar familiarizados com os processos de decomposição sem perdas e de junção e com o conceito de dependência de junção.
+
+Devido a isso, a quinta forma normal também pode receber outro nome. A partir das informações apresentadas, selecione a alternativa que indica corretamente o outro nome da quinta forma normal.
+
+
+(V) Projeção-junção.
+
+      Alternativa correta! Para aplicarmos a quinta forma normal, precisamos conhecer os conceitos de decomposição sem perdas e de junção. Levando assim a ser conhecida como a forma normal de projeção-junção.

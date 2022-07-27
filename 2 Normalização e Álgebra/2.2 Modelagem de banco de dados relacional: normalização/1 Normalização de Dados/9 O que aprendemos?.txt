@@ -1,0 +1,4 @@
+Nessa aula, você aprendeu a:
+Conhecer o processo de normalização de dados;
+Compreender as quatro diretrizes informais;
+Compreender as anomalias de inserção, alteração e remoção.

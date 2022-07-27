@@ -1,0 +1,6 @@
+Nessa aula, você aprendeu a:
+Utilizar a dependência transitiva;
+Diferenciar a dependência parcial da dependência transitiva;
+Aplicar a terceira forma normal;
+Explicar a dependência funcional trivial;
+Aplicar a forma normal de Boyce-Codd.

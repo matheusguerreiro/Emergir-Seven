@@ -1,0 +1,20 @@
+Nós aprendemos sobre o conceito de diretrizes informais e sobre as anomalias. Antes de conhecermos mais formas normais, precisamos entender o que são as dependências funcionais.
+
+As Dependências Funcionais são restrições aplicadas sobre os atributos da tabela. Ou seja, quando um atributo depende de outro para que a sua existência faça sentido. A dependência funcional estabelece uma relação de atributos na tabela, por exemplo, a chave primária, que é ID, e define outra coluna na tabela.
+
+Esse é o caso do CPF, que determina o nome na tabela. Quando buscamos pelo CPF, encontramos o nome restrito que desejamos. Já se buscamos pelo nome, podemos encontrar pessoas diferentes com o mesmo nome. Sendo assim, fica difícil encontrar o nome que de fato estamos procurando na tabela.
+
+Um atrivuto que determina o valor é chamado de determinante, no caso, é o CPF. O outro atributo é chamado de dependente. A dependência funcional é representada pelo "hífen (-)" e o sinal de "menor (>)".
+
+CPF -> nome
+
+Isso quer dizer que o CPF determina funcionalmente o nome. Antes de passarmos à primeira forma normal, vamos entender melhor como esse cenário funciona. A seguir, temos o exemplo de uma possível tabela de colaboradores dentro do clube do livro. Nela, encontramos: o CPF do colaborador; o nome (Marta, Robledo, Helena e Marta); e o endereço do colaborador. Atenção ao nome "Marta" que se repete na tabela.
+
+CPF	nome_colaborador	end_colaborador
+123456	Marta	Rua das Flores
+147896	Robledo	Rua Pio XXI
+965537	Helena	Rua ABC
+437627	Marta	Rua Floriano Peixoto
+Observando o CPF "123456" notamos que ele é da Marta. Se buscarmos pelo nome Marta, aparecerão dois CPFs: "123456" e "437627". Assim, fica difícil entender e encontrar a Marta que estamos procurando. Então, o CPF é a Chave primária, o "nome_colaborador" e "end_colaborador" dependem dessa chave primária para existirem dentro da tabela.
+
+Podemos dizer, portanto, que o CPF determina funcionalmente o nome do colaborador e também determina funcionalmente o endereço do colaborador. Agora que entendemos esses pontos prévios da construção da modelagem do banco de dados, Helena e sua equipe estão prontas para a prática, isto é, a normalizar o banco de dados da loja de informática do Clube do Livro. Nos encontramos já!!

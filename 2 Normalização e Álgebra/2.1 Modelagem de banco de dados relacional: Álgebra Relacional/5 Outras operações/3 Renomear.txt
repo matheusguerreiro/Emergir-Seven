@@ -1,0 +1,24 @@
+Conversando com o Arthur sobre a operação de atribuição, Josefina resolveu explicar sobre a operação renomear, que é representado pelo símbolo "rô", que parece a letra "p", um pouco mais cursiva: ρ. Esta operação nos permite alterar nomes de atributos de uma relação. Vamos entender melhor como isso funciona na prática!!
+
+Com o Relational aberto, relembraremos como construímos a relação livros_estoque, pela projeção do nome_livro da tabela livros e livros_novo.
+
+livros_estoque =  πnome_livro (livros) U  πnome_livro (livros_novo)COPIAR CÓDIGO
+Agora, reconstruiremos a livros_estoque para que ela possa trazer todos os campos de ambas relações. Nós escreveremos livros_estoque =. Ao invés de digitarmos todos os campos de cada tabela, podemos digitar apenas o nome da relação, livros, selecionar o símbolo de união, U, e escrever livros_novo, referente à outra relação que uniremos. Por fim, apertaremos "Enter".
+
+livros_estoque = livros U livros_novoCOPIAR CÓDIGO
+Ele trouxe todos os atributos/campos de ambas as tabelas em uma única relação. Portanto, temos livros_estoque e o próximo passo é renomear o campo "autor" da tabela livros_estoque. Na lateral esquerda da tela, selecionaremos o símbolo "rô (ρ)" e escreveremos o nome do campo a ser renomeado, isto é, autor.
+
+Ao lado do símbolo rô, temos uma seta grossa pintada, ➡, que nos ajudará a identificar o nome do novo campo, que chamaremos de autor_livro. Entre parênteses, escreveremos o nome da relação, (livros_estoque). Em seguida, apertaremos "Enter".
+
+ρ autor ➡ autor_livro (livros_estoque)COPIAR CÓDIGO
+Ele trará o campo "autor" renomeado como "autor_livro". Mas, dessa forma, a nova tabela não ficará salva. Então, podemos usar, com a operação de renomear, a atribuição, assim teremos uma nova relação com o campo do autor renomeado. No início da fórmula, digitaremos livros_estoque = e apertaremos "Enter".
+
+livros_estoque = ρ autor ➡ autor_livro (livros_estoque)COPIAR CÓDIGO
+O resultado é livros_estoque renomeado com o campo autor e podemos renomear os demais campos sem a necessidade de fazer uma nova operação a cada campo, isto é, ficar fazendo várias consultas e relações para poder alterar o nome dos campos.
+
+Nosso próximo passo é renomear o campo nome_livro e quantidade_estoque. Começando por nome_livro, escreveremos livro_estoque = selecionaremos o rô, seguido de nome_livro, identificaremos o novo nome, separado por underline, ➡ nome_do_livro e adicionaremos vírgula para renomearmos também a quantidade_estoque.
+
+Não é necessário usar outra vez o símbolo rô, basta prosseguir com os campos e selecionar a seta para indicar qual será o nome do novo campo, qtd_estoque ➡ quantidade_estoque. Entre parênteses, escreveremos o nome da relação, (livros_estoque). Agora, apertamos "Enter".
+
+livros_estoque =  ρ nome_livro ➡ nome_do_livro, qtd_estoque ➡ quantidade_estoque (livros_estoque) COPIAR CÓDIGO
+Então, temos todos os campos renomeados. Espero que você tenha gostado. Até a próxima!!

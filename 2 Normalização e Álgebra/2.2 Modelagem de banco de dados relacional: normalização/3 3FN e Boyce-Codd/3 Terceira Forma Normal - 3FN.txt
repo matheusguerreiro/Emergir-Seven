@@ -1,0 +1,38 @@
+Para início de conversa, precisamos entender que para uma tabela estar na terceira forma normal, ela precisa, primeiro, estar na segunda forma normal e não ter nenhum atributo que dependa transitivamente de algum atributo não-chave. Por exemplo, Helena notou que na tabela de pedidos, temos a coluna "vendedor", que depende transitivamente do código do "vendedor" e que não faz parte da chave primária.
+
+nota_fiscal	cod_vendedor	vendedor	valor_venda	data_pedido	prazo_entrega	cpf	cliente	endereco	telefone
+NF 152	1	Josicreido	7.399.80	14/02/2021	19/02/2021	315264	Kamilly Maitê	Rua da Penha	(79)3736-7488
+NF 153	2	Robiedo	559.20	23/02/2021	28/02/2021	842679	Luiz Ian	Rua Henrique Soares	(84) 2772-7040
+...	...	...	...	...	...	...	...	...	...
+Ainda na tabela de pedidos, temos os atributos do cliente, que dependem transitivamente do "CPF" e ele não faz parte da chave primária. Então, precisamos separar essas tabelas da de pedidos e isso caracterizaria a terceira forma normal.
+
+Uma tabela está na terceira forma normal - 3F se estiver na segunda forma normal e se não existir dependência transitiva em relação a outra coluna que não participe da chave primária.
+
+É válido alertar que este conceito deve ser analisado com calma, porque em alguns sistemas de informação existe a necessidade de armazenamento de cálculos, por exemplo, o valor total da venda, o valor total do salário bruto e valores consolidados.
+
+Portanto, precisamos analisar o banco de dados com cuidado, porque o sistema precisa dos valores consolidados, isto é, das agregações que totalizam os valores dentro do sistema.
+
+Para aplicarmos a terceira forma normal, temos que identificar todos os atributos que são funcionalmente dependentes dos atributos não-chave e removê-los. Vamos verificar como ficou a nossa tabela após todas as remoções e normalizações pela terceira forma normal.
+
+pedidos
+
+nota_fiscal	cod_vendedor	cpf	valor_venda	data_pedido	prazo_entrega
+NF 152	1	315264	7.399,80	14/02/2021	19/02/2021
+NF 153	2	842679	989.70	23/02/2021	28/02/2021
+...	...	...	...	...	...
+A "nota_fiscal" é a chave primária da tabela de pedidos, o "cod_vendedor" é a chave estrangeira referente à tabela de vendedores e o "CPF" é a chave estrangeira referente à tabela de clientes. Teremos "pedidos" e "vendedores" e "clientes", cada qual com seus atributos.
+
+vendedores
+
+cod_vendedor	vendedor
+1	Josicreido
+2	Robiedo
+3	Josicreia
+4	Jurema
+clientes
+
+cpf	nome	endereco	telefone
+315264	Kamilly Maitê	Rua da Penha	(79)3736-7488
+842679	Luiz Ian	Rua Henrique Soares	(84)2771-7040
+...	...	...	...
+Agora a nossa tabela de pedidos já está na terceira forma normal.

@@ -1,0 +1,9 @@
+Por que estamos estudando a dependência de junção? Helena comentou que, por mais que ela seja uma forma rara e difícil de detectar, é importante aprendê-la.
+
+Uma tabela é n-decomponível quando pode ser dividida em mais de duas. Logo, n é maior que dois. Esse conceito só pode ser aplicado em tabelas com mais de três atributos. Vamos acompanhar o seguinte exemplo: se uma tabela A tem três atributos {a1, a2, a3}, temos três projeções possíveis para ela, isto é, três tabelas:
+
+A1: {a1, a2} A2: {a1, a3} A3: {a2, a3}
+
+Dizemos haver uma dependência de junção se a tabela A puder ser recomposta através das três projeções: A1, A2 e A3. Ou seja, se pudermos dividir a tabela A em outras três projeções e pudermos recuperá-la sem perda de informações, então temos uma dependência de junção. Em resumo, utilizamos os conceitos de decomposição sem perdas e junção.
+
+Quando estudamos Boyce-Codd, aprendemos a decompor uma tabela em outras duas sem perdermos informações. Agora que entendemos o que é a dependência de junção, podemos avançar para a nossa próxima aula, onde estudaremos a quinta forma normal. Vamos lá?

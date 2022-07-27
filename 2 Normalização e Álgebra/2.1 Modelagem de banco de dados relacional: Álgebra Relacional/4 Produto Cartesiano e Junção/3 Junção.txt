@@ -1,0 +1,17 @@
+Continuando a saga do Arthur com a Josefina, para resolução da demanda da equipe de vendas, que era cruzar a tabela de vendedores com vendas, a Josefina estava explicando que depois da realização de um produto cartesiano em uma relação, geralmente existe a necessidade de fazer uma seleção onde os campos que estão em R e também em S, no caso, as relações, sejam iguais, porque o produto cartesiano traz tuplas que não são de interesse.
+
+Foi o que aconteceu com o Arthur quando ele fez o produto cartesiano com vendedores e vendas. A junção, que é representada pelo símbolo da gravata borboleta, ⋈, é a operação que simplifica tudo isso. Ela realiza um produto cartesiano, depois uma seleção das tuplas de interesse e, por fim, uma projeção, para remoção das colunas duplicadas. Vamos ao Relational fazer essa aplicação e resolver essa demanda da equipe de vendas!!
+
+Já com o Relational aberto, Arthur começou a digitar a fórmula para fazer a junção entre as tabelas. Então, ele digitou vendedores, ao lado esquerdo da tela, ele selecionou o botão da junção, "⋈", escreveu venda e apertou "Enter".
+
+vendedores ⋈ vendasCOPIAR CÓDIGO
+O mesmo resultado do produto cartesiano foi retornado. Isso acontece porque entre as tabelas de vendedores e de vendas não existe um campo comum. Sendo assim, a junção não reconhecerá quais tuplas deveriam vir. Para isso, a Josefina sugeriu renomear a coluna de "id_vendedor_vendas".
+
+Nós selecionaremos o botão "rô (ρ)", que é o símbolo de renomear, mas, antes, precisamos dar um nome a essa consulta. Portanto, escreveremos vendas_novo = e agora sim, selecionaremos o rô, ρ e digitaremos a tabela que desejamos renomear, id_vendedor_vendas. O próximo passo é identificar o nome que essa coluna terá.
+
+Ao lado do rô, temos uma seta, ➡, que faz parte da operação "renomear". Vamos selecioná-la e escrever o nome que a nova coluna vai ter, id_vendedor. Entre parênteses, precisamos identificar a tabela de origem, (vendas). Por fim, basta apertar "Enter".
+
+vendas_novo =  ρ id_vendedor_vendas ➡ id_vendedor (vendas)COPIAR CÓDIGO
+Agora o id_vendedor foi renomeado e podemos fazer a junção entre as duas tabelas. Nos próximos vídeos, nós estudaremos em detalhes como funciona a função renomear. Desde que as entidades vendedores e vendas tenham atributo id_pedido em comum, a junção natural considera apenas as tuplas que tenham o mesmo valor em id_pedido. Ela combina cada um dos pares de tuplas em uma única tupla por meio da junção das entidades.
+
+Dessa forma, resolvemos, com o Arthur, a demanda da equipe de vendas. Nos encontramos no próximo vídeo!!

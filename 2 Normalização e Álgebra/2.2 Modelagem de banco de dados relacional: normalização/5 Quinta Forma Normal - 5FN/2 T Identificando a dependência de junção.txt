@@ -1,0 +1,8 @@
+Helena irá explicar à equipe sobre a quinta forma normal e a dependência de junção. Essa dependência é um caso raro e difícil de detectar, pois ela está relacionada ao conceito de decomposição sem perdas. Assim, esse conceito só é aplicado em tabelas que possuem três ou mais atributos.
+
+Com base no que aprendemos até agora, selecione a alternativa que classifica corretamente a dependência de junção:
+
+
+(V) Dizemos que há uma dependência de junção, se uma tabela original puder ser decomposta em três novas tabelas menores para, depois, podermos juntá-las formando a tabela original.
+  
+      Alternativa correta! A dependência de junção ocorre quando realizamos a decomposição de uma tabela em outras três relações. Tais relações são novamente compostas, caso não sejam geradas tuplas falsas, isto é, quando os dados originais são preservados na tabela.

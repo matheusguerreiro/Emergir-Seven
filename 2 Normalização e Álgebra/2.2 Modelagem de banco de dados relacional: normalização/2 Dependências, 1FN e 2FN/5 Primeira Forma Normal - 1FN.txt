@@ -1,0 +1,69 @@
+Nesse momento, de forma geral, a pergunta que precisamos responder é:
+
+Quais cuidados devem ser tomados para que uma tabela esteja na primeira forma normal?
+
+O primeiro cuidado é evitar a mistura de assuntos dentro de uma tabela, porque isso pode causar repetições ou campos que tenham mais de um valor, gerando redundância dos dados.
+
+Além disso, quais são os procedimentos mais recomendados para aplicar a regra? Nós precisamos identificar a chave primária da tabela, o grupo repetitivo e removê-lo da tabela. Desta forma, criaremos uma tabela nova com esse grupo repetitivo e usaremos a chave primária da tabela que está sendo quebrada como chave estrangeira dentro da tabela nova com o grupo repetitivo.
+
+Estamos com o Google Sheets aberto com uma possível tabela de pedidos do Clube do Livro. Dentro dessa tabela, temos vários assuntos, como o "vendedor", "código do vendedor", "produto", "quantidade vendida", "valor da venda", "data do pedido", "valores de clientes", "dados de clientes", dentro outros.
+
+Ao observarmos a tabela com Helena, notamos que os dados da coluna "Produto" se repetem muitas vezes.
+
+Produto
+Notebook Lenovo Ultrafino
+Mouse Gamer Redragon
+Fonte Gigabyte 450W
+Mouse Gamer Redragon
+Pasta Térmica Rise
+Memória XPG Hunter, 8GB
+HD Seagate BarraCuda, 1TB
+Mouse Gamer Redragon
+Suporte para Monitor ELG
+Fica complicado se para adicionarmos um produto novo for necessário inserir um cliente novo. Isso pode gerar "re-trabalho" depois ou uma anomalia de inserção e muitos campos ficarem em branco. O que a Helena deve fazer para alcançar a normalização?
+
+Ela precisa retirar o grupo repetitivo, no caso, os dados do produto e criar uma nova tabela de "itens pedidos" composta por: "nota fiscal"; "código do produto"; "produto"; "quantidade vendida"; "quantidade em estoque"; e o "preço".
+
+nota fiscal	cod_produto	produto	qtd_vendida	qtd_estoque	preco
+NF 152	7	Notebook Lenovo Ultrafino	2	22	3.699,90
+NF 153	1	Mouse Gamer Redragon	8	42	69,90
+...	...	...	...	...	...
+A nota fiscal é a chave estrangeira e o código do produto é a chave primária da tabela. Depois, podemos verificar como ficou a tabela de pedidos. Ela está menor e agora será mais fácil fazer a manutenção. Vamos ao Power Architect conferir como a tabela ficou melhor. Esta é a tabela de pedidos antes de ser normalizada para a primeira forma normal:
+
+pedidos
+nota_fiscal: NVARCHAR NOT NULL [PK]
+cod_vendedor: NVARCHAR NOT NULL
+cod_produto: INTEGER NOT NULL
+produto: NVARCHAR NOT NULL
+qtd_vendida: INTEGER NOT NULL
+qtd_estoque: INTEGER NOT NULL
+valor_venda: DECIMAL NOT NULL
+data_pedido: DATE NOT NULL
+prazo_entrega: DATE NOT NULL
+valor_unitario: DECIMAL NOT NULL
+cpf: NVARCHAR NOT NULL
+cliente: NVARCHAR NOT NULL
+endereco: NVARCHAR NOT NULL
+telefone: NVARCHAR NOT NULL
+A forma normal não admite repetições e atributos multivalorados dentro da tabela. Após a normalização, a tabela ficou da seguinte forma:
+
+pedidos
+nota_fiscal: NVARCHAR NOT NULL [PK]
+cod_vendedor: INTEGER NOT NULL
+vendedor: NVARCHAR NOT NULL [PK]
+valor_venda: DECIMAL NOT NULL
+data_pedido: DATE NOT NULL
+prazo_entrega: DATE NOT NULL
+cpf: NVARCHAR NOT NULL
+cliente: NVARCHAR NOT NULL
+endereco: NVARCHAR NOT NULL
+telefone: NVARCHAR NOT NULL
+ 
+itens pedidos
+nota_fiscal: NVARCHAR NOT NULL [PK]
+cod_produto: INTEGER NOT NULL [PK]
+produto: NVARCHAR NOT NULL
+qtd_vendida: INTEGER NOT NULL
+qtd_estoque: INTEGER NOT NULL
+valor_unitario: DECIMAL NOT NULL
+Agora, temos a tabela de "pedidos" e a de "itens pedidos". Assim, fica bem mais fácil fazer manutenção e entender quais são os assuntos da tabela. Então, normalizamos a tabela de pedidos na primeira forma normal e o nosso próximo passo será compreender os conceitos de dependência funcional parcial e total. Te encontro nos próximos vídeos!!

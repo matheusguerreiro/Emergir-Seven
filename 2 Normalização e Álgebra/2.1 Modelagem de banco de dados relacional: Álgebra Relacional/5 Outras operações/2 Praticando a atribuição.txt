@@ -1,0 +1,10 @@
+Para fins de fixação, Josefina deu a Artur a seguinte consulta:
+
+π nome_livro, qtd_vendida (σ qtd_vendida >= 3 (vendas))COPIAR CÓDIGO
+Como Artur pode refazer essa consulta usando qual atribuição?
+
+
+(V) Temp = σ qtd_vendida >= 3 (vendas)
+    Resultado = π nome_livro, qtd_vendida (Temp)
+
+      Alternativa correta! A ordem lógica da consulta está correta.

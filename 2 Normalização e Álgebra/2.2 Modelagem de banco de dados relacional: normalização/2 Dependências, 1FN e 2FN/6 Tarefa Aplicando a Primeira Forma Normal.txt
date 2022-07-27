@@ -1,0 +1,8 @@
+Para realizar a normalização dos dados, seguimos os conceitos apresentados nas cinco formas normais. Helena explicou para a sua equipe que para uma tabela estar na primeira forma normal, ela necessita satisfazer certas propriedades baseadas na dependência funcional.
+
+A partir das informações apresentadas, identifique a alternativa que aplica corretamente o conceito da primeira forma normal:
+
+
+(V) Não pode existir mais de um assunto em uma mesma tabela, como também não admite repetições ou campos que possuem mais que um valor.
+
+      Alternativa correta! O objetivo da primeira forma normal é eliminar o aninhamento de tabelas para que cada tabela tenha informações de um único assunto e sem campos com valores multivalorados.

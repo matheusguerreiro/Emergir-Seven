@@ -1,0 +1,13 @@
+Helena conseguiu colocar a tabela de pedidos na primeira forma normal. Antes de seguirmos para a segunda forma normal, vamos entender o que é a dependência funcional parcial e a dependência funcional total.
+
+A dependências funcionais parcial e total só ocorrem quando temos uma chave primária composta. A dependência funcional parcial acontecerá quando os atributos não-chave dependem apenas de uma parte da chave primária composta. Já a dependência funcional total acontece quando os atributos não-chave dependem da chave primária composta em sua totalidade.
+
+Dentro da tabela de itens pedidos, "produto", "qtd_estoque" e "preco" dependem funcionalmente e parcialmente apenas do código produto, porque são atributos referentes ao produto. Não faz sentido dependerem da nota fiscal.
+
+nota fiscal	cod_produto	produto	qtd_vendida	qtd_estoque	preco
+NF 152	7	Notebook Lenovo Ultrafino	2	22	3.699,90
+NF 153	1	Mouse Gamer Redragon	8	42	69,90
+...	...	...	...	...	...
+A chave primária na sua totalidade, isto é, a "qtd_vendida", depende da nota fiscal e do código do produto, pois para encontrarmos a quantidade vendida nos itens pedidos, precisamos da nota fiscal. Além disso, para encontrarmos a quantidade vendida de qualquer produto, precisamos de seu código na tabela de itens pedidos.
+
+Agora que entendemos o que é a dependência funcional e parcial, podemos seguir para a segunda forma normal. Vamos lá!!

@@ -1,0 +1,38 @@
+Em uma nova reunião com o time, a equipe de vendas solicitou um novo arquivo, onde pudessem consultar quais livros foram vendidos e os que não foram. Desta maneira, teriam um controle dos livros que entram e saem do estoque. A Josefina, que estava nessa reunião com o Arthur, se juntou a ele para resolver essa demanda.
+
+Arthur ficou bastante animado com o novo desafio. A Josefina, então, começou a explicar sobre a interseção, que faz uma união, com a diferença que ela trará todas as tuplas que existem na relação R e na relação S. Para entendermos melhor, vamos analisar as tabelas da Relação R e S. Começando pela Relação R.
+
+Relação R
+
+id	nome	idade
+1	Maria	25
+2	Daniel	33
+3	Ana	24
+4	Paulo	22
+Nela, temos os atributos: "id", "nome" e "idade", compostos por quatro tuplas: "Maria", "Daniel", "Ana" e "Paulo". Em seguida, temos a tabela da Relação S.
+
+Relação S
+
+id	nome	idade
+1	Mylena	28
+2	Paulo	22
+3	Rodrigo	36
+4	Maria	25
+Ela possui a mesma estrutura de "id", "nome" e "idade", com os nomes: "Mylena", "Paulo", "Rodrigo" e "Maria". Fazendo a interseção entre as relações R e S, o resultado será apenas os nomes "Maria" e "Paulo", pois são estas as tuplas que estão nas duas tabelas.
+
+R ∩ S
+
+id	nome	idade
+1	Maria	25
+2	Paulo	22
+Vamos ao Relational descobrir como o Arthur resolverá essa demanda. Após entender o que é a interseção, de imediato, o Arthur soube o que deveria fazer: pegar a união do estoque e fazer a interseção com a relação de vendas. Mas, ao tentar colocar isso em prática, ele percebeu haver uma falha em sua lógica. Recorrendo, então, à Josefina, ela compartilhou uma solução: atribuir a consulta a uma variável temporária.
+
+O Arthur então pediu que a Josefina falasse um pouco mais dessa variável. Ela pediu para ele ficar tranquilo, pois, logo mais, ela explicaria. Antes de escrevermos a consulta da união no Relational, nós escreveremos um nome, livros_estoque. Também adicionaremos um símbolo de igualdade, =, antes de digitarmos a consulta.
+
+livros_estoque = π nome_livro (livros) U π nome_livro (livros_novo)COPIAR CÓDIGO
+Por fim, apertaremos "Enter". A união de livros da remessa antiga com a nova se chama livros_estoque. Vamos apagar essa fórmula. Após atribuir a consulta a uma variável, nós pegaremos essa variável, que é a consulta da união, livros_estoque, e faremos a interseção com a tabela de vendas.
+
+Então, digitaremos livros_estoque. Na lateral esquerda da tela, selecionaremos o "U" invertido, símbolo da interseção, ∩. Em seguida, projetaremos o "nome_livro", ∩ πnome_livro da tabela de vendas. Por fim, apertaremos "Enter".
+
+livros_estoque ∩ πnome_livro (vendas)COPIAR CÓDIGO
+Agora temos todos os livros vendidos e que estão em estoque. Como não aconteceram vendas da remessa nova de livros, ele trouxe apenas os livros que foram vendidos e são do estoque antigo. Dessa forma, o Arthur conseguiu resolver o desafio da equipe de vendas. Nos encontramos logo mais!!

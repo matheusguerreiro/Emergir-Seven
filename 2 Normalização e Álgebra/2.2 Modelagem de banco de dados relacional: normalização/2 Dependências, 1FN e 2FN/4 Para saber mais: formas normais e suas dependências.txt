@@ -1,0 +1,17 @@
+Para uma tabela estar em uma determinada forma normal, ela precisa satisfazer algumas propriedades baseadas nas dependências funcionais.
+
+Dependências funcionais são restrições aplicadas sobre atributos e ocorrem quando um atributo determina exclusivamente outro atributo. Cada forma normal deve satisfazer as propriedades de uma determinada dependência. Assim sendo:
+
+A primeira forma normal deve satisfazer as propriedades baseadas na dependência funcional.
+
+A segunda forma normal deve satisfazer as propriedades baseadas na dependência funcional parcial.
+
+A terceira forma normal deve satisfazer as propriedades baseadas na dependência transitiva.
+
+A forma normal de Boyce-Codd deve satisfazer as propriedades baseadas na dependência funcional trivial.
+
+A quarta forma normal deve satisfazer as propriedades baseadas na dependência Multivalorada.
+
+A quinta forma normal deve satisfazer as propriedades baseadas na dependência junção.
+
+Observação: durante o curso, vamos conhecer cada uma das formas normais e das dependências, com foco em exemplos e aplicações, visando sempre facilitar o seu processo de aprendizagem e ensino.

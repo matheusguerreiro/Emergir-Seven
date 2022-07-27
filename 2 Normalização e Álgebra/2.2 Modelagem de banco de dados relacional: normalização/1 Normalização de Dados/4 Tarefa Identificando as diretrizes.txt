@@ -1,0 +1,15 @@
+As diretrizes informais são um conjunto de critérios utilizados para definir a qualidade de um projeto de um esquema de relação. Antes de iniciar o processo de normalização de um banco de dados, é importante que conheçamos cada uma das quatro diretrizes.
+
+Com base no que aprendemos até agora, marque a alternativa que identifica corretamente as quatro diretrizes informais:
+
+
+(V) Semântica clara com esquemas fáceis de explicar
+
+    Evitar informações redundantes
+
+    Evitar possibilidade de valores NULL nas tuplas
+
+    Evitar o surgimento de tuplas falsas
+
+
+      Alternativa correta! Essas são as quatro diretrizes informais que definem a qualidade de um projeto de um esquema de relação.

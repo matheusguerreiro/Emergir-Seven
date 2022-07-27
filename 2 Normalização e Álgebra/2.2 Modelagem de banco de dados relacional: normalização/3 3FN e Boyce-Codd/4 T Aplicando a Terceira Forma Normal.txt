@@ -1,0 +1,14 @@
+Você está trabalhando na normalização de um banco de dados e chegou o momento de aplicar a terceira formal. Analise a tabela de vendas a seguir:
+
+Numero_pedido	Codigo_produto	Quantidade	Valor_unitario	Subtotal
+0001	12348	5	350,00	1.750,00
+0002	58269	3	350,00	765,00
+0003	45623	1	350,00	110,00
+0004	75264	4	350,00	580,00
+0005	88526	5	350,00	2.000,00
+A partir das informações apresentadas até o momento, qual alternativa indica corretamente o que pode ser feito para deixar a tabela na terceira forma normal:
+
+
+(V) Remover o campo Subtotal.
+
+      Alternativa correta! A tabela de vendas não está na terceira forma normal, pois o atributo subtotal, resultado da multiplicação dos atributos Quantidade X Valor_unitario, depende de outros atributos não-chave.

@@ -1,0 +1,11 @@
+Estudamos anteriormente sobre junção, junção a esquerda e a direita. Nesse Para saber mais iremos conhecer a junção total.
+
+A junção total é representada pelo símbolo ⧓ e faz ambas as operações. Preenche as tuplas da entidade da esquerda que não encontram par na entidade da direita, assim como também preenche as tuplas da entidade da direita que não encontraram par na entidade da esquerda, adicionando-as ao resultado da junção. Ou seja, a junção total é a junção esquerda e direita juntas.
+
+Aplicando a junção total, temos:
+
+π id_pedido, nome_livro (livros_estoque ⧓ vendas_novo)COPIAR CÓDIGO
+
+https://caelum-online-public.s3.amazonaws.com/2400-modelagem-banco-dados-relacional/04/imagem%201.png
+
+Podemos verificar que não teve muita diferença da junção esquerda e direita, pois a junção total é o resultado dessas duas junções.

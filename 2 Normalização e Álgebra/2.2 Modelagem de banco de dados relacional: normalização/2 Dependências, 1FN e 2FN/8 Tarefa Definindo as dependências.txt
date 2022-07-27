@@ -1,0 +1,12 @@
+Helena explicou para sua equipe que assim como na primeira forma normal, também existem propriedades baseadas nas dependências para que uma tabela esteja na segunda forma normal. Esta por vez é conhecida como dependência funcional parcial.
+
+Dito isso, escolha a(s) alternativa(s) que define(m) a(s) dependências funcional parcial e a funcional total:
+
+
+(V) Uma dependência funcional é total quando um atributo ou um conjunto de atributos depende de forma completa ou total da chave primária composta.
+
+      Alternativa correta! Quando a dependência funcional é total, assumimos que a tabela já está na segunda forma normal, pois, todos os atributos que não fazem parte da chave primária, dependem completamente da chave primária composta.
+
+(V) Uma dependência funcional é parcial quando os atributos não-chave não dependem funcionalmente de toda a chave primária quando esta for composta.
+
+      Alternativa correta! A dependência funcional é parcial quando atributos que não fazem parte da chave primária, dependem apenas de uma parte da chave primária composta.

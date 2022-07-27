@@ -1,0 +1,39 @@
+A cada aprendizado, o Arthur vai recebendo algumas demandas. Em uma delas, chegou uma remessa nova de livros para vendas. Isso acabou gerando outro arquivo .csv. A equipe de vendas pediu para que Arthur unisse a tabela que chegou ao arquivo que já temos, que é a tabela "Livros".
+
+A Josefina estava passando pela sala do Arthur e o escutou conversando sobre essa demanda com os colegas de equipe. Ela entrou na roda de conversa e apresentou para eles a Operação de União.
+
+Como o nome sugere, união é a junção de duas relações, independentemente do que esteja na relação 1 e na relação 2. Vamos entender como isso funciona!!
+
+Relação R
+
+id	nome	idade
+1	Maria	25
+2	Daniel	33
+Esta é a Relação R, onde temos, na tabela, os atributos "id", "nome" e "idade" com duas tuplas: "id" 1 e 2; "nome", Maria e Daniel; e "idade", 25 e 33. Também temos a Relaçao S, com a mesma estrutura da Relação R, "id", "nome" e "idade".
+
+Relação S
+
+id	nome	idade
+1	Ana	24
+2	Paulo	22
+A união, R U S, será formada das duas relações juntas. Independentemente das tuplas que existem em R e em S. Ela é representada pelo "U".
+
+R U S
+
+id	nome	idade
+1	Maria	25
+2	Daniel	33
+1	Ana	24
+2	Paulo	22
+Nessa nova relação, temos todas as tuplas do R e do S. Ou seja, temos quatro tuplas: "id", 1, 2, 1, 2; "nome", Maria, Daniel, Ana e Paulo; e "idade" 25, 33, 24, 22. Vamos conferir o funcionamento no Relational!!
+
+Antes de o Arthur colocar a "mão na massa", isto é, partir para a prática, ele precisa pegar o arquivo que chegou, importar para o Relational e começar a trabalhar. Então, vamos apertar o botão "Load", que fica no canto inferior direito da tela. Vamos navegar em nossa máquina até onde o arquivo está salvo.
+
+Em seguida, selecionaremos o arquivo "livros_novo" e apertaremos "Abrir". Agora o Arthur pode começar a fazer a união das duas relações. Antes, ele precisa trazer o nome "Livro" da relação "livros" e também o nome "Livro" da relação "livros_novos". Ele já sabe como fazer isso usando a projeção.
+
+Então, na lateral esquerda da tela, em "Operators", nós apertaremos "pi ( π)", que é o botão da projeção e digitaremos nome_livro. Entre parênteses, escreveremos o nome da tabela, (livros). Apertaremos a projeção outra vez e escreveremos nome_livro seguida da tabela "livros_novos" entre parênteses, (livros_novos).
+
+Para fazer a união, precisamos colocar o símbolo de união entre as duas projeções. Então, navegaremos até o início da segunda projeção da tabela livros_novo e apertaremos o botão do símbolo de união, U, que também está em "Operators". Por fim, apertaremos "Enter".
+
+ π nome_livro (livros) U π nome_livro (livros_novo)COPIAR CÓDIGO
+Com isso, o Arthur conseguiu terminar a demanda que veio da equipe do comercial, fazendo a união dos dois arquivos e trazendo todos os livros que estão no estoque. Nos encontramos no próximo vídeo!!

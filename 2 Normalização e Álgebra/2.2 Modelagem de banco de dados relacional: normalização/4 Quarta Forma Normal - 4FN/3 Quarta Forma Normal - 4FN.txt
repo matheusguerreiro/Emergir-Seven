@@ -1,0 +1,39 @@
+Em conversa com o time do Clube do Livro, Helena disse que para uma tabela estar na Quarta Forma Normal - 4FN, ela precisa estar na terceira forma normal e não ter mais de um atributo multivalorado. Ou seja, na quarta forma normal não pode existir dependência multivalorada.
+
+Na maioria dos casos, as tabelas que estão normalizadas até a terceira forma normal são intuitivas, por isso é mais fácil recuperar os dados, atualizá-los e removê-los. Mas, pode acontecer de um atributo não-chave estar repetido, trazendo assim valores múltiplos para um atributo que é uma chave. Isso é a dependência multivalorada e não pode acontecer na quarta forma normal.
+
+Um ponto importante é que, por causa da dependência multivalorada, a quarta forma normal pode ser facilmente confundida com o relacionamento binário muitos-para-muitos.
+
+A diferença é que o relacionamento binário acontece entre tabelas, por exemplo, "clientes" pode ter vários "pedidos" e "pedidos" pode ter vários "clientes". Já a dependência multivalorada acontece dentro da tabela, onde um atributo determina um conjunto de valores. Seguiremos com um exemplo, tendo como referência a tabela de compras da aula anterior.
+
+tabela de compras
+
+cod_fornecedor	cod_produto	cpf
+2	7	315264
+1	1	842679
+4	5	214786
+5	4	975631
+1	1	214786
+O "código do fornecedor" define multivalores para o "cpf". Um cliente compra mais de um produto, outro cliente compra outro produto e o banco de dados fica bagunçado, dificultando a manutenção dos dados, remover alguma linha, por exemplo. Então, vamos normalizá-la baseando-nos na quarta forma normal. Quais são os procedimentos?
+
+Primeiro, temos que identificar se existe um multi determinante que aponte para mais de um multi dependente e se existe independência entre esses multi dependentes, isto é, se há independência dentre os atributos. Voltando à tabela, percebemos que o "cpf" é independente, não depende do "cod_fornecedor" e nem do "cod_produto", portanto, ele é um atributo independente.
+
+Vamos conferir o resultado da tabela normalizada na forma normal. No Google Sheets, estamos visualizando a tabela de compras ainda sem a normalização. Ela está na terceira forma normal, porque não tem dependências transitivas, mas tem atributos multivalorados, que são independentes entre si. É como se tivéssemos duas tabelas dentro de uma só e que não se relacionam.
+
+Para colocarmos essa tabela quarta forma normal, precisamos dividi-la em duas tabelas, ambas herdando o código do fornecedor. Assim, na primeira tabela, concatenamos o código do fornecedor com o código do produto:
+
+cod_fornecedor	cod_produto
+2	7
+1	1
+4	5
+5	4
+1	1
+E na segunda tabela, concatenamos o código do fornecedor e o CPF.
+
+cod_fornecedor	cpf
+2	315264
+1	842679
+4	214786
+5	975631
+1	214786
+Então, nesse vídeo estudamos sobre a quarta forma normal, sua estruturação e quais parâmetros precisamos para aplicarmos a regra, mas, os desafios não param por aqui. Vamos acompanhar Helena na quinta forma normal?

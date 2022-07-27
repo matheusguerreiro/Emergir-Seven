@@ -1,0 +1,14 @@
+Ao aplicar a terceira forma normal no banco de dados da loja de informática do Clube do Livro, Helena observou que as pessoas integrantes de sua equipe estavam utilizando os mesmos conceitos da segunda forma normal.
+
+Ao questionar o motivo, um(a) dos(as) integrantes da equipe da Helena informou que a dependência funcional parcial e dependência transitiva possuíam as mesmas restrições a serem satisfeitas.
+
+Com base no que aprendemos até agora, escolha as alternativas que discorrem corretamente as diferenças entre dependência funcional parcial e dependência transitiva.
+
+
+(V) A dependência transitiva ocorre quando um atributo não-chave não depende diretamente da chave primária da tabela, mas depende de um outro atributo não-chave.
+
+      Alternativa correta! Quando há a dependência transitiva, pelo menos um atributo da tabela depende de outro que não seja chave primária da tabela.
+
+(V) A dependência parcial ocorre quando pelo menos um atributo depende apenas de parte da chave primária composta da tabela.
+
+      Alternativa correta! Quando há a dependência parcial, os atributos dependem parcialmente da chave primária composta.

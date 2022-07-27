@@ -1,0 +1,22 @@
+Até agora, acompanhamos o aprendizado do Arthur sobre teoria dos conjuntos, os conceitos e as operações da álgebra relacional. Ao revisar todo esse conteúdo, ele lembrou que Josefina havia explicado ligeiramente sobre duas operações da álgebra relacional, a interseção e as junções, e que se comprometeu a aprofundar esses conteúdos.
+
+No vídeo sobre a interseção, a Josefina falou um pouco da atribuição, isto é, "atribuir a uma variável". A atribuição é utilizada para designar a consulta a uma variável temporária. Ela é representada por uma seta para a esquerda. Ao atribuirmos a consulta a uma variável temporária, fica fácil utilizar essa consulta posteriormente, já que ela fica salva no Relational.
+
+Agora vamos ao Relational entender, na prática, como funciona a atribuição. Com o Relational aberto, nós designaremos as consultas que fizemos na aula de diferença entre conjuntos. Como R, nós designaremos a consulta em que unimos a tabela de livros com a de livros novos e criamos a de livros em estoque.
+
+Na barra de fórmulas do Relational, escreveremos R =. A atribuição é representada pelo símbolo de igualdade no Relational. Como não temos a seta para a esquerda na coluna de operações, usamos o igual, =. Continuando, vamos selecionar o ícone da projeção, "π", e digitaremos o nome do atributo, a coluna nome_livro da tabela de (livros).
+
+Em seguida, selecionaremos a união, "U" e projetaremos, usando " π", a coluna nome_livro da tabela de (livros_novo). Agora a consulta de união está atribuída como R.
+
+R =  π nome_livro(livros) U  π nome_livro(livros_novo)COPIAR CÓDIGO
+Como S, nós atribuiremos o nome_livro na tabela de vendas.
+
+S =  π nome_livro (vendas)COPIAR CÓDIGO
+Ao lado direito do Relational, nas relações ou "Relations", temos o R e S. Agora, utilizaremos essas duas variáveis para calcular a diferença de conjuntos. Então, faremos R diferença S, isto é R - S.
+
+R =  π nome_livro(livros) U  π nome_livro(livros_novo)
+S =  π nome_livro (vendas)
+R - SCOPIAR CÓDIGO
+O resultado retornado será o mesmo da aula sobre diferença de conjuntos.
+
+Com a operação de atribuição, uma consulta pode ser escrita como programa sequencial, facilitando, assim, a leitura. Espero que tenham gostado do vídeo! Nos encontramos logo mais!!

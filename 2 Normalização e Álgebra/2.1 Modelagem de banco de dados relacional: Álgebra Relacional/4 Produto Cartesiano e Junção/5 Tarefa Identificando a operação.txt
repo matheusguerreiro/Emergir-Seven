@@ -1,0 +1,10 @@
+É uma operação que produz uma combinação entre as linhas de uma tabela com as linhas correspondentes de outra tabela, sendo, em princípio, correspondente a uma seleção pelos atributos de relacionamento sobre um produto cartesiano das tabelas.
+
+Por serem parecidos, o produto cartesiano e junção pode causar uma confusão de conceitos em alguns momentos. Pensando nisso, Artur escreveu um material para que pudesse consultá-lo sempre que tivesse dúvidas.
+
+Qual das opções abaixo pode descrever corretamente o resumo desses conceitos para inclusão nas anotações do Artur?
+
+
+(V) Junção, cuja notação, por exemplo, é A ⋈ B.
+
+      Alternativa correta! A junção combina e faz uma seleção dos pares de tuplas encontradas em ambas relações, pois o produto cartesiano traz tuplas que não são de interesse.

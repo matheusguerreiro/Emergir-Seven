@@ -1,0 +1,42 @@
+Dentre as demandas passadas pela equipe de vendas, uma foi o pedido de um relatório com os livros em estoque, mas que nunca foram vendidos. Nós temos a tabela de estoque e a de vendas, mas elas não trazem a informação de maneira objetiva. Ao perceber que o Arthur estava com dificuldade para resolver essa tarefa, a Josefina se dispôs a ajudar mostrando a Operação de Diferença entre Conjuntos.
+
+A diferença de conjuntos nos permite encontrar tuplas que estão em uma relação, mas não em outra. Vamos entender melhor como funciona!!
+
+Relação R
+
+id	nome	idade
+1	Maria	25
+2	Daniel	33
+3	Ana	24
+4	Paulo	22
+Na tela, temos a Relação R, cuja estrutura é "id", "nome" e "idade". Temos quatro tuplas nessa tabela, com os nomes "Maria", "Daniel", "Ana" e "Paulo". Também temos a relação S, com "id", "nome" e "idade" e os nomes "Mylena", "Paulo", "Rodrigo", "Maria".
+
+Relação S
+
+id	nome	idade
+1	Mylena	28
+2	Paulo	22
+3	Rodrigo	36
+4	Maria	25
+Se fizermos a subtração entre a tabela R e a tabela S, retornaremos os nomes que estão disponíveis na tabela R, mas não estão na S. No caso, "Daniel" e "Ana".
+
+R - S
+
+id	nome	idade
+1	Daniel	33
+2	Ana	24
+Isso também vale se a operação for invertida. Isto é, se calcularmos S menos R, o resultado serão os nomes que estão na tabela S e não estão na R. No caso, "Mylena" e "Rodrigo".
+
+S - R
+
+id	nome	idade
+1	Mylena	28
+2	Rodrigo	36
+Agora, vamos aprender a fazer isso no Relational. Ao ouvir Josefina explicando o conceito da diferença de conjuntos, o Arthur entendeu o que ele deveria fazer: pegar a consulta das demandas anteriores e calcular a diferença com o "nome_livro" da tabela de vendas.
+
+Então, nós digitaremos livros_estoque. Na lateral esquerda da tela, em "Operators", selecionaremos o símbolo da diferença e projetaremos πnome_livro da tabela de (vendas). Por fim, apertaremos "Enter".
+
+livros_estoque - πnome_livro (vendas)COPIAR CÓDIGO
+Como resultado, teremos todos os livros que estão em estoque e que nunca foram vendidos. Inclusive, os livros da remessa nova, que recebemos na demanda anterior.
+
+A cada aprendizado, o Arthur vai entendendo mais os conceitos da álgebra relacional. Colocando os conceitos em prática, nós vamos aprendendo junto com ele. Vamos descobrir quais desafios ainda virão para o Arthur? Nos encontramos logo mais!!

@@ -1,0 +1,4 @@
+Nessa aula, você aprendeu como:
+Diferenciar a dependência funcional da dependência multivalorada;
+Explicar a dependência multivalorada;
+Aplicar a quarta forma normal.

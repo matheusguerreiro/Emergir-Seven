@@ -1,0 +1,3 @@
+Nessa aula, você aprendeu a:
+Elaborar funções com atribuição;
+Utilizar a opção renomear.

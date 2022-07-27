@@ -1,0 +1,20 @@
+Helena estava explicando para sua equipe sobre normalização de dados e o seguinte questionamento foi levantado: O que pode acontecer em um banco de dados que não for devidamente normalizado com base nas formas normais ?
+
+E Helena respondeu que surgirão anomalias.
+
+Anomalias são mudanças em dados que podem gerar uma inconsistência no banco de dados relacional.
+
+Sendo assim, escolha a(s) alternativa(s) que representa(m) a(s) anomalia(s) existente(s):
+
+
+(V) Anomalia de remoção.
+
+      Alternativa correta! A anomalia de remoção causa a perda de informação associada a um dado registro.
+
+(V) Anomalia de inserção.
+
+      Alternativa correta! A anomalia de inserção causa a repetição desnecessária de dados (redundância).
+
+(V) Anomalia de alteração.
+
+      Alternativa correta! A anomalia de alteração leva a inconsistência e aumenta o esforço para a atualização dos dados.

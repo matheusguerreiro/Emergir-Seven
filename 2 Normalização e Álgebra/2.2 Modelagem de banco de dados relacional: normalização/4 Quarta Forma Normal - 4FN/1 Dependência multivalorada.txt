@@ -1,0 +1,19 @@
+Uma questão importante que a Helena trouxe é que antes de passarmos para a quarta forma normal, precisamos entender:
+
+O que é uma Dependência Multivalorada?
+
+A seguir, temos o exemplo de uma tabela de compras, com "código do fornecedor", "código do produto" e "cpf".
+
+cod_fornecedor	cod_produto	cpf
+2	7	315264
+1	1	842679
+4	5	214786
+5	4	975631
+1	1	214786
+Ao analisarmos a tabela, percebemos uma dependência multivalorada entre o "cod_fornecedor" e o "cod_produto", onde temos várias compras de um fornecedor e um mesmo produto e também do "cod_fornecedor" com o "cpf" do cliente. O "cpf" se repete duas vezes na tabela.
+
+Na dependência funcional, o valor de um atributo determina o valor de outro atributo. Já na dependência multivalorada, o atributo determina um conjunto de valores de um atributo. No nosso caso, temos o "cod_fornecedor" repetido, o "cod_produto" e o "cpf", sendo assim, podemos dizer que a dependência multivalorada é uma dependência funcional.
+
+A dependência funcional é representada por X -> Y (X determina funcionalmente Y) e a dependência multivalorada é representada por X ->> Y (X determina multivalores em Y). Na multivalorada, há um sinal de "menor (>)" a mais que na dependência funcional. Neste caso, lemos que X multi determina Y ou que Y é multi dependente de X.
+
+Agora que estudamos e entendemos o que é uma dependência multivalorada, podemos passar para a quarta forma normal. Até lá!!

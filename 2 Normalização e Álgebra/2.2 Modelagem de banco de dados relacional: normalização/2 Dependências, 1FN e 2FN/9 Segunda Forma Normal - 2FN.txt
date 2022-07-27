@@ -1,0 +1,78 @@
+Agora que já sabemos o que é a dependência funcional parcial e a total, podemos pensar sobre a seguinte questão:
+
+Quando uma tabela está na segunda forma normal?
+
+Uma tabela está na segunda forma normal - 2FN se ela estiver na primeira forma normal e também se os atributos não-chave dependem da chave composta em sua totalidade. Desta maneira, a segunda forma normal previne a redundância de dados dentro do banco de dados. Quais são os procedimentos mais recomendados para aplicarmos a regra?
+
+Primeiro, identificar se a tabela tem chave primária composta. Segundo, identificar os atributos que dependem parcialmente dessa chave primária e criar uma nova tabela com eles. Então, pegaremos os atributos que dependem parcialmente dessa chave, criaremos uma nova tabela e a chave parcial será a chave primária dessa nova tabela que nós criaremos.
+
+Continuando com a normalização, a Helena observou que na tabela de itens pedidos existe uma chave primária composta, que é a "nota_fiscal" e o "cod_produto". Ela notou também que "produto", "qtd_estoque" e "preco" dependem funcionalmente do código do produto. O que Helena deve fazer nesse caso?
+
+Ela precisa pegar esses atributos que dependem do "cod_produto" e criar uma nova tabela. Vamos conferir como ficou.
+
+nota_fiscal	cod_produto	qt_vendido
+NF 152	7	2
+NF 153	1	8
+NF 154	4	3
+NF 155	1	3
+...	...	...
+A tabela de itens pedidos com a normalização, na segunda forma normal, é composta pela chave primária composta, que é a "nota_fiscal", o "cod_produto" e a "qtd_vendida". A coluna "qtd_vendida" é a única que depende totalmente da chave primária composta.
+
+Agora também temos a tabela de produtos, composta por "cod_produto", "produto", "valor_unitario" e "qtd_estoque".
+
+cod_produto	produto	valor_unitario	qtd_estoque
+1	Mouse Gamer Redragon	69,90	42
+2	Suporte para Monitor ELG	311,65	22
+...	...	...	...
+Não existe nenhum produto repetido na tabela, então, a segunda forma normal, além de garantir que a tabela tenha dependência funcional parcial, também garante que não teremos nenhum atributo repetido.
+
+Na tabela antiga de itens pedidos, se precisássemos inserir um mesmo produto por conta de algum pedido - vamos supor que esse produto é o "Mouse Gamer Redragon" - teríamos uma divergência em relação à quantidade do estoque. Além disso, seria necessário repetir todos os dados.
+
+Criando a tabela de produtos separada da de itens pedidos, a manutenção fica mais simples e não teremos anomalias de inserção nem de atualização ou remoção. Vamos até o Power Architecr conferir logicamente e visualmente essa separação e como ela ficou melhor.
+
+Antes tínhamos as duas tabelas a seguir, de "pedidos" e "itens pedidos":
+
+pedidos
+nota_fiscal: NVARCHAR NOT NULL [PK]
+cod_vendedor: INTEGER NOT NULL
+vendedor: NVARCHAR NOT NULL [PK]
+valor_venda: DECIMAL NOT NULL
+data_pedido: DATE NOT NULL
+prazo_entrega: DATE NOT NULL
+cpf: NVARCHAR NOT NULL
+cliente: NVARCHAR NOT NULL
+endereco: NVARCHAR NOT NULL
+telefone: NVARCHAR NOT NULL
+ 
+itens pedidos
+nota_fiscal: NVARCHAR NOT NULL [PK]
+cod_produto: INTEGER NOT NULL [PK]
+produto: NVARCHAR NOT NULL
+qtd_vendida: INTEGER NOT NULL
+qtd_estoque: INTEGER NOT NULL
+valor_unitario: DECIMAL NOT NULL
+Com a segunda forma normal, temos as tabelas "pedidos", "itens pedidos" e "produtos".
+
+pedidos
+nota_fiscal: NVARCHAR NOT NULL [PK]
+cod_vendedor: INTEGER NOT NULL
+vendedor: NVARCHAR NOT NULL [PK]
+valor_venda: DECIMAL NOT NULL
+data_pedido: DATE NOT NULL
+prazo_entrega: DATE NOT NULL
+cpf: NVARCHAR NOT NULL
+cliente: NVARCHAR NOT NULL
+endereco: NVARCHAR NOT NULL
+telefone: NVARCHAR NOT NULL
+ 
+itens pedidos
+cod_produto: INTEGER NOT NULL [PK]
+nota_fiscal: NVARCHAR NOT NULL [PK]
+qtd_vendida: INTEGER NOT NULL
+ 
+produtos
+cod_produto: INTEGER NOT NULL [PK]
+produto: NVARCHAR NOT NULL
+valor_unitario: DECIMAL NOT NULL
+qtd_estoque: INTEGER NOT NULL
+Assim fica muito mais fácil entender a que as tabelas se referem e fazer manutenção. Nas próximas aulas, aprenderemos a terceira forma normal e um conceito super importante que é a dependência transitiva. Nos encontramos lá!

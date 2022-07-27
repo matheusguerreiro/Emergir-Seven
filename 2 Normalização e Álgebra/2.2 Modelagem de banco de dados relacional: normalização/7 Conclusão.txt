@@ -1,0 +1,11 @@
+Quero te parabenizar por chegar ao fim do curso de Modelagem de banco de dados relacional: normalização da Alura.
+
+Durante o curso, nós acompanhamos a Helena em todo o processo de normalização do banco de dados da loja de informática do Clube do Livro. Nesse trajeto, colocamos o banco de dados na primeira, segunda e terceira forma normal e também na forma normal Boyce-Codd.
+
+Na quarta e quinta forma normal, estudamos alguns exemplos que podem acontecer no mundo real, considerando que o banco de dados do Clube do Livro já havia sido normalizado até a terceira forma normal.
+
+Com toda essa bagagem, você já está apto e mais confiante para aplicar todas as formas normais no banco de dados, seja no seu projeto pessoal ou no seu local de trabalho. Gostaria de pedir que você avaliasse o curso e deixasse um comentário, seja ele positivo ou construtivo. Assim você contribui para sempre melhorarmos a qualidade dos nossos cursos e do nosso conteúdo.
+
+Não deixe de postar suas dúvidas no fórum e nem esqueça de entrar na nossa comunidade do Discord, para discutir com os colegas e instrutores seus projetos pessoais e dúvidas específicas.
+
+Espero que você tenha gostado!! Nos encontramos na próxima!! Tchau!!

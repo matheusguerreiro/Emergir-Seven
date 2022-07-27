@@ -1,0 +1,2 @@
+Nessa aula, você aprendeu a:
+Aplicar as funções União, Interseção e Diferença entre conjuntos no Relational.

@@ -1,0 +1,30 @@
+Continuando o aprendizado, a Helena explicou para a sua equipe que um banco de dados não normalizado com base nas formas normais, corre o risco de sofrer com algumas anomalias. Anomalias são mudanças em dados que podem gerar Inconsistências dentro de um banco de dados relacionais.
+
+A inconsistência se refere a valores que deveriam ser iguais, mas que estão diferentes. Por exemplo, temos a tabela de notas fiscais e recibos. O valor da compra deve ser o mesmo dentro da tabela de notas fiscais e recibos. Caso estejam diferentes, temos uma inconsistência.
+
+Existem três tipos de Anomalias. A Anomalias de Inserção levam a repetição dos dados dentro do banco de dados relacional, que é a redundância. As Anomalias de Alteração levam inconsistências e exigem um esforço maior para atualização dos dados. A Anomalias de Remoção causam a remoção de um dado necessário dentro da tabela, isto é, a remoção de um dado que não deveria ser removido.
+
+Como exemplo, temos uma possível tabela de colaboradores do Clube do Livro com as colunas: "CPF"; "Colaborador"; "Endereço do Colaborador"; "Código do Departamento"; e "Nome do Departamento".
+
+Exemplos de Anomalias
+
+CPF	    nome_colaborador 	end_colaborador 	cod_depto 	nome_depto
+123456	Marta	            Rua das Flores	  15	        Tecnologia
+147896	Robledo	          Rua Pio XXI	      23	        Vendas
+965537	Helena	          Rua ABC	          15	        Tecnologia
+
+Na coluna "nome_colaborador", temos: Marta, Robledo e Helena. Na coluna "nome_depto", temos os departamentos de: Tecnologia, Vendas e Tecnologia. Cada departamento está relacionado a um colaborador. Dentro dessa tabela de eventos, podemos identificar algumas anomalias.Vamos começar pela Anomalia de Inserção.
+
+Ao inserirmos um registro novo nessa tabela de colaboradores, precisamos adicionar também o departamento. Neste processo, pode acontecer de algum colaborador ainda não estar vinculado a um departamento ou de incluirmos um departamento que ainda não tem colaboradores.
+
+A chave primária da tabela é o CPF, então, deixar a parte de colaboradores em branco pode nos trazer algum problema, já que o CPF se refere ao colaborador e não ao departamento.
+
+Outro elemento da anomalia de inserção é a repetição dos dados. Precisamos tomar cuidado para não inserirmos dados repetidos/redundantes, como é o caso da coluna "nome_depto", onde o departamento de "Tecnologia" aparece duas vezes.
+
+Neste caso, o correto é separar as tabelas, ou seja, definir uma tabela para colaborador e outra para departamento. Além disso, ter uma chave estrangeira do "cod_depto" na tabela de colaboradores para definir em qual departamento ele trabalha.
+
+Na Anomalia de Alteração, caso seja necessário alterar um departamento, precisaríamos alterar todos os registros em questão, gerando um "re-trabalho" dentro da tabela. O resultado é uma inconsistência dentro do banco de dados.
+
+Sobre a Anomalia de Remoção, se precisarmos remover um departamento ou até mesmo um colaborador, teremos que remover uma tupla inteira. Neste caso, aconteceria outra inconsistência que é a falta de dados. Para evitarmos todas essas anomalias, podemos usar as formas normais e, consequentemente, normalizarmos o banco de dados.
+
+Nesse primeiro momento, acompanhamos o aprendizado de Helena e sua equipe sobre o que são as diretrizes informais e as anomalias que podem acontecer dentro do banco de dados. Agora estamos prontos para prosseguirmos com as formas normais. Vamos lá?

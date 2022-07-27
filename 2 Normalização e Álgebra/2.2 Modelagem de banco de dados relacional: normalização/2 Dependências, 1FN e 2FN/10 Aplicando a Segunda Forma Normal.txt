@@ -1,0 +1,14 @@
+Helena e sua equipe aplicaram a primeira forma normal no banco de dados da loja de informática do Clube do Livro e agora eles podem seguir adiante e aplicar a segunda forma normal.
+
+Sendo assim, uma tabela está na segunda forma normal se ela está na primeira forma normal e se os atributos na tabela, que não são chaves, dependem da chave primária em sua totalidade e não apenas parte dela.
+
+Com base no que aprendemos até agora, escolha a(s) alternativa(s) que melhor representa(m) o(s) procedimento(s) mais recomendado(s) para aplicar a 2FN:
+
+
+(V) Identificar se a tabela tem chave primária composta.
+
+      Alternativa correta! Um dos primeiros passos que recomendados é identificar se a tabela possui uma chave primária composta.
+
+(V) Distinguir os atributos que dependem parcialmente da chave primária e criar uma nova tabela com eles.
+
+      Alternativa correta! Ao realizarmos este procedimento, estamos aplicando a segunda forma normal na qual os atributos que dependem parcialmente da chave primária são identificados e migrados para uma nova tabela.

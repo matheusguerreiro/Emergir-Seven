@@ -1,0 +1,26 @@
+Chegamos ao final do estudo sobre esse conteúdo juntamente com o Artur. Como último desafio, Josefina propôs uma nova atividade.
+
+Para atendê-la, precisamos recuperar o nome do vendedor, a quantidade vendida, nome e preço dos livros que tiveram vendas menores que oito e depois renomear os campos do resultado final. Vamos lá?
+
+Dica: Você pode usar a união, joins e atribuir as consultas.
+
+
+Opinião do instrutor
+
+Para atender as demandas repassadas no desafio acima, podemos seguir alguns passos:
+
+Unir as duas tabelas de livros. Essa ação é necessária para podermos ter todos os livros cadastrados.
+
+livros_estoque = livros ∪ livros_novo
+
+Depois disso, juntamos a relação de livros com vendas para encontrarmos os livros vendidos.
+
+livros_venda = livros_estoque ⋈ vendas_novo
+
+Realizamos a mesma ação com as informações de vendedores.
+
+vendas_vendedores = vendas_novo ⋈ vendedores
+
+Depois desses passos, podemos obter o resultado final incluindo a seguinte fórmula no Relational:
+
+resultado = σ qtd_vendida < 8 (π nome, qtd_vendida, nome_livro, preco (livros_venda ⋈ vendas_vendedores))

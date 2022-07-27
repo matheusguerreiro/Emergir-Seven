@@ -1,0 +1,10 @@
+Helena explicou à sua equipe que um banco de dados é considerado normalizado se atender até a terceira forma normal. Porém, pode ser que um banco de dados ainda apresente anomalias mesmo normalizado.
+
+Para corrigir as anomalias que ocorrem após o banco de dados estar normalizado, aplicamos outras formas normais e uma delas é a forma normal de Boyce-Codd. Definimos que uma tabela está em FNBC se, e somente se, todos os determinantes são chaves candidatas.
+
+Dito isso, atente-se à seguinte pergunta: Qual conceito pode ser aplicado para uma tabela que está na FNBC?
+
+
+(V) Para deixar uma tabela na FNBC podemos aplicar o conceito de decomposição sem perdas.
+
+      Alternativa correta! Uma decomposição é sem perdas se for sempre possível reconstruir a tabela original fazendo a junção das novas tabelas criadas.

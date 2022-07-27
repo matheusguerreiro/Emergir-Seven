@@ -1,0 +1,22 @@
+Até aqui, Artur tem aprendido bastante coisas e colocado em prática com as demandas da equipe de vendas, porém ele estava querendo ir além do que foi solicitado.
+
+Então, para ajudar, Josefina passou no seguinte desafio:
+
+Trazer o nome e o preço dos livros que tenham o valor maior ou igual a 30,00 reais na base de dados.
+
+Vamos ajudar o Artur com esse desafio? Uma dica, é preciso fazer a seleção primeiro.
+
+Compartilhe sua resposta com a gente no fórum!
+
+VER OPINIÃO DO INSTRUTOR
+Opinião do instrutor
+
+Para construir essa ação e superar o desafio, podemos realizar primeiro a seleção do preço:
+
+maior_30 = σ preco >= 30 (livros)COPIAR CÓDIGO
+Após isso, vamos inserir a projeção trazendo os campos solicitados:
+
+maior_30 = σ preco >= 30 (π nome_livro, preco (livros)COPIAR CÓDIGO
+E por fim, a união com os livros novos:
+
+maior_30 = σ preco >= 30 (π nome_livro, preco (livros) ∪ π nome_livro, preco(livros_novo))

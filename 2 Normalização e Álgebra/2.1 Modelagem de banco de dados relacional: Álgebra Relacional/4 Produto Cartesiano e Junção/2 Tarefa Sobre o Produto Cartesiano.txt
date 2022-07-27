@@ -1,0 +1,15 @@
+Ana, uma colega de equipe do Artur, estava com dificuldade em entender o conceito do produto cartesiano e como funciona a sua combinação dos dados.
+
+Então, ele começou explicando que o produto cartesiano retorna todas as combinações de tuplas de duas relações, formando assim uma terceira relação contendo todas as combinações possíveis entre os elementos das relações originais.
+
+Para a Ana fixar melhor o conteúdo, Artur propôs a realização da atividade abaixo.
+
+Supondo que temos uma relação A e uma relação B que possui os elementos indicados a seguir, qual seria a construção do produto cartesiano?
+
+A (Maria, José, Pedro)
+B (Música, futebol, Artes)
+
+
+(V) Todos os elementos da relação A combinados com todos os elementos da relação B.
+
+      Alternativa correta! No produto cartesiano, todos os elementos presentes nas duas relações envolvidas, serão combinados.

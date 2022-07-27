@@ -1,0 +1,25 @@
+Com as demandas da equipe de vendas sinalizadas, o Arthur passou a formular algumas hipóteses de demandas que a equipe de vendas poderiam voltar a solicitar. Uma dessas hipóteses foi: e se precisássemos trazer todos os livros, independentemente se foram vendidos ou não, de forma mais simples, sem a necessidade de fazer união ou interseção e depois uma diferença de conjuntos?
+
+A Josefina pensou que seria importante apresentar ao Arthur as junções esquerda e direita. Vamos acompanhar como isso funciona?
+
+Começando pela junção à esquerda, ela pega todas as tuplas da entidade à esquerda que não encontraram par entre as tuplas da entidade à direita e adiciona, desta maneira, valores nulos nas tuplas da entidade da tabela à direita. Também adiciona o resultado. Ou seja, a junção esquerda traz todas as tuplas da entidade à esquerda no resultado.
+
+Falando assim, pode parecer um pouco complicado entender, mas, vamos colocar esses conceitos em prática junto ao Arthur para compreendermos melhor.
+
+Estamos com o Relational aberto para começarmos a colocar a "mão na massa" e adicionarmos a junção esquerda com o Arthur. Primeiro, digitaremos na barra de fórmulas livros_estoque, pois o desejo do Arthur é trazer todos os livros, independentemente se foram vendidos ou não.
+
+Em seguida, na lateral esquerda da tela, nós selecionaremos um ícone de "gravata(⋈)" que representa a junção, mas a gravata que usaremos é a que está pintada do lado esquerdo, que significa "junção esquerda". Vamos selecioná-la e escrever vendas_novo. Por fim, apertaremos "Enter".
+
+livros_estoque ⋈ vendas_novoCOPIAR CÓDIGO
+Como resultado teremos todas as tuplas que estão na entidade à esquerda, ou seja, na tabela esquerda que é a livros_estoque. E sobre a tabela de vendas, os livros que não foram vendidos, portanto, estão em estoque, foram complementados com valores nulos, "None". É desta forma que trabalhamos com a junção à esquerda.
+
+A junção à direita é basicamente a mesma coisa que a junção à esquerda. A diferença é que ela priorizará as tuplas da tabela à direita, isto é, trará todas as tuplas da tabela à direita e complementará com nulo as tuplas da tabela à esquerda se não tiverem dados. Nós usaremos essa mesma consulta e trocaremos apenas o símbolo de gravata para a junção direita.
+
+Então, em "Operators", na lateral esquerda da tela, nós selecionaremos a gravata pintada apenas do lado direito. Após trocar o ícone de gravata, adicionando consulta, e apertaremos "Enter".
+
+A diferença é que agora, como a tabela à direita traz as vendas e a tabela à esquerda traz os livros em estoque e nós estamos fazendo a junção à direita, priorizando a direita. Todos os livros que foram vendidos estão em estoque, ou seja, não existem livros que não tenham sido vendidos. Na verdade, existem, mas não estão na tabela de vendas.
+
+Como não existem tuplas na tabela à esquerda que não estão vazias, que não possuem correspondência com a tabela à direita, que não tem par, ele traz o resultado correto: todos os livros que foram vendidos e estão na tabela à esquerda.
+
+Com as explicações de Josefina sobre as junções, o Arthur está tranquilo! Quando chegarem as demandas mais complexas da equipe de vendas, ele estará apto a resolvê-las. Nos encontramos no próximo vídeo!!
+

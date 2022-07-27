@@ -1,0 +1,19 @@
+Como de costume, começaremos a nossa aula com uma questão:
+
+O que é Dependência Transitiva?
+
+A Dependência Funcional Transitiva ocorre quando um atributo não-chave não depende da chave primária, nem parcialmente, mas depende de outro atributo não-chave. Quando isso acontece, temos a Dependência Funcional Transitiva. Mas, por que estamos estudando esse assunto?
+
+Todas as formas normais são baseadas em uma dependência. Para entendermos as formas normais, precisamos conhecer alguns assuntos previamente, como as dependências funcionais e as anomalias. Algumas dependências funcionais podem causar anomalias e as formas normais existem para resolver esse tipo de problema.
+
+Voltando ao assunto da dependência transitiva, poderíamos dizer que a diferença entre a dependência parcial e a transitiva é que na parcial o atributo depende ao menos de uma chave primária. Já na transitiva, o atributo não depende de nenhuma chave primária e sim do atributo não-chave. Para compreendermos melhor esses conceitos, abriremos a tabela de pedidos no Google Sheets da aula anterior.
+
+Nós aplicamos a segunda forma normal na tabela de pedidos: separamos os itens pedidos, depois os produtos e a tabela de pedidos continua da seguinte maneira:
+
+nota_fiscal	cod_vendedor	vendedor	valor_venda	data_pedido	prazo_entrega	cpf	cliente	endereco	telefone
+NF 152	1	Josicreido	7.399.80	14/02/2021	19/02/2021	315264	Kamilly Maitê	Rua da Penha	(79)3736-7488
+NF 153	2	Robiedo	559.20	23/02/2021	28/02/2021	842679	Luiz Ian	Rua Henrique Soares	(84) 2772-7040
+...	...	...	...	...	...	...	...	...	...
+As colunas de "cliente", "endeço" e "telefone" dependem do atributo não-chave, que não faz parte da chave primária, o "CPF". Além disso, temos a situação do "vendedor" que depende do "código do vendedor" para existir nnessa tabela, sendo que ele não faz parte da chave primária.
+
+Agora que sabemos o motivo de estudarmos a dependência funcional transitiva, nos próximos vídeos avançaremos um pouco mais e aprenderemos a terceira forma normal. Nos encontramos lá!

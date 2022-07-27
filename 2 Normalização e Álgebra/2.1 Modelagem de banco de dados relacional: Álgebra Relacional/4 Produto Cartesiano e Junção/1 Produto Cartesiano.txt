@@ -1,0 +1,19 @@
+Estudando com o Arthur, aprendemos os conceitos de união, interseção e diferença entre conjuntos. Além de, junto a ele, termos colocado a "mão na massa", isto é, praticamos e resolvemos todas as demandas da equipe do comercial. Esta mesma equipe trouxe outro desafio para o Arthur: cruzar os dados dos pedidos com os vendedores, para que seja possível saber quais pedidos foram feitos por cada vendedor.
+
+O Arthur pensou bastante em como poderia resolver e recorreu à Josefina, que mostrou o Produto Cartesiano.
+
+R x S
+
+nome	idade	nome	idade
+Maria	25	Mylena	28
+Maria	25	Paulo	22
+Daniel	33	Mylena	28
+Daniel	33	Paulo	22
+O produto cartesiano é representado pela letra "X" que é o símbolo da multiplicação. Faz sentido, se pensarmos que ele realiza combinações possíveis das tuplas, isto é, pega uma tupla e multiplica por outra. O resultado do produto cartesiano, entre as relações R e S, é de quatro tuplas.
+
+Ele pega a tupla "Maria" e faz a multiplicação com a tupla "Mylena". Também faz a multiplicação com a tupla "Paulo". Ou seja, vai fazendo combinações, pegando uma tupla e multiplicando por outra. Desta maneira, o produto cartesiano vai sendo retornado com todas as combinações entre as relações. Vamos ajudar o Arthur a resolver essa demanda, junto à Josefina, assim ele conseguirá entregar o relatório de vendas para a equipe do comercial.
+
+Nós temos a tabela de vendedores e também a tabela de vendas. Então, no Relational, vamos escrever vendedores. Na lateral esquerda, coluna de operadores, localizaremos o símbolo de asterisco. Ele representa o produto cartesiano e a multiplicação. Vamos selecioná-lo, escrever vendas e apertar "Enter".
+
+vendedores * vendasCOPIAR CÓDIGO
+Juntando essas duas relações, teremos um produto cartesiano das duas tabelas: de vendedores e de vendas. Será retornada uma tabela enorme. Analisando essa tabela, o Arthur percebeu que os dados não estavam da maneira que ele gostaria: a tabela não apresenta o pedido relacionado ao vendedor, mas, sim, o vendedor relacionado a cada pedido. Como ele resolverá isso? Saberemos no próximo vídeo!!

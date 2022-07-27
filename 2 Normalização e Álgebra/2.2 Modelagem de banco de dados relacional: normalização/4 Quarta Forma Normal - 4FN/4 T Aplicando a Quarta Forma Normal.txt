@@ -1,0 +1,17 @@
+Uma tabela está na quarta forma normal se estiver na terceira forma normal e não existir mais do que um atributo multivalorado, ou seja, não possuir dependência multivalorada.
+
+Ao avaliar a tabela de Carros a seguir, foi identificado que ela não estava na quarta forma normal.
+
+Modelo	Ano	Cor
+Gol	2016	Preto
+Uno	2015	Preto
+Uno	2015	Prata
+Fox	2015	Branco
+Fox	2014	Vermelho
+
+A partir das informações apresentadas, selecione a alternativa que indica qual alteração precisa ser feita para deixarmos a tabela na quarta forma normal:
+
+
+(V) Será necessário dividir a tabela original em outras duas novas tabelas. A primeira terá os atributos Modelo e Ano e a segunda terá os atributos Modelo e Cor.
+
+      Alternativa correta! Dividimos a tabela original em outras duas novas tabelas, colocando cada atributo dependente (Ano e Cor) em uma tabela distinta juntamente com o campo modelo.

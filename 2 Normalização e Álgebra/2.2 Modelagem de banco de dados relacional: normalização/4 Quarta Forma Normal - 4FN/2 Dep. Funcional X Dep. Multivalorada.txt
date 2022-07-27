@@ -1,0 +1,12 @@
+Para aplicarmos a quarta forma normal, vamos conhecer uma nova dependência e suas restrições: a dependência multivalorada. Ela apresenta restrições semelhantes à dependência funcional.
+
+Com base no que aprendemos até agora, escolha as alternativas que classificam corretamente a dependência funcional e da multivalorada:
+
+
+(V) Na dependência multivalorada, o valor de um atributo determina um conjunto de valores de outro atributo.
+
+      Alternativa correta! A dependência multivalorada ocorre quando dois atributos em uma tabela são independentes um do outro, mas ambos são determinados por um terceiro atributo.
+
+(V) Na dependência funcional o valor de um atributo determina o valor de outro atributo.
+
+      Alternativa correta! Na dependência funcional, uma chave primária em uma relação determina funcionalmente todos os outros atributos não-chave.

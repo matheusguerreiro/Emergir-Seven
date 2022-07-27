@@ -1,0 +1,46 @@
+Helena construiu todo o processo de normalização do banco de dados da loja de informática do clube do livro. Ela explicou para a sua equipe que um banco de dados está normalizado quando atende à terceira regra normal.
+
+Porém, mesmo atendendo a terceira regra normal, pode ser que o banco ainda apresente algumas anomalias, como a redundância dos dados. Helena resolveu apresentar essas anomalias para a sua equipe e ensinar a resolvê-las, assim saberão como proceder caso encontrem esses problemas no banco de dados.
+
+Ela trouxe uma possível tabela de fornecedores da loja de informática do Clube do Livro.
+
+cod_fornecedor	nome_fornecedor	cod_produto	qtd_estoque
+1	Redragon	1	42
+1	Redragon	2	22
+2	Lenovo	7	4
+...	...	...	...
+Nessa tabela, temos o "código do fornecedor", "nome do fornecedor", "código do produto" e "quantidade em estoque. Temos as seguintes combinações de chaves primárias; "cod_fornecedor" e "cod_produto"; "nome_fornecedor" e "cod_produto".
+
+Acontece que, ao procurarmos chaves primárias nessa tabela, temos um problema: o "código do fornecedor" não pode ser uma chave primária sozinha, porque ele se repete várias vezes. O mesmo ocorre para o "nome do fornecedor", ele não pode ser uma chave primária sozinha, porque se repete várias vezes.
+
+Sendo assim, precisamos fazer uma combinação do "cod_fornecedor" com o "cod_produto", assim formaremos uma chave primária composta, onde os dados não se repetem.
+
+Embora a terceira forma normal seja a mais adequada para um banco de dados estar normalizado, pode acontecer da redundância não ser completamente removida. Isso acontece devido à Dependência Funcional Trivial, que é quando x determina funcionalmente y (x -> y), isso se o x não for uma chave candidata de determinada tabela. Para resolver essa questão, usamos a forma normal de Boyce-Codd.
+
+No processo de normalização, aplicamos essa forma quando: já estamos na terceira forma normal; dentro da tabela da terceira forma normal, existe a dependência funcional trivial; há uma superposição entre as combinações de chaves primárias.
+
+Resumindo, definimos que uma tabela está na forma normal se e somente se todos os determinantes são chaves candidatas. Há superposição quando existem chaves candidatas compostas com o atributo que se repete entre elas. É o caso da nossa tabela de fornecedores, onde temos o "cod_produto" repetido entre as combinações de chaves primárias. Quais são os procedimentos mais recomendados para aplicarmos a Boyce-Codd?
+
+Primeiro, temos que identificar todos os atributos determinados por outro atributo que não uma chave candidata, removê-los e levá-los para outra tabela. Vamos verificar como ficou a nossa tabela de fornecedores normalizada na Boyce-Codd.
+
+Primeiro, encontramos a dependência funcional trivial, o "cod_produto". Agora vamos separar a tabela em duas: a tabela de fornecedores, onde temos o "cod_fornecedor" e o "nome_fornecedor"; e a de fornecedor/produto, com o "cod_fornecedor", "cod_produto" e "qtd_estoque".
+
+fornecedores
+
+cod_fornecedor	nome_fornecedor
+1	Redragon
+2	Lenovo
+3	Adata
+...	...
+fornecedor/produto
+
+cod_fornecedor	cod_produto	qtd_estoque
+1	1	42
+1	2	22
+2	7	4
+...	...	...
+Nesse exemplo, fizemos uma decomposição sem perda, que é quando dividimos a tabela em duas ou mais e, fazendo a junção, a tabela volta ao original, no caso, à tabela de fornecedores do início do vídeo. Há outra maneira de colocar a tabela na forma normal de Boyce-Codd que é pegar a chave primária composta, no nosso exemplo, o "nome_fornecedor" e "cod_produto", e colocá-las junto a "qtd_estoque".
+
+Por que temos dois exemplos de normalização da Boyce-Codd? Pela forma normal Boyce-Codd, pode existir mais de uma maneira de normalização. Foi o que acompanhamos nesse vídeo, primeiro a tabela de "nome_fornecedor" e "cod_produto", onde trouxemos chaves candidatas e a "qtd_estoque" e depois o exemplo de decomposição sem perdas, com a "qtd_fornecedor" e a de "cod_fornecedor" e "cod_produto. Ao uni-las, voltamos à tabela original de fornecedores.
+
+Até aqui, estudamos e normalizamos a tabela do Clube do Livro para a terceira forma normal e entendemos em quais situações podemos aplicar a forma normal Boyce-Codd. Com isso, podemos partir para a quarta forma normal. Vamos lá?

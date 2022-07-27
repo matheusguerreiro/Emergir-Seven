@@ -1,0 +1,6 @@
+Nessa aula, você aprendeu a:
+Saber como funciona o processo de normalização;
+Compreender o que é uma Dependência funcional;
+Conhecer a primeira forma normal;
+Reconhecer e distinguir o que é uma Dependência funcional parcial e total;
+Entender e aplicar a segunda forma normal.
