@@ -1,0 +1,25 @@
+[00:00] Como acompanhamos nos passos anteriores, Júlia já fez a implementação do modelo relacional, criou tabelas e relações e alimentou todas com informações. E após algumas consultas, Júlia ficou com dificuldades de criar uma tabela em que tem tanto os nomes dos vendedores quanto o histórico de pedidos.
+
+[00:24] Essa dificuldade se deu porque na tabela “Vendedores” tem o código do vendedor e o nome do vendedor, mas na tabela “Histórico de pedidos” tem apenas o código do vendedor, não tendo nome.
+
+[00:38] Ela pediu ajuda para a Fernanda, para montar essa consulta que une campos de tabelas diferentes. Então, vamos lembrar que na tabela “Vendedores” nós temos o nome e o código do vendedor, e na tabela “Vendas” temos todo o histórico de pedidos, mas não tem o nome do vendedor, só tem o código. E é esse campo que une as tabelas.
+
+[01:02] Vamos começar selecionando quais os campos que queremos na nossa consulta. Vamos selecionar o “nome_vendedor” e vamos adicionar a quantidade de vendas por vendedor. Então, a quantidade “qtd_vendida”. Vamos para o MySQL Workbench começar nossos códigos.
+
+[01:24] Então, escrevendo o nosso código, vou começar com SELECT ID_VENDEDOR, NOME_VENDEDOR, QTD_VENDEDOR, só que antes disso, eu preciso declarar a origem desses campos. Já que estamos usando campos de tabelas diferentes, precisamos declarar para o SQL de onde eles são.
+
+[01:48] Então, o ID_VENDEDOR vai vir da tabela vendas, então VENDAS.ID_VENDEDOR, o NOME_VENDEDOR vem da tabela “Vendedores”, vou colocar VENDEDORES.NOME_VENDEDOR, e a quantidade vendida vem do histórico de pedidos, que é a tabela “Vendas”, então SELECT VENDAS.ID_VENDEDOR, VENDEDORES.NOME_VENDEDOR, VENDAS.QTD_VENDIDA. Então, vamos seguir esse formato, tabela.campo.
+
+[02:18] Vamos dar um “Enter”, e para selecionar as tabelas, só colocamos o nome das tabelas separadas por vírgula, então FROM VENDAS, VENDEDORES, que são as duas tabelas que vamos consultar. Mas para finalizar o nosso código, nós precisamos declarar, definir essa relação entre as duas tabelas.
+
+[02:45] Nós vamos usar o comando WHERE, que era comumente usado para fazer filtros, mas também vai ser útil para definir essa relação. Então, WHERE VENDAS.ID_VENDEDOR = VENDEDORES.ID_VENDEDOR;, vamos selecionar e executar no botão de raio.
+
+[03:24] Agora temos uma tabela, não só com o código, mas também com o nome do vendedor. E a quantidade vendida, porque pedimos também esse campo. Mas essa relação entre as duas tabelas construiu uma visualização que repete o nome dos vendedores por causa do histórico de pedidos. O que poderíamos fazer também é saber o quantitativo de vendas por vendedor. Para isso, usaremos a função SUM, que soma todas as quantidades vendidas.
+
+[04:00] Quando definimos os campos em SELECT, e todos os campos que queremos na nossa consulta, nós podemos usar o comando SUM, antes do VENDAS.QTD_VENDIDAS, então SELECT VENDAS.ID_VENDEDOR, VENDEDORES.NOME_VENDEDOR, SUM(VENDAS.QTD_VENDIDAS.
+
+[04:22] Mas, para esse código funcionar, eu preciso dizer que eu tenho uma agregação, um agrupamento. E esse comando é o GROUP BY, porque o SQL precisa saber que você quer somar, mas a partir de um campo específico. Então, eu vou querer somar, mas agrupando pelo código de vendedores, então GROUP BY VENDA.ID_VENDEDOR.
+
+[04:54] Então, nessa linha de comando conseguimos adicionar esse agrupamento. Então, temos a somatória de quantidades vendidas pelo vendedor. Vamos selecionar e executar, e agora ele mostra uma tabela com o somatório de livros vendidos por cada um dos vendedores. Então, a Bárbara vendeu 12 livros e a Paula vendeu 18 livros.
+
+[05:18] E essa consulta foi construída a partir de campos de tabelas diferentes. Vamos entender outras formas de unir essas tabelas.

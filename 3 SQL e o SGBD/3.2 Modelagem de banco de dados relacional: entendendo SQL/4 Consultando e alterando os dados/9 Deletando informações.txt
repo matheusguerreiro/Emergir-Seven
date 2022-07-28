@@ -1,0 +1,10 @@
+Esther é cientista de dados na área de RH de uma multinacional e precisou realizar uma alteração na tabela TB_FUNCIONARIOS, para isso ela usou o código abaixo:
+
+DELETE FROM TB_FUNCIONARIOS  WHERE CPF = 757.170.810-90;
+
+O que aconteceu após Esther executar este código?
+
+
+(V) Uma linha específica da tabela TB_FUNCIONARIOS foi excluída.
+
+      Alternativa correta! Foi excluído um funcionário da tabelaTB_FUNCIONARIOS, ou seja, a linha cujo o campo CPF for igual à 757.170.810-90 não estará mais na tabela após a execução.

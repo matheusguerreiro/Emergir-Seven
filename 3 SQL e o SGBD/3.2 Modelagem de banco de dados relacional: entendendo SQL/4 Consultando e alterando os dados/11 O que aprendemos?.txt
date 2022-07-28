@@ -1,0 +1,7 @@
+Nessa aula, você aprendeu a:
+Selecionar as informações usando o comando SELECT;
+Selecionar informações específicas usando o WHERE para criar filtros;
+Aplicar os comandos AND, OR e NOT para adicionar condições e personalizar os filtros da consulta;
+Construir uma tabela sem linhas duplicadas com o comando SELECT DISTINCT;
+Ordenar a tabela usando o comando ORDER BY;
+Deletar e atualizar informações usando o DELETE e o UPDATE respectivamente.

@@ -1,0 +1,35 @@
+Bruna é analista de dados na escola AluraSchool e está analisando uma base de dados que contém a tabela Estudantes_recentes. Essa tabela descreve as pessoas calouras que irão estudar no próximo semestre. Além disso, também possui a tabela Turmas com as informações das turmas da escola. Para montar um relatório, ela escreveu as diferentes consultas abaixo. Analise e marque as expectativas corretas.
+
+Tabela Estudantes_recentes
+
+id	nome	idade	matrícula	id_turma
+1	Jorge	16	1	450
+2	Alice	14	0	
+3	Beatriz	13	1	233
+4	João	12	1	233
+5	Valéria	14	0	
+
+Tabela Turmas
+
+id_turma	nivel	lotação
+200	1	0
+233	1	1
+450	2	0
+589	3	0
+788	3	0
+
+
+(V) SELECT TURMAS.ID_TURMA
+FROM TURMAS INNER JOIN ESTUDANTES_RECENTES
+ON TURMAS.ID_TURMA = ESTUDANTES_RECENTES.ID_TURMA
+Bruna terá turmas que já estão definidas para receber estudantes recentes na escola.
+
+      As turmas 450 e 233, vão receber alguns estudantes da tabela ESTUDANTES_RECENTES e o comando INNER JOIN mostra apenas as turmas que estão na tabelas que contêm as pessoas novatas.
+
+(V) Uma tabela com o nome e o nível de cada estudante é capaz de ser mostrada com o código:
+
+SELECT A.NOME, TURMAS.NIVEL 
+FROM ESTUDANTES_RECENTES A LEFT JOIN TURMAS
+ON TURMAS.ID_TURMA = A.ID_TURMA
+
+      Com essa consulta podemos exibir o nível dos alunos que já estão alocados em alguma turma. Para aqueles que não possuem turma ainda, será mostrado null.

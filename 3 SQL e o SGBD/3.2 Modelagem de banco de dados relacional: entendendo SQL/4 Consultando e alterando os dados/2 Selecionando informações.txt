@@ -1,0 +1,10 @@
+Bianca é cientista de dados em uma empresa de consultoria e precisa de uma lista com o nome dos projetos (NOME) cadastrados na tabela TB_PROJECT para repassar para a liderança. Quais comandos em SQL Bianca pode usar para retirar essa informação?
+
+
+(V) SELECT NOME FROM TB_PROJECT
+
+      Alternativa Correta! Com essa consulta Bianca consegue uma tabela com uma coluna dos nomes de projetos.
+
+(V) SELECT NOME AS ‘NOME DOS PROJETOS’ FROM TB_PROJECT
+
+      Alternativa Correta! Essa opção também está correta. Aqui é selecionado apenas o campo NOME da tabela TB_PROJECT e para ficar mais explicativo, esse campo foi apelidado por “Nome dos projetos”.

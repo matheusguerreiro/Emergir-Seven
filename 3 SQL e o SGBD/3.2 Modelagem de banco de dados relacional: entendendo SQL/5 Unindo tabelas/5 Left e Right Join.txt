@@ -1,0 +1,19 @@
+[00:00] Ao analisar o histórico de pedidos, Júlia ficou pensando: será que todos os livros da nossa base de dados foram vendidos? Ela ficou pensando nessa dúvida, mas não sabia muito bem como construir uma consulta para trazer essa resposta. Fernanda disse que tem muitas maneiras de construir uma consulta que traga esse resultado, mas que ela poderia usar o LEFT JOIN, que é responsável por trazer informações da primeira tabela do join, ou seja, aquela tabela à esquerda, e procurar correspondência, informações, na segunda tabela do join, a tabela à direita.
+
+[00:42] Vamos construir a consulta usando esse comando. No MySQL Workbench, eu deixei a pergunta de Júlia, # “Será que todos os livros da nossa base de dados foram vendidos?”, e eu vou começar a nossa consulta usando o comando SELECT, e selecionando dois campos, o nome dos livros, que está na tabela “Livros”, e a quantidade vendida no histórico de vendas, na tabela “Vendas”, então SELECT LIVROS.NOME_LIVRO, embaixo VENDAS.QTD_VENDIDA.
+
+[01:28] E agora, eu declaro de onde esses campos são, então FROM LIVROS LEFT JOIN VENDAS, então, mantenha todos os livros da tabela “Livros”, e procure na tabela “Vendas”. E para terminar esse comando, eu preciso declarar qual é o campo que faz relação entre essas duas tabelas, “Livros” e “Vendas”. E o campo é o código do livro, então ON LIVROS.ID_LIVRO = VENDAS.ID_LIVRO;. Seleciono e executo.
+
+[02:24] Ele aparece uma tabela com duas colunas, que são os campos que selecionamos na nossa consulta, e podemos perceber duas movimentações, vamos dizer assim, a primeira é que alguns livros se repetem, porque eles foram vendidos em oportunidades diferentes, em vendas diferentes. E poderíamos somar essas quantidades usando uma função de agregação, mas eu vou focar nessa segunda observação, que alguns livros estão com a quantidade nula, ou seja, não foram vendidos.
+
+[02:59] Então, para responder à pergunta de Júlia, eu vou filtrar apenas os livros que não foram vendidos. E para filtrar, eu vou usar aquela cláusula WHERE, que já vimos nos passos anteriores. Então WHERE VENDAS.QTD_VENDIDA IS NULL, vou selecionar e executar.
+
+[03:33] E aparece dois livros, “O Cortiço” e “Minha História”, que está cadastrado na tabela “Livros”, mas não tem nenhuma venda registrada na tabela “Vendas”.
+
+[03:43] Fazendo as suas pesquisas, a Júlia percebeu que não tem apenas o LEFT JOIN, temos também a junção à direita, o RIGHT JOIN, que mantém informações da segunda tabela, ou seja, a tabela à direta do join. Vamos manter essas consultas, mas mudar o RIGHT JOIN para sabermos o que aparece. Então, RIGHT JOIN, ao invés de LEFT JOIN, vou tirar o filtro do WHERE para aparecer a consulta toda, sem ser filtrada. Vou selecionar, executar, e aparecem duas colunas também, mas algumas informações estão diferenciadas.
+
+[04:32] O que aconteceu? Ele manteve as quantidades vendidas, mas alguns livros não estão registrados na tabela “Livros”, ou seja, ele manteve todas as vendas, mas alguns livros estão nulos. Vamos adicionar o campo CODIGO_DO_LIVRO, da tabela “Vendas”, para ver que livros são esses. Então VENDAS.ID_LIVRO, eu seleciono e executo.
+
+[05:25] Ele adicionou o código do livro, e percebemos que tem dois livros que não estão na tabela “Vendas”, que é o livro de código 8 e o livro de código 13. Então, esses livros podem ter se perdido ou excluídos da tabela, por isso eles estão registrados no histórico de vendas, mas não estão mais na base de livros.
+
+[05:52] Então, usando esses dois exemplos, podemos perceber que a ordem que as tabelas são declaradas no join importa, e que também, podemos usar filtros dentro dos joins.

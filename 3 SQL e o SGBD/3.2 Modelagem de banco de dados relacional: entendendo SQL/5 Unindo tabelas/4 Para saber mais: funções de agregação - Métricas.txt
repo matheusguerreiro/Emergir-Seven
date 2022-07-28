@@ -1,0 +1,17 @@
+Além de consultar os valores puramente como foram inseridos na tabela, é comum construirmos informações com métricas que resumem uma tabela. Isso pode ser feito com as funções de agregações, vamos entender cada um dos comandos:
+
+MAX: a partir de um conjunto de valores é retornado o maior entre eles;
+MIN: analisa um grupo de valores e retorna o menor entre eles;
+SUM: calcula o somatório dos valores de um campo específico;
+AVG: realiza a média aritmética dos valores de uma determinada coluna; e
+COUNT: contabiliza a quantidade de linhas selecionadas.
+Para saber a maior venda feita no Clube do Livro, podemos construir o comando:
+
+SELECT MAX(QTD_VENDIDA) FROM VENDAS;
+
+Usando o GROUP BY agrupamos os registros que serão agregados em grupos de valores permitindo que a função de agregação seja realizada para cada um desses grupos.
+
+Para saber, por exemplo, a maior venda por código de pessoa vendedora podemos consultar da seguinte maneira:
+
+SELECT MAX(QTD_VENDIDA) FROM VENDAS
+GROUP BY(ID_VENDEDOR);

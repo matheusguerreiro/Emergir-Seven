@@ -1,0 +1,10 @@
+Na empresa da Carol alguns processos estão sendo migrados de planilhas para o SQL. A tabela de histórico de vendas foi criada em um SGBD e já foi preenchida com o histórico de vendas da empresa. Carol estava acostumada a remover duplicatas nas planilhas para identificar o nome dos vendedores que realizaram pelo menos uma venda. Como ela pode eliminar os vendedores duplicados da tabela TB_VENDAS usando a linguagem SQL?
+
+
+(V) SELECT DISTINCT * FROM TB_VENDA ORDER BY ID_VENDEDORES
+
+      Alternativa certa! Carol também pode usar esse comando usando o SELECT DISTINCT ordenado pelo campo ID_VENDEDORES.
+
+(V) SELECT DISTINCT * FROM TB_VENDA
+
+      Alternativa certa! O comando SELECT DISTINCT remove as duplicadas e mostra os valores distintos.

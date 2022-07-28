@@ -1,0 +1,17 @@
+[00:00] Na programação, há diversas maneiras de chegar em uma mesma solução. Para aquele problema de Júlia, que ela queria saber a quantidade de livros por pessoa vendedora, ela também poderia ter usado o comando INNER JOIN, que faz a junção entre tabelas e mostra informações que existem em ambas as tabelas referenciadas. Vamos conhecer como esse comando funciona?
+
+[00:25] No MySQL Workbench deixei o comando que a Júlia usou nos passos passados, e ele basicamente seleciona três campos, o “ID_VENDEDOR” da tabela “Vendas”, o “NOME_VENDEDOR” da tabela “Vendedores”, e faz a soma da quantidade vendida no histórico de vendas, registrado na tabela “Vendas”.
+
+[00:49] E depois, ela coloca o FROM, que declara a origem dessas tabelas, que é “Vendas” e “Vendedores”, e para declarar o campo que relaciona essas duas tabelas, ela usa o comando WHERE. E como ela está usando um agregador, um somatório de vendas, ela usa também o GROUP BY, porque essas vendas vão ser por pessoa vendedora.
+
+[01:12] Para usar o comando INNER JOIN, nós vamos substituir essa vírgula que declara a origem dos campos pelo comando. Então fica SELECT todos os campos, FROM VENDAS INNER JOIN VENDEDORES. E o INNER JOIN vai usar o comando ON ao invés do WHERE para declarar a relação entre as tabelas, o campo que referencia as duas tabelas.
+
+[01:41] Então, vou substituir esse WHERE pelo ON, e vai ficar ON VENDAS.ID_VENDEDOR = VENDEDORES.ID_VENDEDOR. E essa é basicamente a alteração do comando que a Júlia fez para esse novo comando, usando INNER JOIN. Então, vamos selecionar, executar e chegamos na mesma solução, já que todos os vendedores e vendedoras do Clube do Livro realizaram pelo menos uma venda.
+
+[02:05] Para entender melhor esse INNER JOIN, essa junção de tabelas, é muito comum usarmos o diagrama de Venn, que são os dois círculos, e cada um representa uma tabela específica. Nesse caso, colocamos A e B, mas poderia ser “Vendas” e “Vendedores”, como é o caso da Júlia.
+
+[02:25] O INNER JOIN é exatamente essa interseção entre tabelas. Então, eu vou ter todas as informações que tem em uma e tem em outra. No nosso caso, o campo que referencia essas duas, é o código do vendedor. Então, a consulta vai mostrar todos os vendedores que realizaram uma venda, ou seja, todos os vendedores que estão no quadro de vendedores na tabela “Vendedores”, e que realizaram uma venda, ou seja, que estão na tabela “Vendas”.
+
+[02:58] Se existir, no caso, algum vendedor que não realizou venda, ele não aparece no INNER JOIN, mas como todos os vendedores do Clube do Livro foram eficientes, então eles apareceram e permaneceram nessa interseção entre tabelas.
+
+[03:14] Mas não existe só o INNER JOIN para juntar duas tabelas, existem outros joins que fazem uma junção um pouco mais específica e para outros objetivos. Mas para isso, vamos entender nos próximos passos.

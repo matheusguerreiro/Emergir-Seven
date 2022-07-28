@@ -1,0 +1,7 @@
+[00:00] O comercial do Clube do Livro estava acompanhando toda a implementação do modelo relacional e da inserção de formações pela equipe de Fernanda. E ao conferir as informações, percebeu que “Os Lusíadas” estava na tabela de livros, mas ele não estava mais sendo vendido pela empresa. Então, solicitou a retirada, a exclusão dessa linha da tabela. Vamos dar uma olhada nas informações da tabela “Livros”.
+
+[00:26] Para olhar essa informação, eu usei o comando SELECT * FROM LIVROS, e eu percebo que “Os Lusíadas” é o livro de código 8. Para deletar essa linha, eu vou usar o comando DELETE, então DELETE FROM LIVROS WHERE ID_LIVRO = 8;, seleciono e executo, e agora ele deletou, vamos só conferir, executando o comando de SELECT * FROM LIVROS, e vemos que pula do 7 para o 9. Então, essa linha de “Os Lusíadas” já não está mais na tabela “Livros”.
+
+[01:23] Aproveitando as alterações, o comercial solicitou uma nova modificação, nessa nova temporada, todos os livros estariam com 10% de desconto, e precisaríamos alterar todos os preços da tabela “Livros”. Para começar, eu vou suar o comando UPDATE para alterar as informações que já estão cadastradas lá, então UPDATE LIVROS SET PREÇO = 0.9*PREÇO;, eu coloco SET e vou definir qual é a informação, ou seja, o preço tem que ser 90% do preço, então 0.9*PREÇO.
+
+[02:05] Vou selecionar e executar, e ele vai me dar um warning, dizendo que as informações foram arredondadas, já que definimos duas casas decimais para o preço dos livros, mas foram executados.

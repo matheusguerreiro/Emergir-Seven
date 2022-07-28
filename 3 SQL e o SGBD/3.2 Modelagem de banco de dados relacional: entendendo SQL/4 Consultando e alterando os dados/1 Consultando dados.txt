@@ -1,0 +1,13 @@
+[00:00] Após inserir todos os dados, Júlia ficou com uma dúvida: como podemos conferir todas as informações que foram inseridas? Fernanda explicou que existe um comando bem simples, que pode nos mostrar isso, e que quase que forma uma frase em inglês. Vamos no MySQL Workbench conferir.
+
+[00:20] Para selecionar todas as informações da tabela “Livros”, eu vou usar o comando SELECT * FROM LIVROS, isso quer dizer que eu estou selecionando todas as linhas e colunas da minha tabela “Livros”. Vou colocar ponto e vírgula, selecionar e executar.
+
+[00:45] Agora sim, ele aparece uma visualização que é uma tabela, com todas as linhas e colunas da tabela “Livros”. Agora, para selecionar um campo específico, eu substituo o asterisco pelo nome do campo, então SELECT NOME_LIVRO FROM LIVROS, para aparecer todos os nomes de livros que tem na minha tabela. Seleciono, executo, e agora ele aparece uma tabela com uma única coluna, que é justamente o campo que eu selecionei na minha consulta.
+
+[01:18] Mas, se eu quisesse uma consulta em que o campo fosse um pouco mais esclarecedor, como um apelido? Vou usar o código do livro como exemplo. Então, o campo que representa o código do livro é o ID_LIVRO, mas eu posso apelidar para “código do livro”. Para isso, eu seleciono ID_LIVRO, e coloco o comando AS para apelidar.
+
+[01:48] Como o “código do livro” tem espaços, eu vou abrir aspas, colocar SELECT ID_LIVRO AS “Código do Livro” FROM LIVROS. Assim eu seleciono, executo e ele vai mostrar uma coluna com todos os códigos do livro, mas ao invés de o cabeçalho ter ID_LIVRO, eu tenho o meu apelido “Código do Livro”.
+
+[02:15] E isso pode trazer uma consulta um pouco mais esclarecedora, porque nem sempre os campos mostram o significado real do valor que tem naquela coluna. Agora já sabemos que o asterisco seleciona todas as colunas e linhas da minha tabela, e para selecionar uma coluna específica, eu só dito o campo específico.
+
+[02:38] Agora, para selecionar parte das linhas, eu posso fazer um filtro. E isso será explicado nos próximos passos.

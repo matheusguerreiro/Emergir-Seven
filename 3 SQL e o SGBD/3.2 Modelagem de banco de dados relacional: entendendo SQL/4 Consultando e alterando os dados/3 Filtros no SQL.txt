@@ -1,0 +1,17 @@
+[00:00] Jorge também ficou animado para verificar os dados que foram inseridos, e usou o comando SELECT * FROM LIVROS, para selecionar todas as informações da tabela “Livros”. Mas ele estava mais interessado em verificar apenas as biografias. Para isso, precisamos montar uma consulta mais específica, usando o comando WHERE, para construir um filtro.
+
+[00:27] Vou continuar com o comando SELECT * FROM LIVROS do Jorge, dar “Enter” e usar o comando WHERE, então WHERE CATEGORIA = “BIOGRAFIA”. Isso quer dizer que na tabela “Livros” vai aparecer apenas as informações em que a categoria for igual à biografia. Vamos executar, para ver o que aparece.
+
+[01:01] Agora, sim, temos três diferentes biografias que estão cadastradas na tabela “Livros”. Depois que o comercial ficou sabendo que as informações já estavam cadastradas nas tabelas, demandou duas tabelas: A primeira, com todos os romances que fossem mais baratos que R$48,00. E a segunda tabela, com todas as poesias que não fossem nem de Camões, nem de Pedrosa. Vamos construir a primeira tabela.
+
+[01:28] Para a primeira demanda, eu vou copiar esse comando que construímos junto com o Jorge, e ao invés de biografia, eu vou substituir para romance, então WHERE CATEGORIA = “ROMANCE”. E nós temos duas condições, nós temos que o livro tem que ser da categoria romance, e tem que ser com um preço menor que R$48,00.
+
+[02:03] Então, eu vou usar o comando AND para acrescentar uma nova condição. E agora sim o campo preço menor que R$48,00, então WHERE CATEGORIA = “ROMANCE” AND PREÇO <48;. Vamos selecionar, executar, agora apareceram dois romances, “O Cortiço” e “Memórias Póstumas de Brás Cubas”, o primeiro é R$47,80 e o segundo R$45,00. Então, ambos mais baratos do que foi pedido.
+
+[02:35] Para a segunda demanda, vou colar aquele mesmo comando que construímos com o Jorge, SELECT * FROM LIVROS, só que nós temos também algumas restrições. Precisamos de WHERE CATEGORIA = “POESIA”, e eu vou dar um “Enter” só para construir essa restrição de autoria.
+
+[03:06] Eu vou abrir parênteses antes de tudo, e dentro eu vou escrever a restrição da autoria. Então, (AUTORIA = “Luís Vaz de Camões” OR AUTORIA = “Gabriel Pedrosa”), para essas duas autorias eu não vou querer. Fora desse parêntese, eu vou usar o comando NOT, porque não quero. E agora, para unir a categoria poesia e essa não autoria dessas duas pessoas, eu vou colocar o comando AND, então WHERE CATEGORIA = “POESIA” AND NOT (AUTORIA = “Luís Vaz de Camões” OR AUTORIA = “Gabriel Pedrosa”).
+
+[03:57] Então, agora nós temos todos os livros que são de poesia, e não são nem da autoria de Camões, nem de Pedrosa. Vou selecionar, executar e apareceu uma poesia que não são nenhum desses autores.
+
+[04:14] Acompanhando o processo de construção desses comandos, o comando WHERE cria um filtro para especializar as nossas consultas. E os comandos AND, NOT e OR, incluídos no comando WHERE, deixam a consulta ainda mais específica, acrescentando mais condições. Vamos verificar também outras maneiras de selecionar nossos dados.

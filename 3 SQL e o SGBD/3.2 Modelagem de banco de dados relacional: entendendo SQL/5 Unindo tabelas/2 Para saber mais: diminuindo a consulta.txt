@@ -1,0 +1,26 @@
+Na programação há diversas maneiras de chegar no mesmo lugar, mas é sempre bom pegar um atalho, não é mesmo?
+
+Para Júlia identificar o nome dos livros que foram vendidos na tabela VENDAS podemos construir o código abaixo:
+
+SELECT LIVROS.NOME_LIVRO,
+           VENDAS.QTD_VENDIDA
+FROM LIVROS,  VENDAS
+WHERE VENDAS.ID_LIVRO = LIVROS.ID_LIVRO;
+
+Entretanto, uma outra maneira de otimizar essa consulta é apelidando o nome das tabelas. Usando um apelido com o comando AS e referenciando esse apelido nos campos selecionados na consulta.
+
+Então, a consulta anterior pode ser reescrita para:
+
+SELECT A.NOME_LIVRO,
+           B.QTD_VENDIDA
+FROM LIVROS AS  A,  VENDAS AS  B
+WHERE B.ID_LIVRO = A.ID_LIVRO;
+
+Podemos reduzir mais ainda o comando omitindo o AS:
+
+SELECT A.NOME_LIVRO,
+           B.QTD_VENDIDA
+FROM LIVROS  A,  VENDAS   B
+WHERE B.ID_LIVRO = A.ID_LIVRO;
+
+Todos os comandos chegam no mesmo resultado, porém podemos usar alguns artifícios que o deixam mais limpos e esclarecedores.

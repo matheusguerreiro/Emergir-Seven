@@ -1,0 +1,25 @@
+Imagine uma lista de cidades que terminam com “lândia”. Para localizar essas cidades, podemos filtrar os nomes das que sabemos, como por exemplo Uberlândia em Minas Gerais e Analândia em São Paulo.
+
+SELECT CIDADE, ESTADO
+FROM MAPA
+WHERE CIDADE = "Uberlândia" and CIDADE = "Analândia"
+
+CIDADE	ESTADO
+Uberlândia	MG
+Analândia	SP
+Mas podemos otimizar nosso código para parecer todas as cidades com essa condição, utilizando o comando LIKE que irá extrair valores da tabela que possuem uma parte específica.
+
+Para definir que a parte que queremos é o final das palavras usaremos a notação %lândia, como se fosse “alguma coisa” lândia. Veja a construção do comando e o resultado.
+
+SELECT CIDADE, ESTADO
+FROM MAPA
+WHERE CIDADE LIKE '%LÂNDIA'
+
+CIDADE	ESTADO
+Analândia	SP
+Cafelândia	PR
+Tailândia	PA
+Uberlândia	MG
+Diferente da consulta anterior, apareceram outras cidades que terminam com lândia além daquelas citadas no filtro.
+
+Lembre-se que o % é um operador que substitui qualquer valor na procura. Então, caso queira cidades que começam com A, basta usar A%. Outro exemplo seria tentar localizar as cidades que contém a sílaba ‘ma’, podemos usar o %MA% para aparecer todas as cidades que possuem ‘ma’ posicionada em qualquer lugar.

@@ -1,0 +1,18 @@
+Giovanna está supervisionando um projeto que coleta dados em diversas tabelas usando a linguagem SQL. Ela foi verificar os códigos feitos pelas pessoas da equipe para entender quais informações estão sendo coletadas. Quais das análises abaixo estão corretas?
+
+
+(V) SELECT NOME
+    FROM TB_PESSOAS
+    WHERE IDADE > 20
+    AND (CIDADE = 'DF' OR CIDADE = 'RJ')
+
+    A consulta busca todas as pessoas cuja idade seja maior que 20 e que sejam do DF ou RJ.
+
+      Alternativa correta! Na consulta aparece o nome das pessoas que possuem idade maior que 20 anos, que são do Distrito Federal ou do Rio de Janeiro.
+
+(V) SELECT * FROM tb_projeto 
+    WHERE Local_Projeto = 'Mauá';
+    
+    Nessa consulta foram selecionadas as linhas da tabela tb_projeto onde o local do projeto é a cidade de Mauá.
+
+      Alternativa correta! A cláusula WHERE filtra as linhas, nesse caso a tabela mostra apenas as informações em que Local_Projeto = 'Mauá'.
