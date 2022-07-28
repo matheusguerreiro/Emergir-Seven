@@ -1,0 +1,32 @@
+Manuela é desenvolvedora junior em uma empresa de consultoria e está implementando um modelo relacional para seu cliente Filmefix, uma empresa de streaming de filmes e séries. Usando a linguagem SQL, ela já criou todas as tabelas e relações. Entretanto algumas informações ficaram pendentes para serem inseridas.
+
+Como Manuela pode fazer a inserção das linhas abaixo na tabela Filmes?
+
+Id_filme	Nome	                    Lançamento	Duração	Gênero
+1	        Toy Story	                1995-12-22	81	    Aventura
+2	        O Silêncio dos Inocentes	1991-05-17	118	    Suspense
+3	        Coringa	                  2019-10-03	122	    Drama
+
+
+(V) INSERT INTO FILMES VALUES
+( 1  , “Toy Story”               , ‘1995-12-22’ , 81    , “Aventura”),
+( 2  , “O Silêncio dos Inocentes”, ‘1991-05-17’ , 118   , “Suspense”),
+( 3  , “Coringa”                 , ‘2019-10-03’ , 122   , “Drama”);
+
+      Alternativa Correta! É possível fazer a inserção de várias linhas em uma única execução.
+
+(V) INSERT INTO FILMES VALUES
+( 1  , “Toy Story”               , ‘1995-12-22’ , 81    , “Aventura”); 
+INSERT INTO FILMES VALUES
+( 2  , “O Silêncio dos Inocentes”, ‘1991-05-17’ , 118   , “Suspense”); 
+INSERT INTO FILMES VALUES
+( 3  , “Coringa”                 , ‘2019-10-03’ , 122   , “Drama”); 
+
+      Alternativa Correta! Podemos inserir cada uma das três linhas em diferentes inserções.
+
+(V) INSERT INTO FILMES (Nome, Gênero, Lançamento, Duração, Id_filme ) VALUES
+( “Toy Story”                , “Aventura” , ‘1995-12-22’ , 81   , 1),
+( “O Silêncio dos Inocentes” , “Suspense” , ‘1991-05-17’ , 118  , 2),
+( “Coringa”                  , “Drama”    , ‘2019-10-03’ , 122  , 3); 
+
+      Alternativa Correta! Se os campos forem inseridos em ordens diferentes das colunas da tabela, basta declarar qual é a ordem das informações com o nome dos campos antes do comando VALUES.

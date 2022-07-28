@@ -1,0 +1,9 @@
+[00:00] Júlia ficou responsável por inserir 11 linhas na tabela “Livros”, e ficou pensando se teria uma maneira de otimizar os seus códigos. Vamos dar uma olhada no que ela escreveu.
+
+[00:12] Júlia inseriu as características dos livros: “A Volta ao Mundo em 80 Dias”, “O Cortiço” e “Dom Casmurro”. Mas, conseguimos perceber que todo esses comandos precisam ser executados unicamente.
+
+[00:30] Ela mostrou esse código para a Fernanda, para ver se tem outra maneira de otimizá-lo. Fernanda explicou, que dá para inserir várias linhas em uma única execução. Para isso, ela vai precisar copiar cada linha, cada informação que está entre parênteses e separar por vírgula. Eu tenho as informações de “A Volta ao Mundo em 80 Dias” no primeiro parênteses, vírgula, tenho as informações de “O Cortiço” no segundo parênteses, vírgula, e de “O Dom Casmurro” em último e então eu tenho ponto e vírgula para executar o nosso comando. Seleciono tudo, executo no botão de raio.
+
+[01:23] Deu um check verde, tudo certo, e agora Fernanda consegue executar o resto das suas linhas em um só comando. Temos o restante das informações que Júlia precisava preencher, vamos selecionar e executar, e sobrou até tempo dela preencher a tabela vendedores, com os vendedores do Clube do Livro. Temos quatro, vamos selecionar e executar novamente.
+
+[01:54] Jorge é desenvolvedor júnior da equipe de Fernanda, e estava acompanhando todo esse processo. Ficou responsável também de inserir outras informações no restante das tabelas. Vamos entender como Jorge inseriu essas informações?

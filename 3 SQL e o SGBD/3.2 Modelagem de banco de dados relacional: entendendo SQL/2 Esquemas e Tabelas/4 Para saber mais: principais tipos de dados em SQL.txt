@@ -1,0 +1,14 @@
+Ao criar a tabela Livros percebemos que é preciso definir não só o nome dos campos, mas também o seu tipo. Abaixo encontra-se uma tabela com os principais comandos para definição de tipos utilizados na linguagem SQL.
+
+Lembrando que alguns SGBD’s possuem comandos diferenciados para a mesma finalidade, um exemplo disso é a indicação de uma cadeia de caracteres, pois em alguns sistemas usa-se char e em outros é usado o comando character ambos para tipificar como texto.
+
+Categoria	Descrição	Exemplo	Comando
+Numéricos exatos	Inteiros de vários tamanhos que podem ser formatados	9.78 pode ser definida como decimal(3,2) 9 é número inteiro é do tipo int.	int, smallint, decimal(i,j), numeric(i,j), dec(i,j)
+Numéricos aproximados	Números de ponto flutuante com precisão	7.90 é do tipo float	float ou real, double precision
+Cadeias de caracteres	Textos de tamanhos fixos	“modelagem” é char(9)	char(n) ou character(n)
+Texto de tamanho variável		varchar(n) ou char varying(n) ou character varying(n)
+Valores lógicos	Termos que representa verdadeiro ou falso		true, false ou unknown
+Datas	Datas, dias, mês, anos.	Calendário lunar, calendário comercial	Date DD-MM-YYYY ou YYYY-MM-DD-
+Tempo	10:59:13 é tipo HH:MM:SS	HH:MM:SS, timestamp
+
+Mesmo com o padrão ANSI, cada SGBD tem seu manual com mais detalhes sobre tipos específicos. Vale a pena a pesquisa!

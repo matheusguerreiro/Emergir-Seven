@@ -1,0 +1,13 @@
+[00:00] Jorge ficou responsável por continuar o preenchimento das informações. Só que ao se deparar com o seu código, percebeu que escreveu as informações em uma ordem diferente da ordem da tabela. Será que Jorge vai conseguir inserir essas informações, ou ele vai ter que reescrever tudo novamente? Vamos compreender o código de Jorge.
+
+[00;22] No MySQL Workbench, conseguimos perceber que ele escreveu “O Diário de Anne Frank” e todas as informações. Mas a categoria está em primeiro lugar, depois vem autor, o nome, editora, código e no fim o preço, então, está diferente da ordem de quando construímos a tabela “Livros”.
+
+[00:46] Percebendo a preocupação de Jorge, Fernanda logo disse que é possível inserir informações fora de ordem, porém, para isso, é preciso declarar a ordem que você deseja, que você inseriu os seus campos. E essa ordem deve ser declarada antes do comando Values.
+
+[01:06] Então, vamos colocar INSERT INTO LIVROS, vamos manter isso do código de Jorge, dar um “Enter”, abrir parênteses e escrever o nome dos campos que está de acordo com a ordem que ele inseriu. Então, vamos lá, o primeiro é ( CATEGORIA, AUTORIA, NOME_LIVRO, EDITORA, ID_LIVRO, PRECO), agora eu deixo o values e os valores que o Jorge escreveu.
+
+[02:08] Vou selecionar esse comando, e executar no botão de raio. Executado, agora esse livro já foi inserido na tabela “Livros”. Agora que acompanhamos Júlia e Jorge nesse processo de inserção de dados, conseguimos aprender três diferentes tipos de inserir informações nas tabelas. Que tal, agora praticar inserindo as informações dos históricos de pedidos na tabela “Vendas”?
+
+[02:41] Só não esqueça de ativar as restrições entre as tabelas depois que inserir todas as informações. E já vou deixar uma dica: se você preferir, você pode compartilhar todo o seu processo no fórum da Alura. Também, você pode verificar o que os seus colegas estão falando sobre inserir dados no SQL.
+
+[03:03] E por acaso, se eu quiser consultar essas informações que já foram inseridas ou até alterar, como eu faço? Nos próximos passos vamos entender isso.

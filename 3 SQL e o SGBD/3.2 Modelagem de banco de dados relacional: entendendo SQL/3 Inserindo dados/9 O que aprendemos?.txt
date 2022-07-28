@@ -1,0 +1,5 @@
+Nessa aula, você aprendeu a:
+Inserir dados usando o comando INSERT;
+Inserir dados fora da ordem dos campos da tabela;
+Inserir múltiplas linhas em uma execução;
+Desativar e ativar as restrições de chave estrangeira usando o comando SET FOREIGN_KEY_CHECKS.

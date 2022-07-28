@@ -1,0 +1,21 @@
+[00:00] Agora que o nosso esquema já está definido, podemos construir as tabelas baseado nesse modelo relacional que recebemos do Artur, você lembra?
+
+[00:10] Para isso, eu vou para o MySQL Workbench para começar os nossos códigos. No MySQL Workbench, eu vou clicar antes no esquema que criamos dessa janela de “Navegator”, no canto esquerdo, até ele ficar em negrito. Isso quer dizer, que qualquer comando que eu for executar, vai fazer referência a esse esquema e vai dispensar ficarmos declarando ele no nosso código.
+
+[00:38] Para criar a tabela, eu vou usar dois comandos, o Create, que eu já usei para criar o esquema, e o Table. E logo em seguida, eu vou falar o nome da nossa tabela. Então, no espaço de criar nossos códigos, eu vou em CREATE TABLE LIVROS (), e dentro desses parênteses, eu vou definir os campos da tabela “Livros”.
+
+[01:11] O primeiro é o código do livro, ou seja, ID_LIVRO INT NOT NULL,, depois do nome do campo, eu vou falar de que tipo é esse campo. Temos um código, ou seja, o valor numérico inteiro, e o comando que representa isso é o INT. Eu também vou usar o NOT NULL, que quer dizer que todos os meus livros precisam ter um código, ou seja, ele não recebe valores faltantes.
+
+[01:45] O próximo campo é o nome do livro, NOME_LIVRO VARCHAR(100) NOT NULL,, que no caso, é um texto, um caractere. E eu vou usar do tipo VARCHAR, e eu vou “setar”, configurar o tamanho desse campo, então colocar dentro dos parênteses o número de caracteres, e também vou usar o comando NOT NULL, para dizer que todos os livros precisam ter um nome.
+
+[02:17] Os próximos três campos também são caracteres, e eu vou colocar do tipo VARCHAR de tamanho 100, então, o próximo autoria, o nome dos autores e autoras dos nossos livros, AUTORIA VARCHAR(100) NOT NULL,. O próximo é EDITORA VARCHAR(100) NOT NULL,. E o próximo é categoria, ou seja, se ele é romance, bibliografia, então, CATEGORIA VARCHAR(100) NOT NULL,.
+
+[03:06] E o último campo da nossa tabela é preço, e ele também é um valor numérico, só que ele tem uma parte decimal, e eu vou abrir parênteses, para inserir dois argumentos, o primeiro é a quantidade de dígitos que queremos para o campo preço, então, vou deixar cinco dígitos, três para a parte de reais e dois para a parte de centavos, e o próximo argumento é a quantidade de casas decimais que eu quero, então eu vou querer duas casas decimais para representar os centavos e usar o comando not null, todos os livros precisam ter preço. Então, PRECO DECIMAL (5,2) NOT NULL,.
+
+[03:52] Na tabela “livros”, temos três diferentes tipos para categorizar os campos da nossa tabela, o INT, o VARCHAR e o DECIMAL. Mas não existe apenas esses tipos de campos no SQL. Para isso, eu vou deixar um conteúdo para detalhar melhor os tipos mais utilizados na linguagem SQL. Antes de finalizar minha tabela, eu vou definir a chave primária, que é o campo que identifica unicamente as linhas da minha tabela.
+
+[04:26] No nosso caso, todos os livros têm um código único, representado no campo ID_LIVROS. Para definir a chave primária, eu vou usar o comando PRIMARY KEY (ID_LIVRO).
+
+[04:53] Agora, nosso comando já define a criação da tabela “livros” com os campos e os seus tipos e a chame primária. Eu vou colocar o ponto e vírgula para encerrar o comando, seleciono e clico no botão de raio para executar.
+
+[05:13] Não deu erro na tabela output, nossa tabela já está criada, e agora, a Júlia já sabe que é preciso criar um esquema para armazenar todas as tabelas, e que o comando create cria tanto esquemas, quanto tabelas. Vamos entender melhor como essas tabelas se relacionam?

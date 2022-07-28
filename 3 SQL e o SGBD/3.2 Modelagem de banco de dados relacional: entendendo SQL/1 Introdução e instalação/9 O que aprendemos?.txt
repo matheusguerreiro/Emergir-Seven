@@ -1,0 +1,4 @@
+Nessa aula, você aprendeu a:
+Conhecer a importância da linguagem SQL para implementar um modelo relacional;
+Reconhecer as principais SGBD’s disponíveis do mercado;
+Instalar os componentes necessários para utilizar o MySQL.

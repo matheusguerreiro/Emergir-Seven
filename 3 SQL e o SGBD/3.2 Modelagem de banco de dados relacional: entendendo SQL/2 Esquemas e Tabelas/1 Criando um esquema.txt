@@ -1,0 +1,15 @@
+[00:00] Júlia ficou animada para criar todas as tabelas aqui no MySQL, e já perguntou para a Fernanda por qual tabela iríamos começar. Fernanda explicou que antes de criar qualquer tabela, era necessário criar um esquema que irá reunir todas as tabelas que iríamos criar. Vamos entender melhor esse processo?
+
+[00:20] Antes de tudo, precisamos identificar se o nosso servidor está rodando. Para isso, vamos ver se no canto direito da barra de tarefas tem o ícone do UniController.
+
+[00:35] Não consigo identificar nenhum, então vamos na pasta que criamos no diretório C, “MySQL > UniServerZ > UniController”, vai abrir a interface, eu vou clicar em “Start MySQL”, para iniciar o nosso servidor, até aparecer o botão verde, que significa que o servidor já está ligado. E já consegue identificar também o ícone do UniController na nossa barra de tarefas. E eu vou para o MySQL Workbench para criar o nosso esquema.
+
+[01:11] Abrindo o MySQL Workbench, eu vou clicar em “Conexão > Clube_do_livro”, que foi criada no passado, e também inserir nossa senha de acesso ao servidor, que é “livro”. Vou clicar em “Ok”, ele abriu nosso espaço de escrever nossos códigos.
+
+[01:38] Para criar nosso esquema, eu vou usar dois comandos, o “Create” e o Schema”. Então, CREATE SCHEMA CLUBE_DO_LIVRO;, e colocar o nome desse esquema. E toda vez que quisermos encerrar um comando no MySQL ou no SQL, vamos usar o ponto e vírgula. Vou selecionar esse comando, e clicar no ícone de raio para executar.
+
+[02:16] Executado, eu sei que está executado, porque na aba embaixo de “Output”, o comando está parecendo com um check verde, então, quer dizer que não teve erro e o esquema foi criado.
+
+[02:28] Para verificar que foi criado, eu vou nessa aba “Navegator”, que fica no cano esquerdo do MySQL Workbench, e clicar em “Schemas”. Aparece todos os esquemas criados, só que conseguimos ver que não tem o “Clube do Livro”.
+
+[02:50] Para atualizar essa visualização, eu vou clicar nessa seta que tem no canto superior dessa janela, para atualizar, clico, e agora já aparece o esquema “CLUBE_DO_LIVRO”, e já está preparado, pronto para receber todas as diferentes tabelas que formos criar nos próximos passos.

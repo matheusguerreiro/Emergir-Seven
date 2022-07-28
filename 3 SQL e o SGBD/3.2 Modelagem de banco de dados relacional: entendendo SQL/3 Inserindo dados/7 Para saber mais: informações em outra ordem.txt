@@ -1,0 +1,17 @@
+Também podemos fazer a inserção de informações em ordem diferente dos campos que foram declarados na tabela.
+
+Vamos inserir três biografias na tabela LIVROS, entretanto inserindo a categoria depois a autoria, o nome do livro, a editora e por último o código do livro e seu preço. Usando essa ordem precisamos declarar o nome dos campos antes do comando VALUES.
+
+#Inserindo valores fora de ordem
+INSERT INTO LIVROS 
+(CATEGORIA, AUTORIA, NOME_LIVRO, EDITORA, ID_LIVRO, PREÇO)
+VALUES
+('Biografia' ,    'Malala Yousafzai', 'Eu sou Malala'       , 'Companhia das Letras', 11, 22.32),
+('Biografia' ,    'Michelle Obama'  , 'Minha história'      , 'Objetiva'            ,    12,    57.90),
+('Biografia' ,    'Anne Frank'      , 'Diário de Anne Frank', 'Pe Da Letra'         , 13, 34.90);
+
+Lembrando se você quiser excluir alguma tabela você pode usar o comando DROP, assim como mostra o código abaixo. Ah! Só não esqueça de desativar e ativar as restrições de chave estrangeira para realizar a exclusão.
+
+#######       Código Extra      ########
+# Excluindo uma tabela
+DROP TABLE VENDEDORES;

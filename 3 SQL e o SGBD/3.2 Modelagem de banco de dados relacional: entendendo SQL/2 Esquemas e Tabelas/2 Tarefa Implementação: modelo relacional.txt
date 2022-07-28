@@ -1,0 +1,6 @@
+Matheus é desenvolvedor júnior e foi contratado para implementar um modelo relacional usando a linguagem SQL no sistema de gerenciamento de banco de dados MySQL. Além disso, ele também fará a inclusão, alteração, exclusão e seleção de dados em tabelas. Com o modelo relacional em mãos, qual seria o primeiro passo para fazer a implementação?
+
+
+(V) Usar o comando CREATE SCHEMA após a instalação do SGBD escolhido.
+
+      Logo depois da instalação e configuração do Sistema Gerencial de Banco de Dados é possível criar um esquema usando o comando CREATE SCHEMA que armazenará todas as tabelas que serão criadas.

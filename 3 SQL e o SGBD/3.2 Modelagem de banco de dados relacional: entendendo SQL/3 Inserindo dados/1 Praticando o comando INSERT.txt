@@ -1,0 +1,13 @@
+[00:00] Agora que o nosso modelo relacional já está implementado, podemos inserir as informações. Fernanda explicou que a inserção de dados pode ser usada através do comando INSERT INTO. E Júlia logo perguntou por qual tabela iríamos começar.
+
+[00:17] Fernanda explicou que podemos começar por qualquer tabela, desde que a relação entre essas duas tabelas esteja desativada. Ou seja, aquela chave estrangeira não esteja mais ligando uma tabela a outra.
+
+[00:34] Para fazer isso, eu vou usar o comando no MySQL Workbench SET FOREIGN_KEY_CHECKS = 0;. Vou selecionar isso e executar no botão de raio. Isso quer dizer, que agora as tabelas não estão mais relacionadas, e a chave estrangeira está desativada. Para nos auxiliar a inserir um novo livro na tabela livros, eu vou clicar no esquema que criamos, o “Clube_do_Livro”, na janela “Navegator”, no canto esquerdo do MySQL Workbench, vou clicar em “clube_do_livro”, vou clicar em “Tables”, para aparecer todas as tabelas que tem nesse esquema.
+
+[01:28] Vou clicar em “livros > columns”, para aparecer os campos da tabela “Livros” na ordem em que eles foram cadastrados. E vou colocar o comando que a Fernanda citou, que é INSERT INT LIVROS VALUES (, para inserir os valores eu usei o comando Values. E vou começar inserindo na ordem que está na tabela. Então, primeiro campo é o código do livro 1,, o nome do livro, como ele é um texto, eu vou colocar entre aspas, ”Percy Jackson e o Ladrão de Raios”,.
+
+[02:35] O próximo é o autor, então é ”Rick Riordan”,, o próximo é a editora, então ”Intrínseca”, e a categoria vou colocar ”Aventura”,, e o último campo é o preço. Nós vamos seguir a lógica da língua inglesa, ou seja, o separador é o ponto, que é diferente do português, que separa os centavos após uma vírgula. O preço do “Percy Jackson e o Ladrão de Raios” é 34,65. Então, vou colocar 34.65, vou fechar parênteses, para colocar todos esses valore dentro deles, ponto e vírgula, seleciono tudo e executo no botão de raio.
+
+[03:47] Deu erro, porque eu coloquei o nome da tabela errado, o nome da tabela é “Livros”. Vou selecionar de novo e executar. Agora sim, deu certo no espaço de output com um check verde, e agora as informações do “Percy Jackson e o Ladrão de Raios” já está na tabela livros.
+
+[04:12] E depois de a Fernanda ter explicado todo esse processo de inserir uma informação, ela distribuiu a inserção de dados para cada um da equipe. Vamos conferir como foram inseridas essas informações?

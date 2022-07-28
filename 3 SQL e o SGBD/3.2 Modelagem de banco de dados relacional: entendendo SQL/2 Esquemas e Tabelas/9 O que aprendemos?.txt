@@ -1,0 +1,5 @@
+Nessa aula, você aprendeu a:
+Construir um esquema usando o comando CREATE SCHEMA;
+Criar uma tabela usando o comando CREATE TABLE;
+Alterar tabelas para adicionar restrições e estabelecer a integridade referencial;
+Definir a chave primária e a chave estrangeira de uma tabela.

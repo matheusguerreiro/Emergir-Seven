@@ -1,0 +1,9 @@
+[00:00] Júlia, que é desenvolvedora júnior da equipe de Fernanda, ficou curiosa para saber como iremos gerenciar o banco de dados aqui no Clube do Livro.
+
+[00:09] Fernanda logo explicou, que mesmo usando o SQL como linguagem de acesso aos dados, existem vários sistemas de gerenciamento de banco de dados, disponíveis no mercado.
+
+[00:19] Dentro os SGBDs mais comuns, podemos citar o SQL Server, o MySQL, o SQLite e até o DB2 da IBM, por exemplo. Mesmo cada um tempo as suas peculiaridades, todos usam a linguagem SQL para transformar um modelo de alto nível, ou seja, aquele que está mais próximo do nosso entendimento, para o modelo de baixo nível, que está mais próximo da linguagem do computador.
+
+[00:46] A equipe escolheu o MySQL para manuseio e organização dos dados. Além de ser uma opção gratuita, ele está entre os SGBDs mais difundidos e utilizados.
+
+[00:58] Júlia ficou admirada com a quantidade de possibilidade que temos para gerenciar banco de dados. E ficou animada também para instalar o MySQL em sua máquina. Fernanda combinou nos próximos passos iria mostrar como instalar os componentes necessários para usar o MySQL e colocar tudo em prática.

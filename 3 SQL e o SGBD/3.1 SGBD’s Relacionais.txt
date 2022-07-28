@@ -1,0 +1,59 @@
+Os bancos de dados são as ferramentas mais utilizadas para o armazenamento das informações e dos dados, seja em um servidor físico ou na nuvem.
+
+É possível armazenar diversas informações em um banco de dados, surgindo assim a necessidade de termos ferramentas específicas que facilitem o nosso trabalho na hora de estruturá-los para receber essas informações. Neste momento, entram os SGBDs(Sistemas de Gestão de Bancos de Dados).
+
+Podemos encontrar uma diversidade de SGBDs disponíveis no mercado que pode variar entre os não-relacionais como o MongoDB e os relacionais como o MySQL, Oracle, PostgreSQL, SQL Server, entre outros.
+
+Neste artigo, vamos focar em conhecer mais sobre alguns SGBDs relacionais e suas diferenças.
+
+Podemos fazer todas essas alterações em um banco de dados sem um SGBD?
+Ao utilizar um SGBD, podemos realizar vários processos nos bancos de dados: consultar, alterar e excluir dados das tabelas; criar e gerenciar usuários; importar e exportar dados; e gerenciar backups, garantindo assim a segurança, a integridade, controle de redundância e até o compartilhamento dos dados.
+
+Devido a grande variedade de opções disponíveis no mercado, uma dúvida que pode surgir no momento da escolha é:
+
+Qual SGBD irei utilizar?
+Normalmente, chamamos o MySQL, Oracle, PostgreSQL de banco de dados, mas na realidade eles são os SGBDs que gerenciam os bancos de dados. Todos esses SGBDs, por padrão, utilizam a linguagem SQL para realizar as consultas.
+
+Devido a esse padrão entre os SGBDs, algumas vantagens são levantadas ao se trabalhar com os SGBDs relacionais, como: aprendizado, portabilidade, longevidade, comunicação e liberdade de escolha.
+
+Entretanto, é preciso dizer que existem diferenças que podem ser muito significativas no momento de realizar a escolha de qual software iremos utilizar para implementar o nosso projeto.
+
+Vamos estudar algumas delas?
+
+MySQL
+
+O MySQL é um dos bancos de dados mais populares da Oracle Corporation, possui uma versão gratuita, open source, multiplataforma, sendo compatível com diversas linguagens de programação. Além disso, tem uma comunidade ativa e pode ser utilizado em qualquer tipo de aplicação, desde as mais simples até as mais robustas.
+
+Outro ponto favorável é a facilidade de programação e aprendizado deste SGBD. É importante lembrar que a ferramenta e a documentação estão disponíveis apenas em inglês.
+
+O MySQL Workbench é um exemplo de software disponibilizado para simplificar a execução de tarefas complexas, configurar, gerenciar, administrar o banco de dados.
+
+Oracle
+
+O Oracle é um SGBD que surgiu no fim dos anos 70, também faz parte da Oracle Corporation e possui várias edições, cada uma com características diferentes focadas para as necessidades de empresas de médio e grande porte.
+
+Possui uma versão gratuita, suporta múltiplos bancos de dados e é compatível com diversas linguagens de programação. E assim como o MySQL, não possui uma versão em português da sua documentação.
+
+O SQL Developer é um software gratuito disponibilizado para facilitar a utilização dos(as) usuários(as) e administradores(as) de banco de dados para execução de suas tarefas.
+
+PostgreSQL
+
+O PostgreSQL foi desenvolvido com base no POSTGRES 4.2 do Berkeley Computer Science Department da Universidade da Califórnia. É um SGBD open source e gratuito, possui uma comunidade ativa, é estavel, escalável e disponibiliza flexibilidade ao utilizar o stored procedure.
+Inicialmente foi projetado para rodar em plataformas semelhantes ao UNIX, mas hoje é multiplataforma. Não existe uma versão em português da sua documentação.
+
+O pgAdmin é o software disponibilizado para facilitar a administração do banco de dados pelas pessoas usuárias, normalmente a sua instalação é feita juntamente com o SGBD e o seu acesso é feito através do navegador.
+
+SQL Server
+
+O SQL Server é um SGBD da empresa Microsoft. Ele disponibiliza um excelente suporte para recuperação de dados e inclui softwares de gestão de banco de dados tanto para nível profissional quanto empresarial.
+
+Esse SGBD possui versões gratuitas e é compatível com diversas linguagens de programação. Inicialmente foi projetado para rodar apenas em plataformas Windows, porém, foi lançada uma versão compatível com sistemas operacionais Linux, a partir do SQL Server 2017.
+
+Diferente dos outros SGBDs anteriormente apresentados, o SQL Server possui uma versão em português da sua documentação.
+
+O SQL Server Management Studio (SSMS) é o software disponibilizado pela Microsoft para acessar, configurar, gerenciar, administrar e desenvolver todos os componentes do SQL Server.
+
+Conclusão
+Como estudamos neste artigo, existem uma variedade de SGBDs que podem ser utilizados para implementar um projeto de bancos de dados. Esses SGBDs possuem diversas semelhanças, mas há também diferenças que podem ser muito significativas no momento da decisão.
+
+Utilizar um SGBD para gerenciar os nossos dados é muito importante, pois como dito anteriormente, será através deles que é possível garantir a segurança, a integridade, controle de redundância e até o compartilhamento dos dados.

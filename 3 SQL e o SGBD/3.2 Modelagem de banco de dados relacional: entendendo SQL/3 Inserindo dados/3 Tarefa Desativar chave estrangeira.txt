@@ -1,0 +1,6 @@
+Pierre é engenheiro de dados em uma empresa de logística e está participando do preenchimento de dados nas tabelas usando a linguagem SQL no MySQL. Todas as tabelas já foram criadas e as chaves primárias e estrangeiras também já foram definidas. Mas, antes de preencher qualquer tabela com as informações, qual comando Pierre deve usar para desativar as restrições de chave estrangeira para prosseguir com a inserção das linhas?
+
+
+(V) SET FOREIGN_KEY_CHECKS = 0;
+
+      O comando SET FOREIGN_KEY_CHECKS = 0; desativa as restrições de chave estrangeira, permitindo inserir informações em quaisquer tabelas.

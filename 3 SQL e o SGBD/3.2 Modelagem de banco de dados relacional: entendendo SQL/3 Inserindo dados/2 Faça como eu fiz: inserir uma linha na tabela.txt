@@ -1,0 +1,14 @@
+Para inserir uma linha na tabela com a linguagem SQL utilizamos o comando INSERT INTO. Quando criamos a tabela LIVROS definimos os campos ID_LIVRO como INT, NOME_LIVRO, a AUTORIA, a EDITORA e a CATEGORIA como VARCHAR(100) e o último campo o PREÇO como DECIMAL(5,2).
+
+Seguindo a ordem desses campos podemos inserir o livro Percy Jackson e o Ladrão de Raios e todas essas características usando o comando abaixo:
+
+INSERT INTO LIVROS VALUES (
+ 1,
+'Percy Jackson e o Ladrão de Raios',
+'Rick Riordan',
+'Intrínseca',
+'Aventura',
+34.45
+);
+
+Insira 1 para código do livro, nome do livro 'Percy Jackson e o Ladrão de Raios', o autor 'Rick Riordan’, a editora 'Intrínseca', o gênero 'Aventura' e por fim o preço 34 reais e 45 centavos. Perceba que todos os campos que são textos (cadeias de caracteres) são escritos entre aspas.

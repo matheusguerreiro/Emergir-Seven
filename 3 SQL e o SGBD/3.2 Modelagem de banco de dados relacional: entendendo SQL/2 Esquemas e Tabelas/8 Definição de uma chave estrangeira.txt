@@ -1,0 +1,11 @@
+Amanda é engenheira de dados e está fazendo a implementação de um modelo relacional na sua empresa. Ela já criou a tabela TB_DEPENDENTE, entretanto ainda não definiu a chave estrangeira cujo o nome do campo é CPF_FUNCIONARIO. Esse campo fará referência à coluna CPF da tabela TB_FUNCIONARIO. Ela também já sabe que o apelido da restrição será tb_funcionario_tb_dependente_fk. Qual é o comando em SQL que Amanda pode usar para criar essa chave estrangeira?
+
+
+(V) ALTER TABLE  TB_DEPENDENTE 
+    ADD CONSTRAINT tb_funcionario_tb_dependente_fk
+    FOREIGN KEY (CPF_FUNCIONARIO)  
+    REFERENCES TB_FUNCIONARIO (CPF)
+    ON DELETE  NO ACTION 
+    ON UPDATE NO ACTION;
+
+      Amanda pode usar o comando ALTER TABLE para alterar a tabela TB_DEPENDENTE, permitindo que seja indicada a chave estrangeira através do comando FOREIGN KEY.

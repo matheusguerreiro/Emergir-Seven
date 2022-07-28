@@ -1,0 +1,13 @@
+[00:00] Criando todas as tabelas, Júlia percebeu que elas já foram construídas com a chave primária. Mas ainda não entendeu como elas se relacionam. Como será que a tabela “estoque” está relacionada com a tabela “livros”, por exemplo? Fernanda explicou, que para isso precisamos declarar a chave estrangeira, que é o campo que vai fazer a relação entre as tabelas.
+
+[00:27] Mas para declarar, precisamos alterar a tabela que já foi criada. Para alterar uma tabela, eu vou usar o comando ALTER TABLE, e logo em seguida, declarar qual tabela vamos alterar. Então, no MySQL Workbench, vou colocar ALTER TABLE ESTOQUE ADD CONSTRAINT CE_ESTOQUE_LIVROS, e vamos alterar a tabela adicionando uma restrição. Para adicionar uma restrição, vou usar o comando ADD CONSTRAINT, e apelidar o nome dessa restrição. Pode ser um apelido qualquer, eu vou usar a lógica CE, de chave estrangeira.
+
+[01:22] Logo em seguida, eu preciso falar qual é o campo da tabela estoque, que é a chave estrangeira. Então, eu vou usar o comando FOREIGN KEY(ID_LIVRO), e dizer que é o código do livro que é a nossa chave estrangeira. E agora, já temos que o campo ID_LIVRO é a chave estrangeira da tabela “Estoque”.
+
+[01:55] Mas ainda não fizemos referência a qual tabela esse estoque está relacionado. Então, vou usar o comando REFERENCES LIVRO (ID_LIVRO). Temos que o ID_LIVRO da tabela estoque é a chave estrangeira que faz referência ao campo ID_LIVRO, só que da tabela “Livros”.
+
+[02:39] A chave estrangeira garante a minha integridade referencial. Mas eu vou adicionar duas linhas de código para personalizar essa referência. Vou colocar o ON DELETE NO ACTION, e o ON UPDATE NO ACTION.
+
+[03:00] Essas duas linhas, de modo simplificado, vai gerar um erro toda vez que eu alterar um livro que estiver na tabela estoque, mas não estiver registrado na tabela “Livros”. Finalizado o meu comando, ponto e vírgula, vou selecionar tudo e clicar no botão de raio para executar.
+
+[03:21] Agora já estou com essa referência definida, e quando todas as tabelas e referências forem construídas, nossa base de dados já está pronta para receber novas informações. Vamos entender todo esse processo nos próximos passos.

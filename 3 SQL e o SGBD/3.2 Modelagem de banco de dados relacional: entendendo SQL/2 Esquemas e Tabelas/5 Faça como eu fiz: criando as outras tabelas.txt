@@ -1,0 +1,55 @@
+Para criar uma tabela usamos o comando CREATE TABLE e logo em seguida o nome da tabela que será criada. Após o nome da tabela abrimos e fechamos parênteses, e todos os campos e seus tipos serão definidos dentro desses parênteses. Para finalizar também será declarado o campo que é chave primária usando o comando PRIMARY KEY.
+
+O modelo relacional do Clube do Livro define quatro diferentes tipos de tabelas: Livros, Estoque, Vendas e Vendedores. Construa comigo cada uma delas!
+
+1) Tabela Livros:
+
+CREATE TABLE LIVROS (
+    ID_LIVRO INT NOT NULL,
+    NOME_LIVRO VARCHAR(100) NOT NULL,
+    AUTORIA VARCHAR(100) NOT NULL,
+    EDITORA VARCHAR(100) NOT NULL,
+    CATEGORIA VARCHAR(100) NOT NULL,
+    PREÇO DECIMAL(5,2) NOT NULL,  
+ PRIMARY KEY (ID_LIVRO)
+);
+
+2) Tabela Estoque:
+
+CREATE TABLE ESTOQUE (
+    ID_LIVRO INT NOT NULL,
+    QTD_ESTOQUE INT NOT NULL,
+ PRIMARY KEY (ID_LIVRO)
+);
+
+3) Tabela Vendas:
+
+CREATE TABLE VENDAS (
+    ID_PEDIDO INT NOT NULL,
+    ID_VENDEDOR INT NOT NULL,
+    ID_LIVRO INT NOT NULL,
+    QTD_VENDIDA INT NOT NULL,
+    DATA_VENDA DATE NOT NULL,
+ PRIMARY KEY (ID_VENDEDOR,ID_PEDIDO)
+);
+
+4) Tabela Vendedores:
+
+CREATE TABLE VENDEDORES (
+    ID_VENDEDOR INT NOT NULL,
+    NOME_VENDEDOR VARCHAR(255) NOT NULL,
+ PRIMARY KEY (ID_VENDEDOR)
+);
+
+
+Opinião do instrutor
+
+Agora sim todas as tabelas do modelo relacional do Clube do Livro foram criadas! Perceba que os comandos foram adaptados seguindo o esqueleto abaixo:
+
+CREATE TABLE NOME_TABELA (
+NOME_CAMPO_1 TIPO_CAMPO_1,
+NOME_CAMPO_2 TIPO_CAMPO_1,
+   PRIMARY KEY (NOME_CAMPO_1)
+);
+
+Perceba que adicionamos o comando NOT NULL depois de todos os campos, já que queremos que nossa tabela não tenha valores faltantes, ou seja, na etapa de inserção de informações é obrigatório que todas as informações sejam declaradas. Com isso, ao consultar nossa tabela não termos colunas vazias.

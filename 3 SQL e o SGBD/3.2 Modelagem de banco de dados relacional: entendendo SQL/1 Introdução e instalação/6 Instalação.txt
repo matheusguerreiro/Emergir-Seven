@@ -1,0 +1,27 @@
+[00:00] Fernanda explicou que antes de fazer qualquer instalação, é preciso criar primeiro um pasta para armazenar todos os componentes. Então, vou abrir meu explorador de arquivos, vou ao diretório C, clico com o botão direito, “Novo > Pasta”, para criar uma nova pasta chamada “MySQL”.
+
+[00:25] Pasta criada. Fernanda lembrou também, que existem dois grandes softwares que vamos fazer a instalação. O primeiro é o Uniform Server, que é um conjunto de servidor que contém o MySQL e vai simplificar a nossa instalação. E o segundo é o MySQL Workbench, que vai trazer um software mais amigável para construirmos os nossos códigos. Vamos começar pelo servidor?
+
+[00:50] Primeiro passo é ir ao navegador, e procurar no Google “MySQL Server”. Você pode ir direto no link, mas eu vou ao navegador, “uniform server download”, eu vou no link “SourceForge.net”. Você vai perceber que é uma página completamente cheia de informações.
+
+[01:21] Eu vou clicar no botão “Files”, do lado de “Summary”, ele vai aparecer um monte de pasta, e eu vou clicar na última pasta, que é a “Uniform Server ZeroXIV”, ele vai aparecer mais pastas ainda. E eu vou clicar nesse “14_0_3_ZeroXIV”. E ele já vai abrir o nosso executável. Clico no botão para baixar, ele vai demandar 5 segundos, e já vai baixar o nosso executável, eu clico em “Abrir arquivo”.
+
+[02:01] Aparece uma janela para localizarmos o diretório que queremos salvar e extrair nossos arquivos. Então, vou nos três pontinhos, e localizar a pasta que acabamos de criar. Então, vou ao diretório C, vou em “MySQL > Ok”, e aperto “Extract”, para extrair todos os componentes.
+
+[02:25] Aguardo um pouco até ele extrair, finalizada a extração, vou naquela pasta, para ver o que ele fez. Clico no diretório C, “MySQL”, ele criou uma pasta chamada “UniServerZ”. Abrindo para ver o que tem dentro dessa pasta, te diversas pastas, e conseguimos perceber que existe “UniController”, vamos clicar nele. Ele pede para inserirmos uma senha. Vou colocar “Livro”, aperto em “Ok”, e essa vai ser a senha de acesso ao servidor, então, é importante gravarmos ela também.
+
+[03:08] Aperto “Ok”, aguardo um pouco, ele salvou nossa senha, aperto em “Ok” novamente, e ele já vai aparecer uma interface que é onde vamos controlar nosso servidor. O primeiro passo é clicar no botão “Start MySQL”, para começar o nosso SQL. Pronto, o nosso MySQL está iniciado, mas eu vou precisar de um ambiente mais amigável para construir os nossos códigos.
+
+[03:37] Então, eu vou minimizar e procurar o nosso navegador, o MySQL Workbench Downloads. Então, volto para o nosso navegador no Google, “mysql workbench download”. Clico em “dev.mysql.com”, e ele já identificou que o meu sistema operacional é o Windows, então, eu já vou clicar nesse botão de “download”.
+
+[04:11] E existe um passo importante, o MySQL é da Oracle, e ele só vai te dar acesso ao download, se você tiver um cadastro lá, se você não tiver, basta clicar em “Sign up”, para fazer esse cadastro. Mas se você já tiver, é só clicar em “Login”. Eu já tenho, então vou clicar em “Login”, colocar meus acessos, iniciar a sessão, e pronto, ele já vai mostrar o botão de “Download now” para carregarmos o MySQL Workbench.
+
+[04:45] Espero um pouco, abro o arquivo. Aperto “Next” na janela de instalação, e vou mudar só esse diretório para a pasta que salvamos, novamente, dou “Ok”, clico em “Next”, vou colocar a instalação completa, “Next > Install”, agora eu espero ele instalar e a barra de progresso completar.
+
+[05:22] Ele vai perguntar, na verdade, se você deseja permitir que esse aplicativo faça alterações no seu dispositivo. Então, eu só vou verificar que é o MySQL da Oracle American Inc., e aperto “Sim”, para ele continuar a instalação.
+
+[05:41] Pronto, finalizado a instalação, eu aperto em “Finish”, e ele já vai abrir o Workbench. Com o meu MYSQL Workbench aberto, eu vou criar uma conexão no botão de “+”, do lado de “MySQL Connections”. Então, aperto em “+”, vou colocar o nome dessa conexão como “Clube dolivro”, e verifico que o hostname é o 127.0.0.1 e a porta é a 3306. Esses são códigos que já vêm padrão, mas é importante verificar antes de testar a conexão.
+
+[06:25] E agora, vamos finalmente testar a nossa conexão com o servidor que acabamos de instalar, apertando em “Test connections”, vou colocar a senha “livro”, que cadastramos com o servidor, aperto em “Ok”, sucesso, conectado, aperto “ok” novamente, e agora eu crio a conexão apertando em “Ok”.
+
+[06:48] Ele criou um botão, para entrarmos na conexão. Vamos clicar para ver o que tem dentro. Agora temos um ambiente para colocar os nossos códigos, e outros recursos que o Workbench nos traz.

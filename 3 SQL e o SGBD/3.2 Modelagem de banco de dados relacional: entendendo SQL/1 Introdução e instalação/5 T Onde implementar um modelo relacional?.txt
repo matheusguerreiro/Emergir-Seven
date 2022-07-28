@@ -1,0 +1,6 @@
+Karina é engenheira de dados na Alura Foods, uma empresa de vendas do ramo alimentício. Ela recebeu da equipe de desenvolvimento um modelo relacional para fazer a implementação. Onde Karina pode fazer a implementação desse modelo para posteriormente ser preenchido por dados?
+
+
+(V) Karina pode usar o SGBD MySQL, já que está entre os sistemas mais difundidos para fazer a implementação de modelos relacionais.
+
+      Isso mesmo! O MySQL é um dos sistemas de gerenciamento de banco de dados mais populares e apropriados para ter um modelo relacional implementado. Além de oferecer gerenciamento de acesso à usuários, a manipulação e a organização dos dados.

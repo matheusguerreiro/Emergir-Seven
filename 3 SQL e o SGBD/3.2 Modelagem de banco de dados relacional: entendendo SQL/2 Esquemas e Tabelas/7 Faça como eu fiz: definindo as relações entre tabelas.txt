@@ -1,0 +1,39 @@
+Para estabelecer a relação entre duas tabelas já criadas é preciso alterar uma tabela definindo o campo que será a chave estrangeira e finalizando fazendo referência ao campo de outra tabela. No modelo relacional abaixo, percebemos três diferentes ligações. Vamos criar cada uma delas?
+
+https://caelum-online-public.s3.amazonaws.com/2462-entendendo-sql/02/aula2-img1.png
+
+Opinião do instrutor
+
+1) Relação entre as tabelas Vendas e Livros
+
+O comando abaixo irá alterar a tabela Vendas (tabela filha), adicionando a restrição de chave estrangeira apelidada de CE_VENDAS_LIVROS que referencia a tabela Livros (tabela pai), vinculando as colunas ID_LIVRO de ambas as tabelas.
+
+ALTER TABLE VENDAS ADD CONSTRAINT CE_VENDAS_LIVROS
+FOREIGN KEY (ID_LIVRO)
+REFERENCES LIVROS (ID_LIVRO)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION;
+
+2) Relação entre as tabelas Livros e Estoque
+
+ALTER TABLE ESTOQUE ADD CONSTRAINT CE_LIVROS_ESTOQUES
+FOREIGN KEY (ID_LIVRO)
+REFERENCES LIVROS (ID_LIVRO)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION;
+
+3) Relação entre as tabelas Vendedores e Vendas
+
+ALTER TABLE VENDEDORES ADD CONSTRAINT CE_VENDEDORES_VENDAS
+FOREIGN KEY (ID_VENDEDOR)
+REFERENCES VENDAS (ID_VENDEDOR)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION;
+
+Após escrever todas as restrições, basta selecionar o código e executá-lo. No MySQL Workbench, é usando o atalho CTRL + ENTER ou apertando no botão de raio no menu superior.
+
+A restrição de chave estrangeira garante a integridade referencial. Aqui no “faça como eu fiz”, foram estabelecidas todas as ligações entre tabelas do modelo relacional do Clube do Livro.
+
+Lembre-se que declaramos o padrão NO ACTION para os comandos ON DELETE e ON UPDATE, a qual, de modo simplificado, significa que será gerado um erro ao alterar uma nova observação na tabela filha que não exista na tabela pai. Essa é uma das maneiras de personalizar a referência entre as tabelas.
+
+Qualquer dúvida é só compartilhar aqui no fórum.
